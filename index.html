@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AIRankHub – Independent reviews and rankings of the best AI tools in 2026. Compare ChatGPT, Claude, Gemini, Midjourney and 100+ AI tools." />
+  <meta name="keywords" content="AI tools review, best AI tools 2026, ChatGPT vs Claude, AI ranking, AI comparison" />
+  <title>AIRankHub – Best AI Tools Reviews & Rankings 2026</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ── NAV ───────────────────────────────────────────────── -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="/">
+      <span class="logo-icon">⚡</span>
+      <span class="logo-text">AIRank<b>Hub</b></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#tools">Tools</a>
+      <a href="#categories">Categories</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#blog">Blog</a>
+    </nav>
+    <a class="btn btn-primary" href="#tools">Explore Tools →</a>
+  </div>
+</header>
+
+<!-- ── HERO ──────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="badge">🔥 Updated Daily · 200+ Tools Reviewed</div>
+    <h1>Find the <span class="gradient-text">Best AI Tools</span><br/>for Your Workflow</h1>
+    <p class="hero-sub">Independent, hands-on reviews of every major AI tool. Compare features, pricing, and real-world performance — no sponsored rankings.</p>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search AI tools, use cases, categories..." />
+      <button onclick="handleSearch()">Search</button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>200+</strong><span>Tools Reviewed</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><strong>50K+</strong><span>Monthly Readers</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><strong>100%</strong><span>Independent</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CATEGORY FILTER ───────────────────────────────────── -->
+<section class="categories" id="categories">
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterTools('all')">All Tools</button>
+      <button class="filter-btn" onclick="filterTools('chatbot')">💬 Chatbots</button>
+      <button class="filter-btn" onclick="filterTools('image')">🎨 Image</button>
+      <button class="filter-btn" onclick="filterTools('coding')">💻 Coding</button>
+      <button class="filter-btn" onclick="filterTools('video')">🎬 Video</button>
+      <button class="filter-btn" onclick="filterTools('writing')">✍️ Writing</button>
+      <button class="filter-btn" onclick="filterTools('voice')">🎙️ Voice</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── TOOLS GRID ─────────────────────────────────────────── -->
+<section class="tools-section" id="tools">
+  <div class="container">
+    <div class="section-header">
+      <h2>Top Rated AI Tools</h2>
+      <p>Ranked by real-world performance, not sponsorships</p>
+    </div>
+    <div class="tools-grid" id="toolsGrid">
+
+      <!-- ChatGPT -->
+      <article class="tool-card" data-category="chatbot" data-score="9.5">
+        <div class="card-top">
+          <div class="tool-icon" style="background:#10a37f">G</div>
+          <div class="tool-meta">
+            <h3>ChatGPT</h3>
+            <span class="tool-maker">OpenAI</span>
+          </div>
+          <span class="badge-hot">🔥 #1</span>
+        </div>
+        <p class="tool-desc">The most widely used AI chatbot. GPT-4o delivers fast, multimodal responses ideal for writing, analysis, and coding tasks.</p>
+        <div class="tool-tags">
+          <span class="tag">Chatbot</span><span class="tag">Writing</span><span class="tag">Coding</span>
+        </div>
+        <div class="card-bottom">
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="score">9.5<small>/10</small></span>
+          </div>
+          <div class="pricing">
+            <span class="price-free">Free</span>
+            <span class="price-paid">$20/mo</span>
+          </div>
+        </div>
+        <a class="btn-review" href="#">Read Full Review →</a>
+      </article>
+
+      <!-- Claude -->
+      <article class="tool-card" data-category="chatbot" data-score="9.4">
+        <div class="card-top">
+          <div class="tool-icon" style="background:#cc785c">A</div>
+          <div class="tool-meta">
+            <h3>Claude</h3>
+            <span class="tool-maker">Anthropic</span>
+          </div>
+          <span class="badge-new">🆕 Claude 4</span>
+        </div>
+        <p class="tool-desc">The best AI for long-document analysis and nuanced writing. Claude Opus 4 sets the bar for safety-conscious, thoughtful AI assistance.</p>
+        <div class="tool-tags">
+          <span class="tag">Chatbot</span><span class="tag">Analysis</span><span class="tag">Writing</span>
+        </div>
+        <div class="card-bottom">
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="score">9.4<small>/10</small></span>
+          </div>
+          <div class="pricing">
+            <span class="price-free">Free</span>
+            <span class="price-paid">$20/mo</span>
+          </div>
+        </div>
+        <a class="btn-review" href="#">Read Full Review →</a>
+      </article>
+
+      <!-- Midjourney -->
+      <article class="tool-card" data-category="image" data-score="9.3">
+        <div class="card-top">
+          <div class="tool-icon" style="background:#7c3aed">M</div>
+          <div class="tool-meta">
+            <h3>Midjourney</h3>
+            <span class="tool-maker">Midjourney Inc.</span>
+          </div>
+          <span class="badge-hot">🎨 Best Image</span>
+        </div>
+        <p class="tool-desc">Still the gold standard for AI art generation. V7 produces stunning photorealistic and artistic images that outperform all competitors.</p>
+        <div class="tool-tags">
+          <span class="tag">Image</span><span class="tag">Art</span><span class="tag">Design</span>
+        </div>
+        <div class="card-bottom">
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="score">9.3<small>/10</small></span>
+          </div>
+          <div class="pricing">
+            <span class="price-paid">$10/mo</span>
+          </div>
+        </div>
+        <a class="btn-review" href="#">Read Full Review →</a>
+      </article>
+
+      <!-- Cursor -->
+      <article class="tool-card" data-category="coding" data-score="9.2">
+        <div class="card-top">
+          <div class="tool-icon" style="background:#0ea5e9">C</div>
+          <div class="tool-meta">
+            <h3>Cursor</h3>
+            <span class="tool-maker">Anysphere</span>
+          </div>
+          <span class="badge-hot">💻 Best Coding</span>
+        </div>
+        <p class="tool-desc">The AI-native code editor that's replacing VS Code. Tab autocomplete, natural-language edits, and multi-file context make it a productivity beast.</p>
+        <div class="tool-tags">
+          <span class="tag">Coding</span><span class="tag">IDE</span><span class="tag">Autocomplete</span>
+        </div>
+        <div class="card-bottom">
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="score">9.2<small>/10</small></span>
+          </div>
+          <div class="pricing">
+            <span class="price-free">Free</span>
+            <span class="price-paid">$20/mo</span>
+          </div>
+        </div>
+        <a class="btn-review" href="#">Read Full Review →</a>
+      </article>
+
+      <!-- Gemini -->
+      <article class="tool-card" data-category="chatbot" data-score="9.0">
+        <div class="card-top">
+          <div class="tool-icon" style="background:#4285f4">G</div>
+          <div class="tool-meta">
+            <h3>Gemini</h3>
+            <span class="tool-maker">Google</span>
+          </div>
+        </div>
+        <p class="tool-desc">Google's most capable AI with deep Search and Workspace integration. Gemini 2.5 Pro excels at reasoning, coding, and real-time web access.</p>
+        <div class="tool-tags">
+          <span class="tag">Chatbot</span><span class="tag">Search</span><span class="tag">Multimodal</span>
+        </div>
+        <div class="card-bottom">
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="score">9.0<small>/10</small></span>
+          </div>
+          <div class="pricing">
+            <span class="price-free">Free</span>
+            <span class="price-paid">$20/mo</span>
+          </div>
+        </div>
+        <a class="btn-review" href="#">Read Full Review →</a>
+      </article>
+
+      <!-- Runway -->
+      <article class="tool-card" data-category="video" data-score="8.9">
+        <div class="card-top">
+          <div class="tool-icon" style="background:#ef4444">R</div>
+          <div class="tool-meta">
+            <h3>Runway Gen-4</h3>
+            <span class="tool-maker">Runway</span>
+          </div>
+          <span class="badge-new">🎬 Gen-4</span>
+        </div>
+        <p class="tool-desc">Professional-grade AI video generation and editing. Trusted by filmmakers and content creators for cinematic quality output.</p>
+        <div class="tool-tags">
+          <span class="tag">Video</span><span class="tag">Creative</span><span class="tag">Editing</span>
+        </div>
+        <div class="card-bottom">
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="score">8.9<small>/10</small></span>
+          </div>
+          <div class="pricing">
+            <span class="price-free">Free trial</span>
+            <span class="price-paid">$15/mo</span>
+          </div>
+        </div>
+        <a class="btn-review" href="#">Read Full Review →</a>
+      </article>
+
+      <!-- ElevenLabs -->
+      <article class="tool-card" data-category="voice" data-score="9.1">
+        <div class="card-top">
+          <div class="tool-icon" style="background:#f59e0b">E</div>
+          <div class="tool-meta">
+            <h3>ElevenLabs</h3>
+            <span class="tool-maker">ElevenLabs</span>
+          </div>
+          <span class="badge-hot">🎙️ Best Voice</span>
+        </div>
+        <p class="tool-desc">The most realistic AI voice cloning and text-to-speech platform. 3,000+ voices across 30 languages with emotional range control.</p>
+        <div class="tool-tags">
+          <span class="tag">Voice</span><span class="tag">TTS</span><span class="tag">Cloning</span>
+        </div>
+        <div class="card-bottom">
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="score">9.1<small>/10</small></span>
+          </div>
+          <div class="pricing">
+            <span class="price-free">Free</span>
+            <span class="price-paid">$5/mo</span>
+          </div>
+        </div>
+        <a class="btn-review" href="#">Read Full Review →</a>
+      </article>
+
+      <!-- Perplexity -->
+      <article class="tool-card" data-category="chatbot" data-score="8.8">
+        <div class="card-top">
+          <div class="tool-icon" style="background:#06b6d4">P</div>
+          <div class="tool-meta">
+            <h3>Perplexity</h3>
+            <span class="tool-maker">Perplexity AI</span>
+          </div>
+        </div>
+        <p class="tool-desc">The AI search engine that cites sources. Perfect for research tasks where accuracy and real-time web data matter most.</p>
+        <div class="tool-tags">
+          <span class="tag">Search</span><span class="tag">Research</span><span class="tag">Citations</span>
+        </div>
+        <div class="card-bottom">
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="score">8.8<small>/10</small></span>
+          </div>
+          <div class="pricing">
+            <span class="price-free">Free</span>
+            <span class="price-paid">$20/mo</span>
+          </div>
+        </div>
+        <a class="btn-review" href="#">Read Full Review →</a>
+      </article>
+
+      <!-- Jasper -->
+      <article class="tool-card" data-category="writing" data-score="8.5">
+        <div class="card-top">
+          <div class="tool-icon" style="background:#6366f1">J</div>
+          <div class="tool-meta">
+            <h3>Jasper</h3>
+            <span class="tool-maker">Jasper AI</span>
+          </div>
+        </div>
+        <p class="tool-desc">Purpose-built AI writing assistant for marketing teams. Brand voice, SEO optimization, and team collaboration make it ideal for businesses.</p>
+        <div class="tool-tags">
+          <span class="tag">Writing</span><span class="tag">Marketing</span><span class="tag">SEO</span>
+        </div>
+        <div class="card-bottom">
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="score">8.5<small>/10</small></span>
+          </div>
+          <div class="pricing">
+            <span class="price-paid">$49/mo</span>
+          </div>
+        </div>
+        <a class="btn-review" href="#">Read Full Review →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── COMPARISON BANNER ──────────────────────────────────── -->
+<section class="compare-banner">
+  <div class="container">
+    <div class="compare-inner">
+      <div class="compare-text">
+        <h2>ChatGPT vs Claude vs Gemini</h2>
+        <p>Our most read comparison. See which AI chatbot wins in 10 key categories including coding, writing, analysis, and value for money.</p>
+        <a class="btn btn-white" href="#">Read the Full Comparison →</a>
+      </div>
+      <div class="compare-scores">
+        <div class="cs-item"><span>ChatGPT</span><div class="bar" style="width:95%">9.5</div></div>
+        <div class="cs-item"><span>Claude</span><div class="bar bar-2" style="width:94%">9.4</div></div>
+        <div class="cs-item"><span>Gemini</span><div class="bar bar-3" style="width:90%">9.0</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LATEST REVIEWS ─────────────────────────────────────── -->
+<section class="blog-section" id="blog">
+  <div class="container">
+    <div class="section-header">
+      <h2>Latest Reviews & Guides</h2>
+      <p>Fresh AI analysis published daily</p>
+    </div>
+    <div class="blog-grid" id="reviews">
+      <article class="blog-card featured">
+        <div class="blog-meta"><span class="cat-tag">Comparison</span><span class="date">Mar 25, 2026</span></div>
+        <h3>Claude Opus 4.6 vs GPT-4o: Which AI Is Better in 2026?</h3>
+        <p>We ran 200+ real-world tasks across writing, coding, analysis and reasoning. Here's who wins in each category...</p>
+        <a class="read-more" href="#">Read Review →</a>
+      </article>
+      <article class="blog-card">
+        <div class="blog-meta"><span class="cat-tag">Guide</span><span class="date">Mar 24, 2026</span></div>
+        <h3>Best Free AI Tools in 2026: 20 Tools That Won't Cost a Penny</h3>
+        <p>You don't need to spend money to access powerful AI. We tested 20 free-tier tools that deliver real value...</p>
+        <a class="read-more" href="#">Read Guide →</a>
+      </article>
+      <article class="blog-card">
+        <div class="blog-meta"><span class="cat-tag">Review</span><span class="date">Mar 23, 2026</span></div>
+        <h3>Cursor Review 2026: The AI Code Editor That Replaced VS Code</h3>
+        <p>After 3 months of daily use, here's our honest assessment of whether Cursor is worth the switch...</p>
+        <a class="read-more" href="#">Read Review →</a>
+      </article>
+      <article class="blog-card">
+        <div class="blog-meta"><span class="cat-tag">Roundup</span><span class="date">Mar 22, 2026</span></div>
+        <h3>10 Best AI Video Generators Tested: Sora vs Kling vs Runway</h3>
+        <p>We generated the same 5 prompts across 10 platforms. The quality gap between leaders and laggards is huge...</p>
+        <a class="read-more" href="#">Read Roundup →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── NEWSLETTER ─────────────────────────────────────────── -->
+<section class="newsletter">
+  <div class="container newsletter-inner">
+    <div>
+      <h2>Get Daily AI Demand Insights</h2>
+      <p>Join 50,000+ professionals who get our weekly AI tool roundups, reviews, and industry analysis.</p>
+    </div>
+    <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+      <input type="email" placeholder="your@email.com" required />
+      <button type="submit">Subscribe Free</button>
+    </form>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="/"><span class="logo-icon">⚡</span><span class="logo-text">AIRank<b>Hub</b></span></a>
+      <p>Independent AI tool reviews and rankings. No paid placements. No sponsored rankings.</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Tools</h4>
+        <a href="#">Chatbots</a><a href="#">Image AI</a><a href="#">Coding AI</a><a href="#">Video AI</a>
+      </div>
+      <div>
+        <h4>Content</h4>
+        <a href="#">Reviews</a><a href="#">Comparisons</a><a href="#">Guides</a><a href="#">Blog</a>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <a href="#">About</a><a href="#">Contact</a><a href="#">Privacy</a><a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 AIRankHub · Independent AI Reviews · Not affiliated with any AI company</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
