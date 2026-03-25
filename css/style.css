@@ -493,6 +493,64 @@ a { color: inherit; text-decoration: none; }
 .footer-links h4 { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
 .footer-links a { font-size: 13px; color: var(--text-muted); transition: color .2s; }
 .footer-links a:hover { color: var(--text); }
+/* ─── BUSINESS BAR ──────────────────────────────────────── */
+.biz-bar {
+  background: linear-gradient(90deg, rgba(99,102,241,.12), rgba(168,85,247,.08));
+  border-top: 1px solid rgba(99,102,241,.25);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 0;
+}
+.biz-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.biz-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.biz-icon { font-size: 26px; }
+.biz-left strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.biz-left span {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.btn-tg {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #229ED9;
+  color: #fff;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: opacity .2s, transform .2s;
+}
+.btn-tg:hover { opacity: .88; transform: translateY(-1px); }
+
+/* Contact links in footer */
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+  transition: color .2s;
+}
+.contact-link:hover { color: var(--text); }
+.tg-link { color: #48b4e0 !important; font-weight: 600; }
+.tg-link:hover { color: #7dcff0 !important; }
+
 .footer-bottom {
   text-align: center;
   padding: 20px 0;
