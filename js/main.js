@@ -1,13 +1,15 @@
 // ─── FILTER ──────────────────────────────────────────────
 function filterTools(category) {
-  // Update active button
   document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
   event.target.classList.add('active');
 
-  // Filter cards
   document.querySelectorAll('.tool-card').forEach(card => {
     const match = category === 'all' || card.dataset.category === category;
     card.classList.toggle('hidden', !match);
+    if (match) {
+      card.classList.remove('visible');
+      requestAnimationFrame(() => card.classList.add('visible'));
+    }
   });
 }
 
@@ -19,7 +21,6 @@ function handleSearch() {
     const text = card.innerText.toLowerCase();
     card.classList.toggle('hidden', !text.includes(q));
   });
-  // Reset filter buttons
   document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
   document.querySelector('.filter-btn').classList.add('active');
 }
@@ -41,8 +42,23 @@ function handleSubscribe(e) {
   }, 3000);
 }
 
+// ─── SCROLL REVEAL ───────────────────────────────────────
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.tool-card, .blog-card, .compare-inner, .newsletter-inner').forEach((el, i) => {
+  el.classList.add('reveal');
+  el.style.transitionDelay = `${Math.min(i * 0.06, 0.3)}s`;
+  revealObserver.observe(el);
+});
+
 // ─── ANIMATE BARS ON SCROLL ──────────────────────────────
-const observer = new IntersectionObserver(entries => {
+const barObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.style.width = entry.target.dataset.width || entry.target.style.width;
@@ -50,4 +66,19 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.3 });
 
-document.querySelectorAll('.bar').forEach(bar => observer.observe(bar));
+document.querySelectorAll('.bar').forEach(bar => barObserver.observe(bar));
+
+// ─── BACK TO TOP ─────────────────────────────────────────
+const backToTop = document.querySelector('.back-to-top');
+if (backToTop) {
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('show', window.scrollY > 400);
+  }, { passive: true });
+}
+
+// ─── MOBILE NAV ──────────────────────────────────────────
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.remove('open');
+  });
+});
