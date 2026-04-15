@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free online HTML code tester with live preview. Paste HTML, CSS, JavaScript and see the rendered output instantly. Zero signup, fully private, runs in your browser." />
+  <meta name="keywords" content="html code tester, html sandbox online, html live preview, html js tester, free html editor" />
+  <title>Free Online HTML Code Tester & Live Preview | AIRankHub</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/tool.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="/"><span class="logo-icon">⚡</span><span class="logo-text">AIRank<b>Hub</b></span></a>
+    <nav class="nav-links">
+      <a href="/#tools">Reviews</a>
+      <a href="/tools/">Free Tools</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+    <a class="btn btn-primary" href="https://t.me/aisen68" target="_blank">Business →</a>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="breadcrumb">
+    <a href="/">Home</a> <span>›</span>
+    <a href="/tools/">Free Tools</a> <span>›</span>
+    <span>HTML Code Tester</span>
+  </nav>
+
+  <header class="tool-header">
+    <div class="tool-hero-emoji">🧪</div>
+    <span class="tool-cat">Developer Tools</span>
+    <h1 class="tool-title">HTML Code Tester</h1>
+    <p class="tool-tagline">Paste HTML, CSS, and JavaScript. See the result instantly. No signup, no uploads, works fully in your browser.</p>
+    <div class="tool-badges">
+      <span class="tool-badge">🔒 100% Private</span>
+      <span class="tool-badge">⚡ Runs in Browser</span>
+      <span class="tool-badge">💰 Free Forever</span>
+    </div>
+  </header>
+
+  <main class="tool-main">
+<div class="tool-split">
+      <div class="tool-pane">
+        <div class="tool-pane-header">
+          <span>📝 HTML + CSS + JS</span>
+          <div class="tool-btn-row">
+            <button class="tool-btn" id="runBtn">Run ▶</button>
+            <button class="tool-btn secondary" id="resetBtn">Reset</button>
+          </div>
+        </div>
+        <textarea id="htmlInput" class="tool-textarea" spellcheck="false" autocomplete="off"></textarea>
+      </div>
+      <div class="tool-pane">
+        <div class="tool-pane-header">
+          <span>👁️ Live Preview</span>
+          <div class="tool-btn-row">
+            <button class="tool-btn secondary" id="clearConsoleBtn">Clear Console</button>
+          </div>
+        </div>
+        <iframe id="preview" class="tool-iframe" sandbox="allow-scripts allow-modals allow-forms"></iframe>
+      </div>
+    </div>
+    <div class="tool-console" id="consoleOut" aria-live="polite"></div>
+  </main>
+
+  <section class="tool-how">
+    <h2>How It Works</h2>
+    <p>This tool uses an iframe element with the srcdoc attribute. When you edit the textarea, your HTML is injected directly into the iframe, creating a fully isolated rendering context. JavaScript executes inside the iframe's sandbox, isolated from this page. Console output is captured by overriding console methods inside the iframe and forwarding messages back via postMessage.</p>
+  </section>
+
+  <section class="tool-faq">
+    <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+      <div class="faq-q">Is my code uploaded to a server?</div>
+      <div class="faq-a">No. Everything runs entirely in your browser using an iframe sandbox. Your code never leaves your machine.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I use external libraries like jQuery or React?</div>
+      <div class="faq-a">Yes. Add a &lt;script src="https://cdn...">&lt;/script> tag in the &lt;head> or before your code. The iframe sandbox allows external network requests.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Does the console output show errors?</div>
+      <div class="faq-a">Yes. console.log, console.warn, and console.error from your code are captured and shown in the console panel below the preview.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is there a file size limit?</div>
+      <div class="faq-a">Practically no — the browser handles hundreds of KB of HTML without issue. For very large projects, consider a full IDE.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Why does my code not run?</div>
+      <div class="faq-a">Check for syntax errors in the console output. Common issues: missing closing tags, unescaped quotes inside attributes, or &lt;script> placement before the DOM element it references.</div>
+    </div>
+  </section>
+
+  <section class="tool-cta">
+    <h3>Need a custom AI tool for your workflow?</h3>
+    <p>We build private AI utilities for teams and publishers. No sponsored rankings, no data harvesting.</p>
+    <a class="btn btn-primary" href="https://t.me/aisen68" target="_blank">Talk on Telegram →</a>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container footer-bottom">
+    <p>© 2026 AIRankHub · <a href="/" style="color:#a5b4fc">Home</a> · <a href="/tools/" style="color:#a5b4fc">Free Tools</a> · Business: <a href="https://t.me/aisen68" target="_blank" style="color:#a5b4fc">Telegram @aisen68</a></p>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const STARTER = `<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 24px; background: #0f172a; color: #e2e8f0; }
+    h1 { color: #7dd3fc; margin-bottom: 12px; }
+    button { padding: 8px 16px; background: #6366f1; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }
+    button:hover { background: #4f46e5; }
+  </style>
+</head>
+<body>
+  <h1>Hello, World! 👋</h1>
+  <p>Edit the code on the left to see live changes.</p>
+  <button onclick="console.log('button clicked at', new Date().toLocaleTimeString())">Click me</button>
+  <script>
+    console.log('Page loaded at', new Date().toLocaleTimeString());
+  <\/script>
+</body>
+</html>`;
+
+  const input = document.getElementById('htmlInput');
+  const frame = document.getElementById('preview');
+  const consoleOut = document.getElementById('consoleOut');
+  const runBtn = document.getElementById('runBtn');
+  const resetBtn = document.getElementById('resetBtn');
+  const clearBtn = document.getElementById('clearConsoleBtn');
+
+  // Persist across reloads
+  const SAVED = localStorage.getItem('html-tester-code');
+  input.value = SAVED || STARTER;
+
+  function consoleInjector() {
+    return `<script>\n(function(){\n  const origLog = console.log, origWarn = console.warn, origError = console.error;\n  function send(level, args){\n    try { parent.postMessage({__ht: true, level: level, args: Array.from(args).map(a => {\n      if (a === null) return 'null';\n      if (a === undefined) return 'undefined';\n      if (typeof a === 'object') { try { return JSON.stringify(a); } catch(e) { return String(a); } }\n      return String(a);\n    })}, '*'); } catch(e){}\n  }\n  console.log   = function(){ send('log', arguments); origLog.apply(console, arguments); };\n  console.warn  = function(){ send('warn', arguments); origWarn.apply(console, arguments); };\n  console.error = function(){ send('error', arguments); origError.apply(console, arguments); };\n  window.addEventListener('error', function(e){ send('error', [e.message + ' @ line ' + e.lineno]); });\n})();\n<\/script>`;
+  }
+
+  function escapeScriptClose(html) {
+    // strictly for injection safety
+    return html;
+  }
+
+  function render() {
+    const code = input.value;
+    localStorage.setItem('html-tester-code', code);
+    const injector = consoleInjector();
+    // Insert injector right after <head> if present, else prepend
+    let doc;
+    if (/<head[^>]*>/i.test(code)) {
+      doc = code.replace(/<head[^>]*>/i, function(m){ return m + injector; });
+    } else if (/<html[^>]*>/i.test(code)) {
+      doc = code.replace(/<html[^>]*>/i, function(m){ return m + '<head>' + injector + '</head>'; });
+    } else {
+      doc = injector + code;
+    }
+    frame.srcdoc = doc;
+  }
+
+  function log(level, msg) {
+    const line = document.createElement('div');
+    line.className = 'log-line log-' + level;
+    const time = new Date().toLocaleTimeString();
+    line.textContent = '[' + time + '] ' + (level === 'log' ? '' : level.toUpperCase() + ': ') + msg;
+    consoleOut.appendChild(line);
+    consoleOut.scrollTop = consoleOut.scrollHeight;
+  }
+
+  window.addEventListener('message', function(e) {
+    if (!e.data || !e.data.__ht) return;
+    log(e.data.level, e.data.args.join(' '));
+  });
+
+  let debounceT = null;
+  input.addEventListener('input', function() {
+    clearTimeout(debounceT);
+    debounceT = setTimeout(render, 300);
+  });
+
+  runBtn.addEventListener('click', function(){ consoleOut.innerHTML = ''; render(); });
+  resetBtn.addEventListener('click', function(){
+    if (confirm('Reset to starter template? Your current code will be lost.')) {
+      input.value = STARTER;
+      consoleOut.innerHTML = '';
+      render();
+    }
+  });
+  clearBtn.addEventListener('click', function(){ consoleOut.innerHTML = ''; });
+
+  // Keyboard: Ctrl+Enter to run
+  input.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { e.preventDefault(); runBtn.click(); }
+  });
+
+  render();
+})();
+</script>
+
+</body>
+</html>
