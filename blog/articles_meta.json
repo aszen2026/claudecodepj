@@ -1,5 +1,27 @@
 [
   {
+    "title": "Qwen-3.6: What Just Happened (April 2026)",
+    "slug": "qwen-36-what-just-happened-april-2026",
+    "date": "April 24, 2026",
+    "date_str": "2026-04-24",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in qwen-3.6 and break down what matters most for your workflow.",
+    "topic": "Qwen-3.6",
+    "is_event": true
+  },
+  {
+    "title": "Claude Opus 4.7: What Just Happened (April 2026)",
+    "slug": "claude-opus-47-what-just-happened-april-2026",
+    "date": "April 24, 2026",
+    "date_str": "2026-04-24",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in claude opus 4.7 and break down what matters most for your workflow.",
+    "topic": "Claude Opus 4.7",
+    "is_event": true
+  },
+  {
     "title": "Qwen 3.6: What Just Happened (April 2026)",
     "slug": "qwen-36-what-just-happened-april-2026",
     "date": "April 24, 2026",
