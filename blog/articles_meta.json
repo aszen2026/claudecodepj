@@ -1,5 +1,27 @@
 [
   {
+    "title": "GPT-2: What Just Happened (April 2026)",
+    "slug": "gpt-2-what-just-happened-april-2026",
+    "date": "April 24, 2026",
+    "date_str": "2026-04-24",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-2 and break down what matters most for your workflow.",
+    "topic": "GPT-2",
+    "is_event": true
+  },
+  {
+    "title": "Openai Launch: What Just Happened (April 2026)",
+    "slug": "openai-launch-what-just-happened-april-2026",
+    "date": "April 24, 2026",
+    "date_str": "2026-04-24",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in openai launch and break down what matters most for your workflow.",
+    "topic": "Openai Launch",
+    "is_event": true
+  },
+  {
     "title": "Qwen-3.6: What Just Happened (April 2026)",
     "slug": "qwen-36-what-just-happened-april-2026",
     "date": "April 24, 2026",
