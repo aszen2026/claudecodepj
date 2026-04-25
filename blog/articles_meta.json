@@ -1,5 +1,16 @@
 [
   {
+    "title": "Deepseek-v4: What Just Happened (April 2026)",
+    "slug": "deepseek-v4-what-just-happened-april-2026",
+    "date": "April 25, 2026",
+    "date_str": "2026-04-25",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in deepseek-v4 and break down what matters most for your workflow.",
+    "topic": "Deepseek-v4",
+    "is_event": true
+  },
+  {
     "title": "GPT-5.5 Pro: What Just Happened (April 2026)",
     "slug": "gpt-55-pro-what-just-happened-april-2026",
     "date": "April 25, 2026",
