@@ -1,5 +1,27 @@
 [
   {
+    "title": "GPT-5 Nano: What Just Happened (April 2026)",
+    "slug": "gpt-5-nano-what-just-happened-april-2026",
+    "date": "April 26, 2026",
+    "date_str": "2026-04-26",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5 nano and break down what matters most for your workflow.",
+    "topic": "GPT-5 Nano",
+    "is_event": true
+  },
+  {
+    "title": "Mimo V2.5: What Just Happened (April 2026)",
+    "slug": "mimo-v25-what-just-happened-april-2026",
+    "date": "April 26, 2026",
+    "date_str": "2026-04-26",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in mimo v2.5 and break down what matters most for your workflow.",
+    "topic": "Mimo V2.5",
+    "is_event": true
+  },
+  {
     "title": "Deepseek-v4: What Just Happened (April 2026)",
     "slug": "deepseek-v4-what-just-happened-april-2026",
     "date": "April 25, 2026",
