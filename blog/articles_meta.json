@@ -1,5 +1,27 @@
 [
   {
+    "title": "Claude 4.7: What Just Happened (April 2026)",
+    "slug": "claude-47-what-just-happened-april-2026",
+    "date": "April 27, 2026",
+    "date_str": "2026-04-27",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in claude 4.7 and break down what matters most for your workflow.",
+    "topic": "Claude 4.7",
+    "is_event": true
+  },
+  {
+    "title": "Qwen3.5: What Just Happened (April 2026)",
+    "slug": "qwen35-what-just-happened-april-2026",
+    "date": "April 27, 2026",
+    "date_str": "2026-04-27",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in qwen3.5 and break down what matters most for your workflow.",
+    "topic": "Qwen3.5",
+    "is_event": true
+  },
+  {
     "title": "GPT-5 Nano: What Just Happened (April 2026)",
     "slug": "gpt-5-nano-what-just-happened-april-2026",
     "date": "April 26, 2026",
