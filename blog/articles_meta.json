@@ -1,5 +1,16 @@
 [
   {
+    "title": "Grok 3: What Just Happened (April 2026)",
+    "slug": "grok-3-what-just-happened-april-2026",
+    "date": "April 28, 2026",
+    "date_str": "2026-04-28",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in grok 3 and break down what matters most for your workflow.",
+    "topic": "Grok 3",
+    "is_event": true
+  },
+  {
     "title": "Gemini-3: What Just Happened (April 2026)",
     "slug": "gemini-3-what-just-happened-april-2026",
     "date": "April 28, 2026",
