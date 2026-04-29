@@ -1,5 +1,27 @@
 [
   {
+    "title": "Microsoft Launch: What Just Happened (April 2026)",
+    "slug": "microsoft-launch-what-just-happened-april-2026",
+    "date": "April 29, 2026",
+    "date_str": "2026-04-29",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in microsoft launch and break down what matters most for your workflow.",
+    "topic": "Microsoft Launch",
+    "is_event": true
+  },
+  {
+    "title": "GPT-5.6: What Just Happened (April 2026)",
+    "slug": "gpt-56-what-just-happened-april-2026",
+    "date": "April 29, 2026",
+    "date_str": "2026-04-29",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5.6 and break down what matters most for your workflow.",
+    "topic": "GPT-5.6",
+    "is_event": true
+  },
+  {
     "title": "Grok 3: What Just Happened (April 2026)",
     "slug": "grok-3-what-just-happened-april-2026",
     "date": "April 28, 2026",
