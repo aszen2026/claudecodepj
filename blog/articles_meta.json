@@ -1,5 +1,27 @@
 [
   {
+    "title": "GPT-6: What Just Happened (April 2026)",
+    "slug": "gpt-6-what-just-happened-april-2026",
+    "date": "April 30, 2026",
+    "date_str": "2026-04-30",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-6 and break down what matters most for your workflow.",
+    "topic": "GPT-6",
+    "is_event": true
+  },
+  {
+    "title": "Google Launch: What Just Happened (April 2026)",
+    "slug": "google-launch-what-just-happened-april-2026",
+    "date": "April 30, 2026",
+    "date_str": "2026-04-30",
+    "year_month": "2026-04",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in google launch and break down what matters most for your workflow.",
+    "topic": "Google Launch",
+    "is_event": true
+  },
+  {
     "title": "Microsoft Launch: What Just Happened (April 2026)",
     "slug": "microsoft-launch-what-just-happened-april-2026",
     "date": "April 29, 2026",
