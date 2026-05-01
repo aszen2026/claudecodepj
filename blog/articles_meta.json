@@ -1,5 +1,27 @@
 [
   {
+    "title": "Qwen 3.5: What Just Happened (May 2026)",
+    "slug": "qwen-35-what-just-happened-may-2026",
+    "date": "May 01, 2026",
+    "date_str": "2026-05-01",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in qwen 3.5 and break down what matters most for your workflow.",
+    "topic": "Qwen 3.5",
+    "is_event": true
+  },
+  {
+    "title": "GPT-5.5: What Just Happened (May 2026)",
+    "slug": "gpt-55-what-just-happened-may-2026",
+    "date": "May 01, 2026",
+    "date_str": "2026-05-01",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5.5 and break down what matters most for your workflow.",
+    "topic": "GPT-5.5",
+    "is_event": true
+  },
+  {
     "title": "ChatGPT/OpenAI: Everything You Need to Know in May 2026",
     "slug": "chatgptopenai-everything-you-need-to-know-in-may-2026",
     "date": "May 01, 2026",
