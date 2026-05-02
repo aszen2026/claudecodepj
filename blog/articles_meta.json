@@ -1,5 +1,27 @@
 [
   {
+    "title": "Mimo-v2.5: What Just Happened (May 2026)",
+    "slug": "mimo-v25-what-just-happened-may-2026",
+    "date": "May 02, 2026",
+    "date_str": "2026-05-02",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in mimo-v2.5 and break down what matters most for your workflow.",
+    "topic": "Mimo-v2.5",
+    "is_event": true
+  },
+  {
+    "title": "Anthropic Launch: What Just Happened (May 2026)",
+    "slug": "anthropic-launch-what-just-happened-may-2026",
+    "date": "May 02, 2026",
+    "date_str": "2026-05-02",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in anthropic launch and break down what matters most for your workflow.",
+    "topic": "Anthropic Launch",
+    "is_event": true
+  },
+  {
     "title": "Deepseek V4: What Just Happened (May 2026)",
     "slug": "deepseek-v4-what-just-happened-may-2026",
     "date": "May 02, 2026",
