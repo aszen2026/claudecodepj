@@ -1,5 +1,27 @@
 [
   {
+    "title": "Deepseek V4: What Just Happened (May 2026)",
+    "slug": "deepseek-v4-what-just-happened-may-2026",
+    "date": "May 02, 2026",
+    "date_str": "2026-05-02",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in deepseek v4 and break down what matters most for your workflow.",
+    "topic": "Deepseek V4",
+    "is_event": true
+  },
+  {
+    "title": "Claude Opus 4.7: What Just Happened (May 2026)",
+    "slug": "claude-opus-47-what-just-happened-may-2026",
+    "date": "May 02, 2026",
+    "date_str": "2026-05-02",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in claude opus 4.7 and break down what matters most for your workflow.",
+    "topic": "Claude Opus 4.7",
+    "is_event": true
+  },
+  {
     "title": "Qwen 3.5: What Just Happened (May 2026)",
     "slug": "qwen-35-what-just-happened-may-2026",
     "date": "May 01, 2026",
