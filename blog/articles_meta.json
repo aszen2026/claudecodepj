@@ -1,5 +1,27 @@
 [
   {
+    "title": "GPT-5.4 Pro: What Just Happened (May 2026)",
+    "slug": "gpt-54-pro-what-just-happened-may-2026",
+    "date": "May 03, 2026",
+    "date_str": "2026-05-03",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5.4 pro and break down what matters most for your workflow.",
+    "topic": "GPT-5.4 Pro",
+    "is_event": true
+  },
+  {
+    "title": "Gemini 3.1: What Just Happened (May 2026)",
+    "slug": "gemini-31-what-just-happened-may-2026",
+    "date": "May 03, 2026",
+    "date_str": "2026-05-03",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gemini 3.1 and break down what matters most for your workflow.",
+    "topic": "Gemini 3.1",
+    "is_event": true
+  },
+  {
     "title": "AI Coding Tools: Everything You Need to Know in May 2026",
     "slug": "ai-coding-tools-everything-you-need-to-know-in-may-2026",
     "date": "May 03, 2026",
