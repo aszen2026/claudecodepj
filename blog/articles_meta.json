@@ -1,5 +1,27 @@
 [
   {
+    "title": "GPT-2: What Just Happened (May 2026)",
+    "slug": "gpt-2-what-just-happened-may-2026",
+    "date": "May 04, 2026",
+    "date_str": "2026-05-04",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-2 and break down what matters most for your workflow.",
+    "topic": "GPT-2",
+    "is_event": true
+  },
+  {
+    "title": "Qwen3: What Just Happened (May 2026)",
+    "slug": "qwen3-what-just-happened-may-2026",
+    "date": "May 04, 2026",
+    "date_str": "2026-05-04",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in qwen3 and break down what matters most for your workflow.",
+    "topic": "Qwen3",
+    "is_event": true
+  },
+  {
     "title": "AI Agent: Everything You Need to Know in May 2026",
     "slug": "ai-agent-everything-you-need-to-know-in-may-2026",
     "date": "May 03, 2026",
