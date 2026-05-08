@@ -1,5 +1,27 @@
 [
   {
+    "title": "Mimo V2.5: What Just Happened (May 2026)",
+    "slug": "mimo-v25-what-just-happened-may-2026",
+    "date": "May 08, 2026",
+    "date_str": "2026-05-08",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in mimo v2.5 and break down what matters most for your workflow.",
+    "topic": "Mimo V2.5",
+    "is_event": true
+  },
+  {
+    "title": "Deepseek 4: What Just Happened (May 2026)",
+    "slug": "deepseek-4-what-just-happened-may-2026",
+    "date": "May 08, 2026",
+    "date_str": "2026-05-08",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in deepseek 4 and break down what matters most for your workflow.",
+    "topic": "Deepseek 4",
+    "is_event": true
+  },
+  {
     "title": "Google Launch: What Just Happened (May 2026)",
     "slug": "google-launch-what-just-happened-may-2026",
     "date": "May 07, 2026",
