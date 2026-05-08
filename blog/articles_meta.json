@@ -1,5 +1,27 @@
 [
   {
+    "title": "Anthropic Funding: What Just Happened (May 2026)",
+    "slug": "anthropic-funding-what-just-happened-may-2026",
+    "date": "May 08, 2026",
+    "date_str": "2026-05-08",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in anthropic funding and break down what matters most for your workflow.",
+    "topic": "Anthropic Funding",
+    "is_event": true
+  },
+  {
+    "title": "Google Gemini: Everything You Need to Know in May 2026",
+    "slug": "google-gemini-everything-you-need-to-know-in-may-2026",
+    "date": "May 08, 2026",
+    "date_str": "2026-05-08",
+    "year_month": "2026-05",
+    "category": "Gemini AI Review",
+    "excerpt": "We analyzed the latest trends in google gemini and break down what matters most for your workflow.",
+    "topic": "Google Gemini",
+    "is_event": false
+  },
+  {
     "title": "Mimo V2.5: What Just Happened (May 2026)",
     "slug": "mimo-v25-what-just-happened-may-2026",
     "date": "May 08, 2026",
