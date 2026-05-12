@@ -1,5 +1,26 @@
 [
   {
+    "title": "Complete Guide to AI Tools for Small Business (May 2026)",
+    "slug": "complete-guide-to-ai-tools-for-small-business-may-2026",
+    "date": "May 12, 2026",
+    "date_str": "2026-05-12",
+    "year_month": "2026-05",
+    "category": "Guide",
+    "excerpt": "We analyzed the latest trends in ai tools for small business and break down what matters most for your workflow.",
+    "topic": "AI Tools for Small Business"
+  },
+  {
+    "title": "GPT-5: What Just Happened (May 2026)",
+    "slug": "gpt-5-what-just-happened-may-2026",
+    "date": "May 12, 2026",
+    "date_str": "2026-05-12",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5 and break down what matters most for your workflow.",
+    "topic": "GPT-5",
+    "is_event": true
+  },
+  {
     "title": "Complete Guide to AI Tools for Students (May 2026)",
     "slug": "complete-guide-to-ai-tools-for-students-may-2026",
     "date": "May 11, 2026",
