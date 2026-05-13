@@ -1,5 +1,26 @@
 [
   {
+    "title": "Complete Guide to AI Tools for Designers (May 2026)",
+    "slug": "complete-guide-to-ai-tools-for-designers-may-2026",
+    "date": "May 13, 2026",
+    "date_str": "2026-05-13",
+    "year_month": "2026-05",
+    "category": "Guide",
+    "excerpt": "We analyzed the latest trends in ai tools for designers and break down what matters most for your workflow.",
+    "topic": "AI Tools for Designers"
+  },
+  {
+    "title": "Veo 3.1: What Just Happened (May 2026)",
+    "slug": "veo-31-what-just-happened-may-2026",
+    "date": "May 13, 2026",
+    "date_str": "2026-05-13",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in veo 3.1 and break down what matters most for your workflow.",
+    "topic": "Veo 3.1",
+    "is_event": true
+  },
+  {
     "title": "Complete Guide to AI Tools for YouTubers (May 2026)",
     "slug": "complete-guide-to-ai-tools-for-youtubers-may-2026",
     "date": "May 12, 2026",
