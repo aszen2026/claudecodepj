@@ -1,5 +1,27 @@
 [
   {
+    "title": "Nvidia Launch: What Just Happened (May 2026)",
+    "slug": "nvidia-launch-what-just-happened-may-2026",
+    "date": "May 15, 2026",
+    "date_str": "2026-05-15",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in nvidia launch and break down what matters most for your workflow.",
+    "topic": "Nvidia Launch",
+    "is_event": true
+  },
+  {
+    "title": "Nvidia Funding: What Just Happened (May 2026)",
+    "slug": "nvidia-funding-what-just-happened-may-2026",
+    "date": "May 15, 2026",
+    "date_str": "2026-05-15",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in nvidia funding and break down what matters most for your workflow.",
+    "topic": "Nvidia Funding",
+    "is_event": true
+  },
+  {
     "title": "Google Shutdown: What Just Happened (May 2026)",
     "slug": "google-shutdown-what-just-happened-may-2026",
     "date": "May 14, 2026",
