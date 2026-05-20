@@ -1,5 +1,27 @@
 [
   {
+    "title": "Gemini 3.5: What Just Happened (May 2026)",
+    "slug": "gemini-35-what-just-happened-may-2026",
+    "date": "May 20, 2026",
+    "date_str": "2026-05-20",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gemini 3.5 and break down what matters most for your workflow.",
+    "topic": "Gemini 3.5",
+    "is_event": true
+  },
+  {
+    "title": "Gemini 3.5 Flash: What Just Happened (May 2026)",
+    "slug": "gemini-35-flash-what-just-happened-may-2026",
+    "date": "May 20, 2026",
+    "date_str": "2026-05-20",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gemini 3.5 flash and break down what matters most for your workflow.",
+    "topic": "Gemini 3.5 Flash",
+    "is_event": true
+  },
+  {
     "title": "Anthropic Acquisition: What Just Happened (May 2026)",
     "slug": "anthropic-acquisition-what-just-happened-may-2026",
     "date": "May 19, 2026",
