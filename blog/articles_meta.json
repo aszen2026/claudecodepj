@@ -1,5 +1,27 @@
 [
   {
+    "title": "Anthropic $65B Deal: What Just Happened (May 2026)",
+    "slug": "anthropic-65b-deal-what-just-happened-may-2026",
+    "date": "May 29, 2026",
+    "date_str": "2026-05-29",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in anthropic $65b deal and break down what matters most for your workflow.",
+    "topic": "Anthropic $65B Deal",
+    "is_event": true
+  },
+  {
+    "title": "Claude Opus 4.8: What Just Happened (May 2026)",
+    "slug": "claude-opus-48-what-just-happened-may-2026",
+    "date": "May 29, 2026",
+    "date_str": "2026-05-29",
+    "year_month": "2026-05",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in claude opus 4.8 and break down what matters most for your workflow.",
+    "topic": "Claude Opus 4.8",
+    "is_event": true
+  },
+  {
     "title": "Meta Launch: What Just Happened (May 2026)",
     "slug": "meta-launch-what-just-happened-may-2026",
     "date": "May 28, 2026",
