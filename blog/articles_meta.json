@@ -1,5 +1,27 @@
 [
   {
+    "title": "anthropic: What Just Happened (June 2026)",
+    "slug": "anthropic-what-just-happened-june-2026",
+    "date": "June 02, 2026",
+    "date_str": "2026-06-02",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in anthropic and break down what matters most for your workflow.",
+    "topic": "anthropic",
+    "is_event": true
+  },
+  {
+    "title": "financial times: What Just Happened (June 2026)",
+    "slug": "financial-times-what-just-happened-june-2026",
+    "date": "June 02, 2026",
+    "date_str": "2026-06-02",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in financial times and break down what matters most for your workflow.",
+    "topic": "financial times",
+    "is_event": true
+  },
+  {
     "title": "Open Source AI: Everything You Need to Know in June 2026",
     "slug": "open-source-ai-everything-you-need-to-know-in-june-2026",
     "date": "June 02, 2026",
