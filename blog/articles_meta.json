@@ -1,5 +1,27 @@
 [
   {
+    "title": "wwdc 2026: What Just Happened (June 2026)",
+    "slug": "wwdc-2026-what-just-happened-june-2026",
+    "date": "June 02, 2026",
+    "date_str": "2026-06-02",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in wwdc 2026 and break down what matters most for your workflow.",
+    "topic": "wwdc 2026",
+    "is_event": true
+  },
+  {
+    "title": "AI Agent: Everything You Need to Know in June 2026",
+    "slug": "ai-agent-everything-you-need-to-know-in-june-2026",
+    "date": "June 02, 2026",
+    "date_str": "2026-06-02",
+    "year_month": "2026-06",
+    "category": "Best AI Agent Tools",
+    "excerpt": "We analyzed the latest trends in ai agent and break down what matters most for your workflow.",
+    "topic": "AI Agent",
+    "is_event": false
+  },
+  {
     "title": "ChatGPT/OpenAI: Everything You Need to Know in June 2026",
     "slug": "chatgptopenai-everything-you-need-to-know-in-june-2026",
     "date": "June 01, 2026",
