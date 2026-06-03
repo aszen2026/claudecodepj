@@ -1,5 +1,27 @@
 [
   {
+    "title": "Qwen 3.6: What Just Happened (June 2026)",
+    "slug": "qwen-36-what-just-happened-june-2026",
+    "date": "June 03, 2026",
+    "date_str": "2026-06-03",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in qwen 3.6 and break down what matters most for your workflow.",
+    "topic": "Qwen 3.6",
+    "is_event": true
+  },
+  {
+    "title": "Microsoft Launch: What Just Happened (June 2026)",
+    "slug": "microsoft-launch-what-just-happened-june-2026",
+    "date": "June 03, 2026",
+    "date_str": "2026-06-03",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in microsoft launch and break down what matters most for your workflow.",
+    "topic": "Microsoft Launch",
+    "is_event": true
+  },
+  {
     "title": "anthropic: What Just Happened (June 2026)",
     "slug": "anthropic-what-just-happened-june-2026",
     "date": "June 02, 2026",
