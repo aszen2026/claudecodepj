@@ -1,5 +1,27 @@
 [
   {
+    "title": "Deepseek-v4: What Just Happened (June 2026)",
+    "slug": "deepseek-v4-what-just-happened-june-2026",
+    "date": "June 03, 2026",
+    "date_str": "2026-06-03",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in deepseek-v4 and break down what matters most for your workflow.",
+    "topic": "Deepseek-v4",
+    "is_event": true
+  },
+  {
+    "title": "Qwen3.7: What Just Happened (June 2026)",
+    "slug": "qwen37-what-just-happened-june-2026",
+    "date": "June 03, 2026",
+    "date_str": "2026-06-03",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in qwen3.7 and break down what matters most for your workflow.",
+    "topic": "Qwen3.7",
+    "is_event": true
+  },
+  {
     "title": "Qwen 3.6: What Just Happened (June 2026)",
     "slug": "qwen-36-what-just-happened-june-2026",
     "date": "June 03, 2026",
