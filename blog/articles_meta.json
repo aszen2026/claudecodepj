@@ -1,5 +1,27 @@
 [
   {
+    "title": "Github Launch: What Just Happened (June 2026)",
+    "slug": "github-launch-what-just-happened-june-2026",
+    "date": "June 03, 2026",
+    "date_str": "2026-06-03",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in github launch and break down what matters most for your workflow.",
+    "topic": "Github Launch",
+    "is_event": true
+  },
+  {
+    "title": "Phi-3: What Just Happened (June 2026)",
+    "slug": "phi-3-what-just-happened-june-2026",
+    "date": "June 03, 2026",
+    "date_str": "2026-06-03",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in phi-3 and break down what matters most for your workflow.",
+    "topic": "Phi-3",
+    "is_event": true
+  },
+  {
     "title": "Deepseek-v4: What Just Happened (June 2026)",
     "slug": "deepseek-v4-what-just-happened-june-2026",
     "date": "June 03, 2026",
