@@ -1,5 +1,27 @@
 [
   {
+    "title": "GPT-2: What Just Happened (June 2026)",
+    "slug": "gpt-2-what-just-happened-june-2026",
+    "date": "June 06, 2026",
+    "date_str": "2026-06-06",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-2 and break down what matters most for your workflow.",
+    "topic": "GPT-2",
+    "is_event": true
+  },
+  {
+    "title": "s&p 500: What Just Happened (June 2026)",
+    "slug": "sp-500-what-just-happened-june-2026",
+    "date": "June 06, 2026",
+    "date_str": "2026-06-06",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in s&p 500 and break down what matters most for your workflow.",
+    "topic": "s&p 500",
+    "is_event": true
+  },
+  {
     "title": "ios 27: What Just Happened (June 2026)",
     "slug": "ios-27-what-just-happened-june-2026",
     "date": "June 06, 2026",
