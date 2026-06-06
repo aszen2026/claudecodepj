@@ -1,5 +1,27 @@
 [
   {
+    "title": "ios 27: What Just Happened (June 2026)",
+    "slug": "ios-27-what-just-happened-june-2026",
+    "date": "June 06, 2026",
+    "date_str": "2026-06-06",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in ios 27 and break down what matters most for your workflow.",
+    "topic": "ios 27",
+    "is_event": true
+  },
+  {
+    "title": "LLM Technology: Everything You Need to Know in June 2026",
+    "slug": "llm-technology-everything-you-need-to-know-in-june-2026",
+    "date": "June 06, 2026",
+    "date_str": "2026-06-06",
+    "year_month": "2026-06",
+    "category": "LLM Comparison Guide",
+    "excerpt": "We analyzed the latest trends in llm technology and break down what matters most for your workflow.",
+    "topic": "LLM Technology",
+    "is_event": false
+  },
+  {
     "title": "Best AI Meeting Notes Tools (June 2026): Top Picks Tested",
     "slug": "best-ai-meeting-notes-tools-june-2026-top-picks-tested",
     "date": "June 05, 2026",
