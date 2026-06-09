@@ -1,5 +1,27 @@
 [
   {
+    "title": "Mimo-v2.5: What Just Happened (June 2026)",
+    "slug": "mimo-v25-what-just-happened-june-2026",
+    "date": "June 09, 2026",
+    "date_str": "2026-06-09",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in mimo-v2.5 and break down what matters most for your workflow.",
+    "topic": "Mimo-v2.5",
+    "is_event": true
+  },
+  {
+    "title": "Google Gemini: Everything You Need to Know in June 2026",
+    "slug": "google-gemini-everything-you-need-to-know-in-june-2026",
+    "date": "June 09, 2026",
+    "date_str": "2026-06-09",
+    "year_month": "2026-06",
+    "category": "Gemini AI Review",
+    "excerpt": "We analyzed the latest trends in google gemini and break down what matters most for your workflow.",
+    "topic": "Google Gemini",
+    "is_event": false
+  },
+  {
     "title": "Gemini 3.5: What Just Happened (June 2026)",
     "slug": "gemini-35-what-just-happened-june-2026",
     "date": "June 09, 2026",
