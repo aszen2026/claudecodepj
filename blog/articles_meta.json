@@ -1,5 +1,27 @@
 [
   {
+    "title": "Gemini 3.5: What Just Happened (June 2026)",
+    "slug": "gemini-35-what-just-happened-june-2026",
+    "date": "June 09, 2026",
+    "date_str": "2026-06-09",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gemini 3.5 and break down what matters most for your workflow.",
+    "topic": "Gemini 3.5",
+    "is_event": true
+  },
+  {
+    "title": "Apple Launch: What Just Happened (June 2026)",
+    "slug": "apple-launch-what-just-happened-june-2026",
+    "date": "June 09, 2026",
+    "date_str": "2026-06-09",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in apple launch and break down what matters most for your workflow.",
+    "topic": "Apple Launch",
+    "is_event": true
+  },
+  {
     "title": "Cursor vs Copilot: Complete Comparison Guide (June 2026)",
     "slug": "cursor-vs-copilot-complete-comparison-guide-june-2026",
     "date": "June 08, 2026",
