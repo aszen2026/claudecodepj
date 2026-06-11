@@ -1,5 +1,26 @@
 [
   {
+    "title": "Complete Guide to Free AI Chatbots (June 2026)",
+    "slug": "complete-guide-to-free-ai-chatbots-june-2026",
+    "date": "June 11, 2026",
+    "date_str": "2026-06-11",
+    "year_month": "2026-06",
+    "category": "Guide",
+    "excerpt": "We analyzed the latest trends in free ai chatbots and break down what matters most for your workflow.",
+    "topic": "Free AI Chatbots"
+  },
+  {
+    "title": "GPT-5: What Just Happened (June 2026)",
+    "slug": "gpt-5-what-just-happened-june-2026",
+    "date": "June 11, 2026",
+    "date_str": "2026-06-11",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5 and break down what matters most for your workflow.",
+    "topic": "GPT-5",
+    "is_event": true
+  },
+  {
     "title": "GPT-6: What Just Happened (June 2026)",
     "slug": "gpt-6-what-just-happened-june-2026",
     "date": "June 11, 2026",
