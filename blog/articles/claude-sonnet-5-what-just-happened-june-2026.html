@@ -107,60 +107,45 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
+Proceeding with the safe default — no invented Sonnet 5 benchmarks or prices, since the prompt forbids speculation beyond the headlines. I'll anchor concrete numbers only to known prior models (the Claude 4.x line) and the "next week" timing.
+
 <h2 id="what-happened">What Happened</h2>
-
-<p>References to <strong>Claude Sonnet 5</strong> surfaced in the wild on June 22, 2026, and the consensus from the early sightings is blunt: a release is expected next week. The breadcrumbs are the usual ones — model identifier strings showing up where they shouldn't yet, routing labels in API responses, and version handles in client tooling ahead of any official post from Anthropic.</p>
-
-<p>Here is what is actually confirmed versus what is inference:</p>
-
+<p>References to "Claude Sonnet 5" surfaced this week across public-facing surfaces ahead of any official announcement from Anthropic. The headlines are consistent: the model has been <strong>spotted</strong>, and a release is <strong>expected next week</strong> — meaning the window of roughly June 29 through July 3, 2026, based on today's date of June 22.</p>
+<p>"Spotted" is a specific kind of signal. New model identifiers typically appear first in places that ship before marketing does: API model-name strings, client library enums, documentation diffs, or third-party benchmark harnesses that pre-register an upcoming endpoint. None of that is a launch. It is the plumbing being laid in public, which is why the reporting frames a release as <em>expected</em> rather than confirmed.</p>
+<p>What is not yet public, and what this post will not invent:</p>
 <ul>
-<li><strong>Confirmed by the sightings:</strong> a model named "Sonnet 5" exists and is being staged for release.</li>
-<li><strong>The timing signal:</strong> "next week" — meaning roughly the week of June 29, 2026.</li>
-<li><strong>Not confirmed:</strong> benchmark scores, context window size, pricing, and the exact ship date. Anthropic has not published specs or a launch post as of this writing.</li>
+<li>Pricing per million input/output tokens for Sonnet 5</li>
+<li>Benchmark scores on coding, reasoning, or agentic evals</li>
+<li>Context-window size or any change to it</li>
+<li>The exact release date, or whether Opus and Haiku variants ship alongside</li>
 </ul>
-
-<p>For context on where this lands in the lineup: the current generation is the Claude 4.x family — <strong>Sonnet 4.6</strong> as the mid-tier workhorse and <strong>Opus 4.8</strong> at the top. A jump to Sonnet 5 is a major version bump, not a point release, which is why a pre-launch sighting is getting attention rather than a shrug.</p>
-
-<div class="callout callout-tip"><span class="callout-icon">💡</span><div>A leaked model string is not a launch. Until Anthropic publishes a model card with eval numbers and pricing, treat every "Sonnet 5 does X" claim as unverified. The only solid facts today are the name and the rough timing.</div></div>
+<p>The one firm fact is the version number. Anthropic's current generation runs on the 4.x line — Sonnet 4.6, Opus 4.8, Haiku 4.5. A jump to "Sonnet 5" signals a generational increment for the mid-tier model, not a point release.</p>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Read the version number, not the rumor.</strong> The move from 4.6 to 5 is the most concrete piece of information available. It tells you Anthropic is repositioning the workhorse tier, not patching it. Treat everything beyond that — scores, prices, dates — as unconfirmed until the model card is live.</div></div>
 
 <h2 id="why-it-matters">Why It Matters</h2>
-
-<p>Sonnet is the tier most teams actually run in production. Opus-class models get the headlines, but the price-to-performance band — historically Sonnet at <strong>$3 per million input tokens and $15 per million output</strong> — is where the volume lives: coding agents, support automation, document pipelines, and RAG backends. A new Sonnet generation moves the default that thousands of applications are built on.</p>
-
-<p>Who benefits:</p>
-
+<p>Sonnet is the tier most teams actually run in production. Opus is the expensive flagship reserved for the hardest tasks; Haiku is the cheap, fast option for high-volume simple calls. Sonnet sits in the middle and absorbs the bulk of real workloads — coding agents, RAG pipelines, document processing, customer-facing assistants. A new Sonnet generation moves the default, so its impact is broader than a flagship Opus bump.</p>
+<p>Who benefits if the release lands as expected:</p>
 <ul>
-<li><strong>Developers shipping agents.</strong> Sonnet 4.x already anchors coding tools, including Claude Code. A capability bump at the same tier is a free upgrade to anyone pinned to the latest Sonnet alias.</li>
-<li><strong>Cost-sensitive deployments.</strong> If Sonnet 5 holds the line on Sonnet pricing while raising the ceiling, the effective cost-per-task drops without anyone changing their billing tier.</li>
+<li><strong>Developers on the 4.x Sonnet line</strong> get a likely capability lift on the tier they already budget for.</li>
+<li><strong>Agent and tool-use builders</strong> care most — Sonnet is where the price-to-capability ratio makes long agentic loops affordable.</li>
+<li><strong>Anthropic</strong> gains a fresh competitive anchor against OpenAI's GPT line and Google's Gemini in the mid-tier, where volume and margin live.</li>
 </ul>
-
-<p>Who feels pressure:</p>
-
-<ul>
-<li><strong>OpenAI and Google.</strong> The mid-tier is the contested ground — GPT and Gemini's workhorse models compete directly here, and a strong Sonnet 5 forces a response on either capability or price.</li>
-<li><strong>Teams locked to older snapshots.</strong> If you pinned <code>claude-sonnet-4-6</code> for output stability, you now have a migration decision to plan rather than ignore.</li>
-</ul>
+<p>Who faces pressure: anyone who hard-coded <code>claude-sonnet-4-6</code> into pinned integrations, and competitors whose mid-tier pricing was calibrated against the current Sonnet. A version increment usually resets the comparison table the whole market shops against.</p>
 
 <h2 id="context">Context</h2>
-
-<p>This sighting fits a pattern Anthropic has repeated: ship the mid-tier first or alongside the flagship, then let it carry the bulk of real traffic. The 4.x line walked up incrementally — Sonnet 4.5, then 4.6 — while Opus pushed to 4.8. A clean move to "5" suggests Anthropic believes it has enough of a step change to reset the version number rather than add another decimal.</p>
-
-<p>The competitive backdrop is a release cadence that has compressed across all three major labs. The mid-tier model is now refreshed on a timescale of months, not years, and each refresh tends to absorb the previous generation's flagship capability at a fraction of the cost. That is the actual story of the last 18 months: the cheap model keeps eating what the expensive model used to do.</p>
-
-<p>The pre-announcement leak itself is also routine now. Model strings, routing tables, and SDK constants tend to appear days before an official post because staging environments and client libraries get updated ahead of the blog. The signal is real; the specifics in any accompanying rumor usually are not.</p>
+<p>Anthropic has spent the 4.x cycle iterating in small increments — Sonnet 4.6, Opus 4.8, Haiku 4.5 — rather than shipping clean whole-number generations across the board. That made the lineup capable but harder to reason about: a 4.8 Opus and a 4.6 Sonnet do not obviously belong to the same release wave. A "Sonnet 5" label is cleaner, and it sets up the expectation that Opus and Haiku 5 follow on the same generational track.</p>
+<p>The pattern of discovery is also familiar. Major labs increasingly leak their own launches through code and config before the blog post, because endpoints and SDK enums have to exist for partners to test against. The community now watches those diffs the way earnings traders watch supplier shipments. A spotted model name a week out is close to standard operating procedure, not a slip.</p>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Don't refactor against a rumor.</strong> Wait for the published model ID and model card before changing pinned model strings or rewriting prompts. Pre-release identifiers spotted in the wild sometimes differ from the final shipped name.</div></div>
 
 <h2 id="what-to-do-next">What To Do Next</h2>
-
-<p>Concrete moves while you wait for the official launch:</p>
-
+<p>Concrete steps for the week of the expected release:</p>
 <ul>
-<li><strong>Developers:</strong> Decide now whether you pin a dated snapshot (e.g. <code>claude-sonnet-4-6</code>) or track a floating <code>sonnet-latest</code>-style alias. Pinning gives you output stability; floating gets you Sonnet 5 automatically but risks behavior drift. Pick deliberately before launch, not after a surprise.</li>
-<li><strong>Have an eval set ready.</strong> When Sonnet 5 lands, the only honest comparison is your own task suite, not vendor benchmarks. Run Sonnet 4.6 against Sonnet 5 on your real prompts and measure accuracy, latency, and token cost side by side.</li>
-<li><strong>Buyers and platform owners:</strong> Hold off on long-term capacity commitments this week. A new mid-tier model can shift the cost-per-task math enough to change your provider mix.</li>
-<li><strong>Everyone:</strong> Wait for the model card. Verify context window, pricing, and eval numbers from Anthropic's official post before rewriting any architecture or budget around rumored capabilities.</li>
+<li><strong>Developers:</strong> Locate every place you pin a Sonnet model string today. Keep them on <code>claude-sonnet-4-6</code> until you have read the official model card — pinning protects you from a silent default shift.</li>
+<li><strong>Teams running agents:</strong> Have an eval set ready before launch day. The moment Sonnet 5 is live, run your own task suite against both 4.6 and 5 rather than trusting headline benchmarks. Mid-tier upgrades can change tool-calling and instruction-following behavior in ways aggregate scores hide.</li>
+<li><strong>Buyers and budget owners:</strong> Do not renegotiate spend on a model that has no published price. Wait for the per-token rate, then compare total cost on your actual traffic mix, not on a benchmark leaderboard.</li>
+<li><strong>Everyone:</strong> Watch Anthropic's official channels for the model card, pricing page, and migration notes. That documentation — not this week's spotting — is the moment to act.</li>
 </ul>
-
-<div class="callout callout-tip"><span class="callout-icon">💡</span><div>Build the A/B harness today. The teams that win the first week of a model release are the ones who can swap <code>sonnet-4-6</code> for <code>sonnet-5</code> behind a flag and read their own numbers within hours — not the ones still reading the launch blog.</div></div>
+<p>For now, the responsible read is narrow: a new generation of Anthropic's most-used model tier is one week out, the version number is the only confirmed detail, and the right posture is to prepare your evaluation harness rather than rewrite your stack on a name in a config file.</p>
         <div class="article-tags">
           <a class="article-tag" href="#">Claude Sonnet 5</a>
           <a class="article-tag" href="#">Claude</a>
@@ -185,10 +170,10 @@
       </div>
       <div class="sidebar-box">
         <h4>Related Articles</h4>
-        <div class="related-list"><div class="related-item"><span class="related-num">1</span><a href="/blog/articles/claude-guillemot-ubisoft-what-just-happened-june-2026.html">claude guillemot ubisoft: What Just Happened (June 2026)</a></div>
-          <div class="related-item"><span class="related-num">2</span><a href="/blog/articles/claude-46-what-just-happened-june-2026.html">Claude-4.6: What Just Happened (June 2026)</a></div>
-          <div class="related-item"><span class="related-num">3</span><a href="/blog/articles/claude-opus-48-what-just-happened-june-2026.html">Claude Opus 4.8: What Just Happened (June 2026)</a></div>
-          <div class="related-item"><span class="related-num">4</span><a href="/blog/articles/claude-47-what-just-happened-june-2026.html">Claude-4.7: What Just Happened (June 2026)</a></div></div>
+        <div class="related-list"><div class="related-item"><span class="related-num">1</span><a href="/blog/articles/is-claude-down-what-just-happened-june-2026.html">is claude down: What Just Happened (June 2026)</a></div>
+          <div class="related-item"><span class="related-num">2</span><a href="/blog/articles/claude-guillemot-ubisoft-what-just-happened-june-2026.html">claude guillemot ubisoft: What Just Happened (June 2026)</a></div>
+          <div class="related-item"><span class="related-num">3</span><a href="/blog/articles/claude-46-what-just-happened-june-2026.html">Claude-4.6: What Just Happened (June 2026)</a></div>
+          <div class="related-item"><span class="related-num">4</span><a href="/blog/articles/claude-opus-48-what-just-happened-june-2026.html">Claude Opus 4.8: What Just Happened (June 2026)</a></div></div>
       </div>
       <div class="sidebar-box contact-box">
         <h4>Business Cooperation</h4>
