@@ -1,5 +1,27 @@
 [
   {
+    "title": "Apple Funding: What Just Happened (June 2026)",
+    "slug": "apple-funding-what-just-happened-june-2026",
+    "date": "June 26, 2026",
+    "date_str": "2026-06-26",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in apple funding and break down what matters most for your workflow.",
+    "topic": "Apple Funding",
+    "is_event": true
+  },
+  {
+    "title": "GPT-5.6: What Just Happened (June 2026)",
+    "slug": "gpt-56-what-just-happened-june-2026",
+    "date": "June 26, 2026",
+    "date_str": "2026-06-26",
+    "year_month": "2026-06",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5.6 and break down what matters most for your workflow.",
+    "topic": "GPT-5.6",
+    "is_event": true
+  },
+  {
     "title": "Anthropic $27MILLION Deal: What Just Happened (June 2026)",
     "slug": "anthropic-27million-deal-what-just-happened-june-2026",
     "date": "June 25, 2026",
