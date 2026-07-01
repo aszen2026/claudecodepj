@@ -1,5 +1,27 @@
 [
   {
+    "title": "Claude AI: Everything You Need to Know in July 2026",
+    "slug": "claude-ai-everything-you-need-to-know-in-july-2026",
+    "date": "July 01, 2026",
+    "date_str": "2026-07-01",
+    "year_month": "2026-07",
+    "category": "Claude Model Reviews",
+    "excerpt": "We analyzed the latest trends in claude ai and break down what matters most for your workflow.",
+    "topic": "Claude AI",
+    "is_event": false
+  },
+  {
+    "title": "Claude Sonnet 5: What Just Happened (July 2026)",
+    "slug": "claude-sonnet-5-what-just-happened-july-2026",
+    "date": "July 01, 2026",
+    "date_str": "2026-07-01",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in claude sonnet 5 and break down what matters most for your workflow.",
+    "topic": "Claude Sonnet 5",
+    "is_event": true
+  },
+  {
     "title": "Cursor Launch: What Just Happened (June 2026)",
     "slug": "cursor-launch-what-just-happened-june-2026",
     "date": "June 30, 2026",
