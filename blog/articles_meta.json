@@ -1,5 +1,27 @@
 [
   {
+    "title": "Gemini-3.1: What Just Happened (July 2026)",
+    "slug": "gemini-31-what-just-happened-july-2026",
+    "date": "July 01, 2026",
+    "date_str": "2026-07-01",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gemini-3.1 and break down what matters most for your workflow.",
+    "topic": "Gemini-3.1",
+    "is_event": true
+  },
+  {
+    "title": "Gemini 3.1 Flash: What Just Happened (July 2026)",
+    "slug": "gemini-31-flash-what-just-happened-july-2026",
+    "date": "July 01, 2026",
+    "date_str": "2026-07-01",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gemini 3.1 flash and break down what matters most for your workflow.",
+    "topic": "Gemini 3.1 Flash",
+    "is_event": true
+  },
+  {
     "title": "GPT-5.5: What Just Happened (July 2026)",
     "slug": "gpt-55-what-just-happened-july-2026",
     "date": "July 01, 2026",
