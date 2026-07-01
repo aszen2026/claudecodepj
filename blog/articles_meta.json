@@ -1,5 +1,27 @@
 [
   {
+    "title": "GPT-5.5: What Just Happened (July 2026)",
+    "slug": "gpt-55-what-just-happened-july-2026",
+    "date": "July 01, 2026",
+    "date_str": "2026-07-01",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5.5 and break down what matters most for your workflow.",
+    "topic": "GPT-5.5",
+    "is_event": true
+  },
+  {
+    "title": "Claude Opus 4.8: What Just Happened (July 2026)",
+    "slug": "claude-opus-48-what-just-happened-july-2026",
+    "date": "July 01, 2026",
+    "date_str": "2026-07-01",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in claude opus 4.8 and break down what matters most for your workflow.",
+    "topic": "Claude Opus 4.8",
+    "is_event": true
+  },
+  {
     "title": "fable 5: What Just Happened (July 2026)",
     "slug": "fable-5-what-just-happened-july-2026",
     "date": "July 01, 2026",
