@@ -1,5 +1,27 @@
 [
   {
+    "title": "Deepseek V4: What Just Happened (July 2026)",
+    "slug": "deepseek-v4-what-just-happened-july-2026",
+    "date": "July 02, 2026",
+    "date_str": "2026-07-02",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in deepseek v4 and break down what matters most for your workflow.",
+    "topic": "Deepseek V4",
+    "is_event": true
+  },
+  {
+    "title": "Qwen3.6: What Just Happened (July 2026)",
+    "slug": "qwen36-what-just-happened-july-2026",
+    "date": "July 02, 2026",
+    "date_str": "2026-07-02",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in qwen3.6 and break down what matters most for your workflow.",
+    "topic": "Qwen3.6",
+    "is_event": true
+  },
+  {
     "title": "Best AI Resume Builder Tools (July 2026): Top Picks Tested",
     "slug": "best-ai-resume-builder-tools-july-2026-top-picks-tested",
     "date": "July 02, 2026",
