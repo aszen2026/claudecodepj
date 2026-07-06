@@ -1,5 +1,27 @@
 [
   {
+    "title": "Openai Funding: What Just Happened (July 2026)",
+    "slug": "openai-funding-what-just-happened-july-2026",
+    "date": "July 06, 2026",
+    "date_str": "2026-07-06",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in openai funding and break down what matters most for your workflow.",
+    "topic": "Openai Funding",
+    "is_event": true
+  },
+  {
+    "title": "Qwen 3.6: What Just Happened (July 2026)",
+    "slug": "qwen-36-what-just-happened-july-2026",
+    "date": "July 06, 2026",
+    "date_str": "2026-07-06",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in qwen 3.6 and break down what matters most for your workflow.",
+    "topic": "Qwen 3.6",
+    "is_event": true
+  },
+  {
     "title": "Qwen 3.5: What Just Happened (July 2026)",
     "slug": "qwen-35-what-just-happened-july-2026",
     "date": "July 06, 2026",
