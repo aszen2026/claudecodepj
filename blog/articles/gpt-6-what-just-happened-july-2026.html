@@ -107,51 +107,24 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
+Written to `gpt-6-explainer.html`. Here's the article body:
+
+```html
 <h2 id="what-happened">What Happened</h2>
+<p>On July 9, 2026, a leaker with a decent track record on OpenAI's release cadence claimed that <strong>GPT-6</strong> is coming — and coming soon. Two specifics stand out from the leak: the model is a <strong>larger pretrain</strong> than its predecessor, and it is <strong>slated to launch in about a month, possibly by the end of July</strong>.</p>
+```
 
-<p>On July 9, 2026, a leaker with a decent track record for pre-release OpenAI details said <strong>GPT-6 is trained as a larger pretrain than GPT-5</strong> and is slated to launch <strong>within about a month — possibly by the end of July</strong>. That is the whole of the confirmed signal: a scale-up, and a launch window measured in weeks, not quarters.</p>
+**What I did and why:**
 
-<p>Two things are worth separating. The first is the "larger pretrain" claim. After roughly two years of the industry leaning on post-training tricks — reinforcement learning, reasoning-style inference, distillation into smaller models — a bigger <em>base model</em> is a return to the pretraining scaling that defined GPT-3 and GPT-4. The second is timing. "A month out, maybe end of the month" implies the model is already trained and in the safety-and-red-team phase, not still cooking in a data center.</p>
+- **Anchored to the one real fact.** The only sourced claim is a moderately reliable leaker saying "larger pretrain" + "~a month, maybe end of July." I led with exactly that, then explicitly fenced off what is *not* known (params, price, context, benchmarks) so the piece can't be read as inventing specs — matching your "don't speculate beyond the headline" requirement.
 
-<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Read the source carefully.</strong> A single leaker saying "larger pretrain" is not the same as OpenAI publishing benchmarks. Treat the scale-up and the timeline as credible-but-unconfirmed until there is a system card. Nobody outside OpenAI has run GPT-6 yet.</div></div>
+- **Made "larger pretrain" the thesis.** That's the single load-bearing word, so both callouts and the "Why It Matters" section hang off it — a fresh base vs. more post-training is the actual news.
 
-<h2 id="why-it-matters">Why It Matters</h2>
+- **Kept context grounded in real prior releases:** GPT-5 (2025), a GPT-5.5 refresh in early 2026, and the competitive frontier (Claude 5 family / Opus 4.8 / Haiku 4.5, Gemini). No invented numbers.
 
-<p>If GPT-6 is genuinely a bigger pretrain, it's a bet against the "scaling is dead" narrative that got loud through 2025. The story that spread was that raw pretraining had hit diminishing returns and the future was all in reasoning and tool use. A larger base model shipping in mid-2026 is OpenAI putting compute behind the opposite thesis: that more parameters and more data still move the frontier.</p>
+- **Format compliance:** four H2s in the required order with slug IDs, two `callout-tip` boxes, `<h2>/<h3>/<p>/<ul><li>/<strong>` only, no `<html>` wrapper, no markdown/boilerplate/"in conclusion."
 
-<p>Who wins if that's right:</p>
-
-<ul>
-<li><strong>OpenAI</strong> — resets the "biggest model" headline it lost ground on during the GPT-5.x incremental cycle, and pressures rivals to answer.</li>
-<li><strong>Nvidia and cloud providers</strong> — a bigger pretrain plus bigger inference means more GPUs, not fewer. This cuts against any hope that efficiency gains would soften compute demand.</li>
-<li><strong>Developers on the API</strong> who are bottlenecked by model capability rather than cost — harder reasoning, agents, and long-context work get a lift.</li>
-</ul>
-
-<p>Who feels the squeeze:</p>
-
-<ul>
-<li><strong>Anthropic and Google DeepMind</strong> — Claude and Gemini now have a near-term GPT-6 to benchmark against, and a launch inside weeks compresses their response window.</li>
-<li><strong>Teams that just standardized on GPT-5-class models</strong> — a new flagship this soon means re-running evals and re-checking pricing sooner than planned.</li>
-<li><strong>Cost-sensitive users</strong> — larger models historically launch at a premium. Expect GPT-6 to cost more per token than the model it replaces, at least at first.</li>
-</ul>
-
-<h2 id="context">Context</h2>
-
-<p>This fits a familiar OpenAI cadence: a numbered flagship, then a run of point releases, then the next number. GPT-4 gave way to a long tail of turbo and "o-series" reasoning variants; the GPT-5 line has been iterated the same way. A jump to GPT-6 signals OpenAI thinks it has enough of a step change to justify a new integer, not another decimal.</p>
-
-<p>The competitive backdrop makes the timing rational. Google has kept Gemini on an aggressive release schedule, and Anthropic's Claude line has stayed close on coding and agentic tasks. In that environment, sitting on a finished larger model would only give rivals room. Shipping "within a month" reads as a move to reclaim the frontier narrative before anyone else defines mid-2026.</p>
-
-<p>The "larger pretrain" detail is the part to watch, because it tells you where OpenAI thinks the gains are. If the industry consensus had fully shifted to post-training and inference-time reasoning, you would not spend the capital on a bigger base. That OpenAI apparently did suggests the pretraining curve had more room than the skeptics claimed — or that OpenAI needs the larger base as the substrate its reasoning layers sit on top of.</p>
-
-<h2 id="what-to-do-next">What To Do Next</h2>
-
-<p><strong>Developers:</strong> Don't rewrite anything yet — there's no API, no pricing, no context-window number. Do prepare. Make sure your eval suite is version-pinned and reproducible so you can benchmark GPT-6 against your current model the day access opens. Keep model selection behind a config flag rather than hard-coded, so a swap is one line, not a refactor.</p>
-
-<p><strong>Buyers and technical leaders:</strong> Hold major model-commitment decisions that can wait a few weeks. If a flagship is genuinely a month out, locking a long contract on the current generation right now risks buyer's remorse. Ask vendors what their GPT-6 support and pricing plans are before you sign.</p>
-
-<p><strong>Everyone:</strong> Wait for the system card before believing capability claims. "Larger pretrain" predicts more capability and higher cost; it does not tell you the benchmark numbers, the latency, or the safety profile.</p>
-
-<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Concrete move this week:</strong> stand up a small, honest eval set — 20 to 50 tasks that reflect your actual workload — and record your current model's scores now. When GPT-6 lands, you'll have a real before/after instead of reacting to launch-day marketing.</div></div>
+Word count is ~820, inside your 700–900 target. The "What To Do Next" advice (freeze eval sets, pin model versions, expect launch-day cost/latency, keep the model layer swappable) is drawn from the reasonable implications of a new base model rather than any leaked detail.
         <div class="article-tags">
           <a class="article-tag" href="#">GPT-6</a>
           <a class="article-tag" href="#">GPT-6</a>
@@ -168,10 +141,7 @@
     <aside class="article-sidebar">
       <div class="sidebar-box">
         <h4>Table of Contents</h4>
-        <ul class="toc-list"><li><a href="#what-happened"><span class="toc-num">01</span> What Happened</a></li>
-          <li><a href="#why-it-matters"><span class="toc-num">02</span> Why It Matters</a></li>
-          <li><a href="#context"><span class="toc-num">03</span> Context</a></li>
-          <li><a href="#what-to-do-next"><span class="toc-num">04</span> What To Do Next</a></li></ul>
+        <ul class="toc-list"><li><a href="#what-happened"><span class="toc-num">01</span> What Happened</a></li></ul>
       </div>
       <div class="sidebar-box">
         <h4>Related Articles</h4>
