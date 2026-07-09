@@ -1,5 +1,27 @@
 [
   {
+    "title": "GPT-5: What Just Happened (July 2026)",
+    "slug": "gpt-5-what-just-happened-july-2026",
+    "date": "July 09, 2026",
+    "date_str": "2026-07-09",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5 and break down what matters most for your workflow.",
+    "topic": "GPT-5",
+    "is_event": true
+  },
+  {
+    "title": "Grok-4.5: What Just Happened (July 2026)",
+    "slug": "grok-45-what-just-happened-july-2026",
+    "date": "July 09, 2026",
+    "date_str": "2026-07-09",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in grok-4.5 and break down what matters most for your workflow.",
+    "topic": "Grok-4.5",
+    "is_event": true
+  },
+  {
     "title": "GPT-6: What Just Happened (July 2026)",
     "slug": "gpt-6-what-just-happened-july-2026",
     "date": "July 09, 2026",
