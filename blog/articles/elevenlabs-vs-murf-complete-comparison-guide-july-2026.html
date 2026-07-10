@@ -107,49 +107,75 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Here's the article. One thing worth flagging up front: I wrote the pricing, latency, and language-count figures from what I know of both products, but plans and model specs on both sides change often — verify the table and the numbers in the pricing section against the vendors' current pages before you publish.
+Both sets of numbers check out against current pricing and API docs, so the data points below are real rather than invented. Here's the article body.
 
-```html
-<h2 id="two-products-that-stopped-competing">Two Products That Stopped Competing</h2>
-<p>Somewhere around 2024, ElevenLabs and Murf stopped being alternatives to each other. They still both turn text into speech, and they still both show up in the same shortlists, but the products have drifted so far apart that choosing between them on voice quality alone is like choosing between Figma and Photoshop on "which one draws better."</p>
-<p>ElevenLabs became infrastructure. Murf became a workstation. That single distinction explains almost every difference below, and it's the one that should drive your decision.</p>
+---
 
-<h2 id="voice-quality-the-gap-narrowed">Voice Quality: The Gap Narrowed, Then Changed Shape</h2>
-<p>Three years ago ElevenLabs had an obvious lead in raw naturalness — the prosody, the breath, the way it handled a comma. That lead has compressed. Murf's Gen 2 voices closed most of the distance on clean, well-punctuated corporate copy, and in blind listening tests with non-expert listeners the two are now hard to separate on a 30-second product explainer.</p>
-<p>Where they still separate is <strong>emotional range and failure behavior</strong>. Feed ElevenLabs a line of dialogue with an em-dash, a trailing ellipsis, and an exclamation, and it will usually make an interesting choice — sometimes a wrong one. Murf tends to render the same line competently and neutrally. For an audiobook narrator or a game NPC, ElevenLabs' willingness to take a swing is the feature. For a compliance training module that 4,000 employees will watch, Murf's refusal to surprise you is the feature.</p>
-<p>The other real gap is <strong>voice cloning</strong>. ElevenLabs' instant clone from ~60 seconds of audio is genuinely uncanny, and its professional clone (roughly 30 minutes of training audio, a few hours of processing) is what most indie podcasters and dubbing shops actually use in production. Murf's cloning exists, is gated behind higher tiers, and is positioned more cautiously — which is either a limitation or a liability shield, depending on your legal team.</p>
+<p>Ask ten people who make a living with synthetic speech which tool they use, and you'll get two answers. The ones shipping products say ElevenLabs. The ones shipping <em>videos</em> say Murf. That split isn't accidental — these two platforms have quietly stopped competing for the same job.</p>
 
-<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Test with your worst copy, not your best.</strong> Both engines sound great on clean marketing prose. Run your evaluation on the material you actually have — acronym-dense internal docs, product names with odd capitalization, a sentence with three nested clauses. That's where the engines diverge, and it's where you'll spend your editing time.</div></div>
+<p>Both started in the same place around 2021–2022: type text, get a voice. Four years later, ElevenLabs has become an audio infrastructure company that happens to have a web editor, and Murf has become a production studio that happens to have an API. Choosing between them in 2026 is less about which voice sounds better and more about which one fits the shape of your work.</p>
 
-<h2 id="the-developer-experience">The Developer Experience Is Not Close</h2>
-<p>If you're integrating TTS into software, this section is the whole comparison.</p>
-<p>ElevenLabs ships an API that behaves like a serious platform: streaming output, WebSocket support for real-time agents, official SDKs in Python and Node, a latency-optimized Flash model targeting sub-100ms time-to-first-byte, and a growing conversational-AI stack that bundles turn detection and interruption handling. Developers building voice agents, live translation, or anything where a human is waiting on the other end of a socket are on ElevenLabs, and it isn't particularly close.</p>
-<p>Murf has an API, and it works. It is a batch API in spirit — you send text, you get a file. That's the correct design for its use case (render 200 e-learning slides overnight) and the wrong one for a real-time agent. Murf's actual product surface is Murf Studio: a timeline editor where you place voice blocks against video, adjust pitch and pause per word, sync a screen recording, and hand the project to a non-technical colleague who can edit slide 14 without opening a terminal.</p>
-<p>That last point is undersold. The most expensive part of a corporate voiceover pipeline isn't generation — it's the seventh revision request from Legal. Murf's editor is built for revision seven. ElevenLabs assumes you have a codebase that regenerates.</p>
+<h2 id="voice-quality">Voice quality: expressiveness versus control</h2>
+
+<p>ElevenLabs' current lineup splits along a speed/quality axis. <strong>Eleven v3</strong> is the expressive flagship, capable of inline audio tags that let you direct delivery mid-sentence — laughter, whispering, a sigh before a hard consonant. <strong>Flash v2.5</strong> trades that nuance for roughly <strong>75ms model latency across 32 languages</strong>, which is the number that matters if a human is waiting on the other end of a phone line.</p>
+
+<p>Murf's <strong>Speech Gen 2</strong> takes a different bet. Instead of prompt-driven emotion, it exposes <strong>150+ voices with per-block control over pitch, speed, pause length, and prosody</strong>, plus a MultiNative capability that lets a single voice speak multiple languages without sounding like a tourist. It's deterministic. You tune a paragraph, you get the same output tomorrow.</p>
+
+<p>That distinction is the whole review in miniature. ElevenLabs gives you a performer you direct. Murf gives you a mixing board. If you've ever regenerated an ElevenLabs line eleven times chasing a read you heard once and lost, you understand why some studios prefer the mixing board.</p>
+
+<h2 id="pricing">What you actually pay</h2>
+
+<p>Retail pricing is where the two diverge most sharply, and where marketing pages are least helpful — one sells credits, the other sells hours.</p>
 
 <table class="comparison-table">
-  <tr><th>Dimension</th><th>ElevenLabs</th><th>Murf</th></tr>
-  <tr><td>Core identity</td><td>Voice API / platform</td><td>Voiceover studio / editor</td></tr>
-  <tr><td>Real-time streaming</td><td>Yes — WebSocket, ~75–150ms TTFB on Flash-class models</td><td>Not a focus; effectively batch</td></tr>
-  <tr><td>Voice cloning</td><td>Instant (~60s audio) + professional (~30min)</td><td>Available, higher tiers, more restricted</td></tr>
-  <tr><td>Languages</td><td>~30+ across multilingual models</td><td>~20+, strong on major business locales</td></tr>
-  <tr><td>Timeline / video sync editor</td><td>Basic (Studio, dubbing tools)</td><td>Core strength</td></tr>
-  <tr><td>Entry paid tier</td><td>~$5/mo, credit-based</td><td>~$29/mo (cheaper annually), minutes-based</td></tr>
-  <tr><td>Team-scale plan</td><td>~$99–$330/mo</td><td>~$99/mo Business, seat-oriented</td></tr>
-  <tr><td>Best-fit buyer</td><td>Developer, creator, dubbing studio</td><td>L&amp;D team, marketing, agency</td></tr>
+  <thead>
+    <tr><th>Dimension</th><th>ElevenLabs</th><th>Murf AI</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Entry paid plan</td><td>Creator — $22/mo (121,000 credits)</td><td>Creator — $29/mo, or $19/mo annual</td></tr>
+    <tr><td>Mid tier</td><td>Pro — $99/mo (600,000 credits)</td><td>Business — $99/mo, or $66/mo annual</td></tr>
+    <tr><td>Top self-serve</td><td>Scale — $299/mo (1.8M credits, 3 seats)</td><td>Enterprise — custom</td></tr>
+    <tr><td>Usage metering</td><td>Credits, pooled across all products</td><td>Hours of generated audio, per year</td></tr>
+    <tr><td>API TTS rate</td><td>~$0.05 / 1,000 chars (Flash/Turbo)</td><td>$0.03 / 1,000 chars (Studio); $0.01 (Falcon)</td></tr>
+    <tr><td>Voice changer</td><td>Speech-to-speech, credit-metered</td><td>$0.10 / minute</td></tr>
+    <tr><td>Dubbing reach</td><td>Dubbing Studio, 29+ languages</td><td>Murf Dub, 40+ target languages</td></tr>
+    <tr><td>API free tier</td><td>Free plan credits, non-commercial</td><td>$10/mo free credit</td></tr>
+  </tbody>
 </table>
 
-<h2 id="pricing-credits-versus-minutes">Pricing: Credits Versus Minutes</h2>
-<p>The billing models encode the philosophies. ElevenLabs sells <strong>credits</strong>, roughly one per character, which is unforgiving if you iterate — every regeneration of the same paragraph costs you again, and a mid-tier plan evaporates faster than the headline hours suggest. Murf sells <strong>minutes of finished audio</strong> with seat-based team plans, which maps cleanly onto "we produce 40 hours of training video a year."</p>
-<p>Run the math on your actual iteration count, not your final output length. A team that regenerates each line four times before approval will find ElevenLabs' effective cost per finished minute is several times the sticker figure, while Murf's editor lets you tweak a pause without paying for the render again.</p>
+<p>Run the arithmetic and the plans converge more than the sticker suggests. Conversational speech averages roughly 850 characters per minute. ElevenLabs' 121,000 Creator credits therefore buy about <strong>2.4 hours of standard-model audio</strong> — call it 142 minutes. Murf's $29 Creator plan gives you <strong>2 hours per month</strong>. Similar output, and ElevenLabs is cheaper monthly. Murf wins on annual commitment, where $19/mo undercuts everything.</p>
 
-<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Watch the licensing clause, not just the price.</strong> Commercial usage rights, cloned-voice consent requirements, and whether generated audio can be used in paid advertising differ between tiers on both platforms. This is the single most common thing teams discover after they've built the pipeline.</div></div>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Credit trap worth knowing:</strong> ElevenLabs pools credits across <em>every</em> product — TTS, dubbing, Scribe transcription, voice cloning. A weekend spent dubbing a back catalogue can silently eat the budget you needed for next month's narration. Murf's hours are voiceover-only and expire at period end, which is less flexible but far easier to forecast.</div></div>
 
-<h2 id="what-to-actually-pick">What to Actually Pick</h2>
-<p>Choose <strong>ElevenLabs</strong> if a machine is calling the API — voice agents, real-time translation, dubbing at volume, character voices, anything where you need a clone that survives scrutiny, or any product where the voice <em>is</em> the feature. Budget for iteration credits and build your own review loop; the platform assumes you have engineers.</p>
-<p>Choose <strong>Murf</strong> if a person is calling the shots — a learning designer, a marketer, an agency producer who needs to sync narration to a screencast, ship it, and revise it next Tuesday without filing a ticket. The voices are good enough that the quality delta will not be what your audience notices; the workflow delta is what your team will feel every single week.</p>
-<p>And if you're a small studio doing both? The honest answer is that most run both, and the annual cost of doing so is still lower than one week of a session voice actor. Start with a 20-line script from your real backlog, generate it in both, and hand it to someone who wasn't in the meeting.</p>
-```
+<h2 id="api-and-latency">The developer story</h2>
+
+<p>Here is where the gap becomes real money. At <strong>1 million characters per month</strong> — roughly 20 hours of audio, a mid-sized IVR deployment or a well-used in-app narration feature — ElevenLabs Flash bills around <strong>$50</strong>. Murf's Studio-quality tier lands at <strong>$30</strong>, and its Falcon conversational model at <strong>$10</strong>. That's a 5x spread for output most listeners can't reliably distinguish in a phone-bandwidth codec.</p>
+
+<p>So why does ElevenLabs still dominate developer mindshare? Ecosystem depth. Its Conversational AI stack bundles turn-taking, interruption handling, and Scribe speech-to-text into one platform, so you're not stitching a voice vendor to an STT vendor to an orchestration layer. Murf's API is excellent and honestly documented, but it's a voice API — you bring the agent.</p>
+
+<p>Latency is the other tiebreaker. Sub-100ms time-to-first-byte is the threshold where a voice agent stops feeling like a walkie-talkie. Flash v2.5's ~75ms model latency (network overhead is yours to solve) is the benchmark competitors quote themselves against, and that reputation is earned.</p>
+
+<h2 id="workflow">Studio workflow and localization</h2>
+
+<p>Murf's editor is built for people who think in timelines. You can drop a video track, sync voice blocks to visuals, adjust individual word timing, and hand the project to a colleague. Murf Dub extends this to <strong>40+ target languages</strong> with optional human linguistic review — a genuine differentiator for corporate L&amp;D teams who need a native speaker to sign off before a compliance module ships to 60,000 employees.</p>
+
+<p>ElevenLabs' Studio is capable but feels engineered for long-form audio: audiobooks, podcasts, narration. Chapter management is strong. Video sync is not its home turf.</p>
+
+<h2 id="cloning-and-consent">Cloning, consent, and the part nobody reads</h2>
+
+<p>Both offer instant cloning from short samples and professional cloning from longer datasets. Both require verbal consent statements. In practice, ElevenLabs' Voice Library — where cloned voices are shared and their owners paid per use — has been the more contested surface, and its moderation has tightened accordingly.</p>
+
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Before you clone anyone:</strong> get written permission that specifically names synthetic voice generation, and confirm your plan tier grants commercial rights. Free tiers on both platforms generally do not. A cloned voice in a shipped ad on a free plan is a licensing problem, not a technical one.</div></div>
+
+<h2 id="verdict">Which one should you actually buy</h2>
+
+<p>If you are building a product — a voice agent, an accessibility layer, anything where audio is generated at runtime — start with ElevenLabs Flash and accept the premium; the latency and the integrated stack will save you more engineering hours than the $20/month price gap costs you. If you're generating high volume of pre-rendered speech and your margins are thin, benchmark Murf's Falcon endpoint against your actual scripts before assuming quality tracks price. If you make videos, courses, or localized training content, Murf's timeline editor and human-reviewed dubbing will beat ElevenLabs on the parts of the job that aren't the voice at all. And if you're a solo creator producing a couple of hours a month, take ElevenLabs Creator at $22 — you get more audio, more expressive range, and no annual lock-in. The honest answer is that neither tool is losing this comparison; they've simply stopped being the same product.</p>
+
+---
+
+Sources for the figures used: [ElevenLabs pricing](https://elevenlabs.io/pricing), [ElevenLabs API pricing](https://elevenlabs.io/pricing/api), [ElevenLabs models docs](https://elevenlabs.io/docs/overview/models), [Murf pricing](https://murf.ai/pricing), [Murf API](https://murf.ai/api), [Murf Speech Gen 2](https://murf.ai/text-to-speech-gen-2)
+
+One caveat worth flagging: the pricing and model specs are real, but the character-per-minute conversion (850 chars/min) is my own estimate used to make the plans comparable — it's a reasonable average for conversational English, not a vendor-published figure. The 1M-character cost comparison follows from the published per-1k rates. I did not run listening tests, so the quality characterizations are drawn from documented capabilities and general reception, not from a benchmark I conducted.
         <div class="article-tags">
           <a class="article-tag" href="#">ElevenLabs vs Murf</a>
           <a class="article-tag" href="#">ElevenLabs</a>
@@ -167,11 +193,12 @@ Here's the article. One thing worth flagging up front: I wrote the pricing, late
     <aside class="article-sidebar">
       <div class="sidebar-box">
         <h4>Table of Contents</h4>
-        <ul class="toc-list"><li><a href="#two-products-that-stopped-competing"><span class="toc-num">01</span> Two Products That Stopped Competing</a></li>
-          <li><a href="#voice-quality-the-gap-narrowed"><span class="toc-num">02</span> Voice Quality: The Gap Narrowed, Then Changed Shape</a></li>
-          <li><a href="#the-developer-experience"><span class="toc-num">03</span> The Developer Experience Is Not Close</a></li>
-          <li><a href="#pricing-credits-versus-minutes"><span class="toc-num">04</span> Pricing: Credits Versus Minutes</a></li>
-          <li><a href="#what-to-actually-pick"><span class="toc-num">05</span> What to Actually Pick</a></li></ul>
+        <ul class="toc-list"><li><a href="#voice-quality"><span class="toc-num">01</span> Voice quality: expressiveness versus control</a></li>
+          <li><a href="#pricing"><span class="toc-num">02</span> What you actually pay</a></li>
+          <li><a href="#api-and-latency"><span class="toc-num">03</span> The developer story</a></li>
+          <li><a href="#workflow"><span class="toc-num">04</span> Studio workflow and localization</a></li>
+          <li><a href="#cloning-and-consent"><span class="toc-num">05</span> Cloning, consent, and the part nobody reads</a></li>
+          <li><a href="#verdict"><span class="toc-num">06</span> Which one should you actually buy</a></li></ul>
       </div>
       <div class="sidebar-box">
         <h4>Related Articles</h4>
