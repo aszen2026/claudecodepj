@@ -107,63 +107,68 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-<h2 id="the-state-of-play">The State of Play in 2026</h2>
+<p>Two years ago, choosing between Suno and Udio was a coin flip between two research demos that happened to make listenable music. In 2026 it's a genuinely consequential decision, because the two companies took opposite exits from the same legal crisis — and those exits reshaped what each product actually is.</p>
 
-<p>Two years ago, comparing Suno and Udio was a debate about audio artifacts. Today it's a debate about business models. Both tools crossed the "this sounds like a real song" threshold somewhere around 2025, and both then collided with the same wall: the major labels. How each company hit that wall — and what they gave up to get past it — now matters more to your workflow than any spectrogram analysis.</p>
+<h2 id="how-they-got-here">How they got here</h2>
 
-<p>The short version: <strong>Suno moved fast, settled with Warner Music Group in late 2025, and kept its consumer product mostly intact.</strong> <strong>Udio settled with Universal Music Group and, in doing so, temporarily froze user downloads</strong> while it rebuilt around a licensed, walled-garden platform. That decision alienated a chunk of its power-user base overnight and reshaped what the tool is for.</p>
+<p>In June 2024, the RIAA sued both companies on behalf of Universal, Sony, and Warner. Both had trained on copyrighted recordings. Both argued fair use. Neither wanted to find out what a jury thought.</p>
 
-<p>If you are a developer building on top of generative audio, or a professional who needs to know whether the file you generate on Tuesday will still be yours on Friday, that history is the comparison.</p>
+<p>They settled differently. <strong>Udio settled with Universal Music Group in October 2025</strong> and, in the same breath, disabled downloads for existing users — including paying subscribers who had built catalogs on the platform. The deal pointed toward a relaunched, fully licensed platform where artists opt in and rights holders get paid. Users who had generated hundreds of tracks discovered their files were now walled inside the app. The backlash was loud, and mostly fair: people had paid for a tool and woke up inside a rights-cleared garden.</p>
 
-<h2 id="audio-quality">Audio Quality: Closer Than the Marketing Suggests</h2>
+<p><strong>Suno went the other way</strong>, settling with Warner Music Group in November 2025 while continuing to ship. It acquired Songkick from WMG in the process, closed a $250M round led by Menlo Ventures at a reported $2.45B valuation, and kept its v5 model and Suno Studio — a browser DAW with stem export — in front of paying users the entire time.</p>
 
-<p>Blind A/B testing between Suno v5 and Udio's latest models produces uncomfortably split results. In informal listening panels run across production communities, preference splits tend to land near 50/50 on full-mix pop and electronic material — well inside the noise floor for panels of a few dozen listeners. Nobody should be quoting a decisive winner from these.</p>
+<p>The result is that Suno in 2026 is a production tool that happens to be licensed. Udio is a licensing platform that happens to generate music. If you only remember one line from this comparison, make it that one.</p>
 
-<p>Where they genuinely diverge:</p>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Before you subscribe to either:</strong> read the current export terms, not the marketing page. Both companies changed download rights mid-subscription in the last 18 months. Generate a test track and try to actually get a WAV out of it before you commit a workflow to the platform.</div></div>
 
-<ul>
-<li><strong>Vocal realism:</strong> Suno v5 made a visible jump in consonant clarity and breath modeling. Sibilance that used to smear now lands. Udio still tends to win on <em>sustained</em> vocal tone — held notes have less of the wobbly, chorus-y quality that betrays a diffusion model.</li>
-<li><strong>Instrumental separation:</strong> Udio has historically produced mixes where you can actually hear the bass guitar as a distinct object. Suno's mixes are louder and more "finished" out of the box, which flatters casual listening but leaves less room for a mix engineer to work.</li>
-<li><strong>Genre coverage:</strong> Suno covers more ground, including the long tail — polka, throat singing, chiptune. Udio's outputs concentrate around Western commercial genres, likely a consequence of its training data curation and, more recently, its licensing constraints.</li>
-<li><strong>Structure over four minutes:</strong> Both degrade. Suno's extend feature holds a key and tempo more reliably; Udio's inpainting is more surgical when you need to fix bar 47 without regenerating bar 1.</li>
-</ul>
+<h2 id="sound-quality">Sound quality: closer than the discourse suggests</h2>
 
-<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Test with your own prompt, not the demo reel.</strong> Both companies showcase genres their models excel at. Write one prompt describing something specific and slightly awkward — "sparse Appalachian fiddle, no drums, female vocal in the lower register" — and run it on both. The gap between them on <em>your</em> genre is the only gap that matters.</div></div>
+<p>Blind-listening comparisons keep landing in the same place: <strong>Udio still wins on vocal realism, Suno wins on arrangement coherence.</strong></p>
 
-<h2 id="head-to-head">Head-to-Head</h2>
+<p>Udio's vocal model produces less of the "compressed radio-edit" artifact that plagues Suno's high-register singing. Sustained notes hold pitch without the metallic shimmer. Consonants land. If your track lives or dies on a lead vocal — a ballad, a folk demo, anything with exposed voice — Udio's output tends to survive a good pair of headphones better.</p>
+
+<p>Suno's advantage is structural. Ask both for a four-minute progressive house track with a breakdown at 2:30, and Suno is far more likely to actually build tension and release it. Udio drifts. Suno v5 also handles genre fusion prompts more gracefully; asking for "bossa nova drum programming under a shoegaze wall of guitar" gets you something recognizable rather than a mush that commits to neither.</p>
+
+<p>Both still fail in the same predictable places: complex time signatures, anything requiring a real key change, and lyrics with internal rhyme schemes the model quietly flattens. Neither can hold a motif across a song and develop it. That's not a tuning problem, it's an architecture problem, and nobody has solved it.</p>
+
+<h2 id="workflow-and-control">Workflow: this is where the gap is real</h2>
+
+<p>Suno Studio changed the calculus for anyone who works in a DAW. Stem separation — vocals, drums, bass, other — exports cleanly enough to drop into Ableton or Logic and actually mix. You can replace the AI drums with your own kit, keep the vocal, and ship. That's a real workflow, not a party trick.</p>
+
+<p>Udio's editing has always been more surgical in a different way: its inpainting (regenerate seconds 42–58 while everything else stays fixed) remains the best implementation either product has. Suno's equivalent still tends to smear the seams. But surgical editing inside an app you can't export from is a strange kind of freedom.</p>
 
 <table class="comparison-table">
 <tr><th>Dimension</th><th>Suno</th><th>Udio</th></tr>
-<tr><td>Positioning</td><td>Mass-market creation tool</td><td>Licensed platform, artist-adjacent</td></tr>
-<tr><td>Label posture</td><td>Settled with WMG; deals with others in motion</td><td>Settled with UMG; rebuilt as licensed service</td></tr>
-<tr><td>Download / export</td><td>Available on paid tiers</td><td>Disrupted post-settlement; verify current terms</td></tr>
-<tr><td>Editing controls</td><td>Extend, remaster, stems, personas</td><td>Inpainting, extend, remix — finer-grained</td></tr>
-<tr><td>Genre breadth</td><td>Broader long tail</td><td>Narrower, more polished center</td></tr>
-<tr><td>Public API</td><td>No official public API; third-party wrappers exist</td><td>No official public API</td></tr>
-<tr><td>Best for</td><td>Volume, iteration, exploration</td><td>Refinement, surgical edits</td></tr>
+<tr><td>Vocal realism</td><td>Good; artifacts in high register</td><td>Best in class</td></tr>
+<tr><td>Long-form structure</td><td>Strong — reliable intros, breakdowns, outros</td><td>Drifts past ~2 min</td></tr>
+<tr><td>Stem export</td><td>Yes (Studio tier), 4-stem</td><td>Restricted post-settlement</td></tr>
+<tr><td>Section-level regeneration</td><td>Workable, audible seams</td><td>Excellent inpainting</td></tr>
+<tr><td>Commercial rights</td><td>Included on paid tiers</td><td>Depends on relaunched licensing model</td></tr>
+<tr><td>API access</td><td>Yes, waitlisted</td><td>Not publicly available</td></tr>
+<tr><td>Entry paid tier</td><td>~$10/mo</td><td>~$10/mo</td></tr>
 </table>
 
-<h2 id="the-api-problem">The API Problem Nobody Solved</h2>
+<h2 id="the-developer-angle">The developer angle</h2>
 
-<p>Here is the sentence every developer reading this wants: <strong>neither Suno nor Udio ships a documented, generally available public API.</strong> The "Suno API" services you find on RapidAPI and similar marketplaces are unofficial reverse-engineered wrappers. They work until they don't. They violate terms of service. They will break during a model migration and you will have no support channel.</p>
+<p>If you're building anything on top of generative audio — a game with adaptive scoring, a video tool with automatic soundbeds, a podcast pipeline — Suno is currently the only realistic option. It has a documented API, generation webhooks, and a licensing posture where the output is yours. Udio has no public API, and the entity you'd be integrating with is mid-reconstruction.</p>
 
-<p>If you are shipping a product that needs programmatic music generation, you have three realistic options: license from a B2B-first vendor built for it, use an open-weights model you host yourself and accept the quality gap, or build a human-in-the-loop workflow where a person generates in the web UI. The third is unglamorous and it is what most shipped products actually do.</p>
+<p>Latency matters here and rarely gets discussed. Suno's v5 generations typically return a two-minute track in the 40–70 second range under normal load. That is too slow for anything real-time, which means every production integration is doing background generation with caching. Plan for that. Nobody is scoring a game level on the fly in 2026.</p>
 
-<h2 id="rights-and-risk">Rights, Risk, and the Thing Your Legal Team Will Ask</h2>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Prompt tip that works on both:</strong> stop describing genre and start describing production. "Dry close-mic'd vocal, tape saturation, drums low in the mix, no reverb on the snare" gets you dramatically closer to a usable reference than "lo-fi indie." Both models learned from production notes, not Spotify tags.</div></div>
 
-<p>Suno's paid tiers have historically granted commercial use rights to generated output. Udio's terms shifted materially after its settlement. Both companies' terms are moving targets in a way that, say, an image model's terms are not — because both are operating under fresh, ongoing agreements with rightsholders whose terms are not fully public.</p>
+<h2 id="what-nobody-tells-you">What nobody tells you</h2>
 
-<p>The practical risk is not that you get sued for a background track in a YouTube video. It is that you build a brand asset — a podcast theme, a game's main menu loop, a national ad campaign — on output whose provenance you cannot document, and someone later asserts a claim.</p>
+<p>Neither tool makes you a songwriter, and both have a tell. Suno tracks have a characteristic mid-range congestion around 2–4kHz that mastering engineers spot instantly. Udio tracks have a subtle stereo-width inconsistency between sections. Anyone who listens to AI music professionally can identify the source in about eight seconds. If you're planning to pass output off as fully human work, know that the people who matter already know.</p>
 
-<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Archive your exports and your prompts on day one.</strong> Keep the WAV, the prompt text, the model version string, and a timestamp. If either platform changes its terms retroactively or removes your library, local files with a documented generation trail are the difference between an inconvenience and a rebuild.</div></div>
+<p>Also: the training-data question is not settled just because the lawsuits are. Licensing deals cover the labels. They do not cover the independent artist whose catalog was scraped and who has no legal budget. That's an ethical problem you own, not one your subscription resolves.</p>
 
-<h2 id="recommendation">Which One Should You Actually Use</h2>
+<h2 id="recommendation">The recommendation</h2>
 
-<p>Pick <strong>Suno</strong> if you generate at volume, explore widely, and need output you can reliably download and use commercially today. It is the safer operational bet: more genres, a stabler export path, and a company that appears to have negotiated its label agreements without gutting the consumer product. This covers most professionals, most developers prototyping, and nearly everyone making content rather than music.</p>
+<p>If you are shipping anything — client work, a game, a product, a YouTube channel — <strong>use Suno</strong>. It exports, it has an API, its rights position is legible, and Studio's stems mean your output is a starting point rather than a final answer. Pay for the tier with stem access; the cheaper tiers waste your time.</p>
 
-<p>Pick <strong>Udio</strong> if you are a musician who edits rather than rolls the dice — someone who wants to fix a phrase, not regenerate a song — and if a licensed, rightsholder-blessed platform is a requirement rather than a constraint. Verify its current export terms before you commit anything to a client deadline.</p>
+<p>If you are a songwriter using AI to sketch vocal ideas you will re-record yourself, and export doesn't matter because the model is a scratchpad, <strong>Udio's vocal model is still worth the subscription</strong> — with the explicit understanding that you're renting access to a platform actively rebuilding itself. Don't put anything there you'd be upset to lose.</p>
 
-<p>Use both if you can afford roughly $20–$30 a month for each. They are cheap relative to a single session musician's hour, they fail in different ways, and the second subscription is insurance against the first company changing its terms on a Tuesday.</p>
+<p>And if you're deciding for a team: pick Suno now, re-evaluate Udio in twelve months. The licensed-relaunch bet may well produce the better long-term product, one where artists opt in and get paid and the ethics stop being a footnote. It just isn't the product you can build on this quarter.</p>
         <div class="article-tags">
           <a class="article-tag" href="#">Suno vs Udio</a>
           <a class="article-tag" href="#">Suno</a>
@@ -181,12 +186,12 @@
     <aside class="article-sidebar">
       <div class="sidebar-box">
         <h4>Table of Contents</h4>
-        <ul class="toc-list"><li><a href="#the-state-of-play"><span class="toc-num">01</span> The State of Play in 2026</a></li>
-          <li><a href="#audio-quality"><span class="toc-num">02</span> Audio Quality: Closer Than the Marketing Suggests</a></li>
-          <li><a href="#head-to-head"><span class="toc-num">03</span> Head-to-Head</a></li>
-          <li><a href="#the-api-problem"><span class="toc-num">04</span> The API Problem Nobody Solved</a></li>
-          <li><a href="#rights-and-risk"><span class="toc-num">05</span> Rights, Risk, and the Thing Your Legal Team Will Ask</a></li>
-          <li><a href="#recommendation"><span class="toc-num">06</span> Which One Should You Actually Use</a></li></ul>
+        <ul class="toc-list"><li><a href="#how-they-got-here"><span class="toc-num">01</span> How they got here</a></li>
+          <li><a href="#sound-quality"><span class="toc-num">02</span> Sound quality: closer than the discourse suggests</a></li>
+          <li><a href="#workflow-and-control"><span class="toc-num">03</span> Workflow: this is where the gap is real</a></li>
+          <li><a href="#the-developer-angle"><span class="toc-num">04</span> The developer angle</a></li>
+          <li><a href="#what-nobody-tells-you"><span class="toc-num">05</span> What nobody tells you</a></li>
+          <li><a href="#recommendation"><span class="toc-num">06</span> The recommendation</a></li></ul>
       </div>
       <div class="sidebar-box">
         <h4>Related Articles</h4>
