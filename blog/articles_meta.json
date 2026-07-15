@@ -1,5 +1,27 @@
 [
   {
+    "title": "gatwick: What Just Happened (July 2026)",
+    "slug": "gatwick-what-just-happened-july-2026",
+    "date": "July 15, 2026",
+    "date_str": "2026-07-15",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gatwick and break down what matters most for your workflow.",
+    "topic": "gatwick",
+    "is_event": true
+  },
+  {
+    "title": "chatgpt down: What Just Happened (July 2026)",
+    "slug": "chatgpt-down-what-just-happened-july-2026",
+    "date": "July 15, 2026",
+    "date_str": "2026-07-15",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in chatgpt down and break down what matters most for your workflow.",
+    "topic": "chatgpt down",
+    "is_event": true
+  },
+  {
     "title": "GPT-5.5 Pro: What Just Happened (July 2026)",
     "slug": "gpt-55-pro-what-just-happened-july-2026",
     "date": "July 15, 2026",
