@@ -1,5 +1,27 @@
 [
   {
+    "title": "GPT-5.5 Pro: What Just Happened (July 2026)",
+    "slug": "gpt-55-pro-what-just-happened-july-2026",
+    "date": "July 15, 2026",
+    "date_str": "2026-07-15",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5.5 pro and break down what matters most for your workflow.",
+    "topic": "GPT-5.5 Pro",
+    "is_event": true
+  },
+  {
+    "title": "ai: What Just Happened (July 2026)",
+    "slug": "ai-what-just-happened-july-2026",
+    "date": "July 15, 2026",
+    "date_str": "2026-07-15",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in ai and break down what matters most for your workflow.",
+    "topic": "ai",
+    "is_event": true
+  },
+  {
     "title": "Gemini 3.5 Pro: What Just Happened (July 2026)",
     "slug": "gemini-35-pro-what-just-happened-july-2026",
     "date": "July 15, 2026",
