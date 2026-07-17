@@ -1,5 +1,27 @@
 [
   {
+    "title": "grok: What Just Happened (July 2026)",
+    "slug": "grok-what-just-happened-july-2026",
+    "date": "July 17, 2026",
+    "date_str": "2026-07-17",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in grok and break down what matters most for your workflow.",
+    "topic": "grok",
+    "is_event": true
+  },
+  {
+    "title": "project runway: What Just Happened (July 2026)",
+    "slug": "project-runway-what-just-happened-july-2026",
+    "date": "July 17, 2026",
+    "date_str": "2026-07-17",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in project runway and break down what matters most for your workflow.",
+    "topic": "project runway",
+    "is_event": true
+  },
+  {
     "title": "Flux 1: What Just Happened (July 2026)",
     "slug": "flux-1-what-just-happened-july-2026",
     "date": "July 17, 2026",
