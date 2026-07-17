@@ -107,70 +107,66 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-I have enough corroborated detail. The story is Grok 4.5's July 8 launch, priced aggressively against a very different competitive backdrop than xAI's last release — the company is now part of a public SpaceX.
+Research done. Here's the article body.
+
+```html
+<p>SpaceXAI shipped Grok 4.5 on July 8, 2026, and Elon Musk called it "an Opus-class model, but faster, more token-efficient and lower cost." Nine days later, the independent numbers tell a more complicated story: the model is a genuine efficiency win and a fourth-place finisher, at the same time.</p>
 
 <h2 id="what-happened">What Happened</h2>
 
-<p>On Wednesday, July 8, 2026, SpaceXAI released <strong>Grok 4.5</strong>, its first frontier model since SpaceX went public. Elon Musk described it as "an Opus-class model, but faster, more token-efficient and lower cost." The model is available now in Grok Build, in Cursor across all plans, and through the SpaceXAI console.</p>
+<p>Grok 4.5 is the first model release from SpaceXAI since two structural events reshaped the company. SpaceX — which had already merged with xAI earlier this year — completed the largest IPO in history, raising roughly <strong>$86 billion</strong> at a $1.7 trillion valuation. The stock ran from its $135 IPO price to north of $200 within days, pushing the valuation past <strong>$2.7 trillion</strong>. On <strong>June 16</strong>, the company used that inflated stock as currency to acquire AI coding startup Cursor (Anysphere) for <strong>$60 billion in stock</strong> — the largest startup acquisition ever recorded, and roughly the price of a company that had been days away from closing a $2 billion round at a $50 billion valuation from Andreessen Horowitz, Thrive, and Nvidia. The deal is expected to close in Q3.</p>
 
-<p>The headline number is price. Grok 4.5 costs <strong>$2 per million input tokens and $6 per million output tokens</strong>, with configurable reasoning effort (low, medium, high; default high) and serving speeds around 80 tokens per second. That undercuts the field substantially:</p>
+<p>Grok 4.5 is what that acquisition bought. Reported at roughly 1.5 trillion parameters, it was trained alongside Cursor and aimed squarely at coding, agentic tasks, and knowledge work. The specifics:</p>
 
 <ul>
-<li><strong>Grok 4.5</strong> — $2 in / $6 out</li>
-<li><strong>Claude Opus 4.8</strong> — $5 in / $25 out</li>
-<li><strong>GPT-5.5 / 5.6</strong> — $5 in / $30 out</li>
-<li><strong>Claude Fable 5</strong> — $10 in / $50 out</li>
+<li><strong>Pricing:</strong> $2 per 1M input tokens, $0.50 cached input, $6 per 1M output — with higher rates above 200K tokens.</li>
+<li><strong>Context window:</strong> 500,000 tokens — notably a <em>reduction</em> from Grok 4.3's 1M.</li>
+<li><strong>Speed:</strong> ~80 tokens/second, with configurable reasoning effort (low/medium/high, default high).</li>
+<li><strong>Availability:</strong> Grok Build, Cursor on all plans, and the SpaceXAI console.</li>
 </ul>
 
-<p>On xAI's own published benchmarks, Grok 4.5 is competitive but not best-in-class. It scored <strong>83.3% on Terminal-Bench 2.1</strong>, effectively tied with GPT-5.5 at 83.4% and just behind Fable 5 at 84.3%. On harder agentic coding work the gaps widen: <strong>64.7% on SWE-Bench Pro</strong> versus Opus 4.8's 69.2% and Fable 5's 80.4%, and <strong>53% on DeepSWE 1.1</strong> against GPT-5.5's 67% and Fable 5's 70%.</p>
+<p>The benchmarks SpaceXAI chose to publish are split. Grok 4.5 beats Claude Opus 4.8 on DeepSWE 1.0 (62.0% vs 55.75%) and Terminal Bench 2.1 (83.3% vs 78.9%). It loses on the neutral-harness DeepSWE 1.1 run (53% vs 59%) and on SWE Bench Pro (64.7% vs 69.2%). Anthropic's Fable 5 leads all four rows the company selected. Artificial Analysis — the benchmarking firm engineering teams increasingly treat as a neutral referee — placed Grok 4.5 <strong>fourth</strong> on its Intelligence Index at 54 points, behind Fable 5 (60), Opus 4.8 (56), and GPT-5.5 (55). That is fourth place on a leaderboard where Musk had claimed a tie for first. The same testing reportedly found a hallucination rate that more than doubled, to 54% — a reliability figure absent from the launch materials.</p>
 
-<p>The more interesting claim is efficiency. xAI reports Grok 4.5 resolves SWE-Bench Pro tasks using an average of <strong>15,954 output tokens</strong>, against roughly 67,020 for Opus 4.8 — a 4.2× gap — and about 1.9M total tokens per task versus 6.2M for GPT-5.5 and 7.2M for Fable 5. The model was trained alongside Cursor, whose parent company SpaceX agreed to buy in June.</p>
+<p>The efficiency claim, though, holds up and is the real headline. On SWE Bench Pro, Grok 4.5 averages <strong>15,954 output tokens per task versus 67,020 for Opus 4.8 at max effort — about 4.2x fewer</strong>.</p>
 
-<p>OpenAI released <strong>GPT-5.6</strong> the following day, meaning xAI's comparison charts were obsolete within roughly 24 hours.</p>
-
-<div class="callout callout-tip"><span class="callout-icon">💡</span><div>Read the price comparison as a per-task number, not a per-token one. If Grok 4.5 uses ~4× fewer output tokens than Opus 4.8 <em>and</em> charges ~4× less per token, the compounded cost difference on an agentic coding job is closer to an order of magnitude than the sticker prices suggest. Whether that holds on your workload is an empirical question — measure it.</div></div>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Read the harness, not just the score.</strong> Grok 4.5 wins DeepSWE 1.0 on the provider's own harness and loses DeepSWE 1.1 on the neutral one. When a model's ranking flips based on who ran the eval, the harness is doing real work in the result. Always ask which one produced the number.</div></div>
 
 <h2 id="why-it-matters">Why It Matters</h2>
 
-<p>This release marks the point where frontier-model competition stopped being purely about capability scores and started being about cost per completed task. Grok 4.5 loses several benchmarks it published — and xAI shipped anyway, because the pitch is that a model which is 90% as good and 5–10× cheaper wins most real budgets.</p>
+<p>Musk benchmarked against <strong>Opus 4.7</strong>, not the shipping 4.8 — a comparison against a model one version stale. That's the tell for what this release actually is: not a frontier-capability claim that survived contact with independent testing, but a <em>cost-per-task</em> claim that did.</p>
 
-<p><strong>Who wins:</strong> Cursor's users, who get a frontier-adjacent model bundled across all plans. High-volume agentic workloads, where token spend, not raw capability, is the binding constraint. SpaceXAI itself, which now has both a model and one of the largest distribution channels in AI coding under one roof.</p>
+<p>And cost-per-task is the axis that matters most for agentic work. An agent loop burning 67,000 output tokens per task at Opus pricing versus 16,000 at $6/1M is a materially different bill, repeated thousands of times a day. Grok 4.5 doesn't have to be the smartest model to win budget — it has to be good enough at a fraction of the spend. That's a real threat to Anthropic and OpenAI at the mid-tier of the market, and much less of one at the top, where teams pay for the last few points of capability regardless.</p>
 
-<p><strong>Who's squeezed:</strong> Anthropic and OpenAI at the mid-tier. Fable 5 at $10/$50 still leads on the hardest coding work by a wide margin (80.4% vs 64.7% on SWE-Bench Pro), and that gap justifies its price for genuinely hard problems. But the routine 70% of agentic work has just been repriced underneath both companies.</p>
-
-<p>One caveat deserves weight. Artificial Analysis places Grok 4.5 <strong>fourth</strong> on its Intelligence Index — behind Fable 5, GPT-5.5, and Opus 4.8 — and measured its <strong>hallucination rate at 54%, up from 25%</strong> in the prior version. If that holds up, the efficiency win is partly a reliability trade: fewer tokens spent, more verification required.</p>
+<p>The losers are clearer than the winners. Independent coding-tool startups now compete with a Cursor backed by a $2.7 trillion balance sheet and a vertically integrated model. And the 54% hallucination figure, if it holds, prices this model out of exactly the finance and legal applications the launch positioned it for.</p>
 
 <h2 id="context">Context</h2>
 
-<p>Grok 4.5 is the first model shipped by a fundamentally different company than the one that shipped Grok 4. The corporate sequence over six months:</p>
+<p>Grok 4.5 is not Grok 5, and that gap is the story SpaceXAI would rather you didn't notice. Grok 5 — the leading candidate being a 6-trillion-parameter Mixture-of-Experts model training on Colossus 2 — has now slipped through both its Q1 and Q2 2026 windows, with Q3 or later the current expectation. What shipped instead was a run of adjacent releases: Grok Voice (June 4), Grok Imagine Video 1.5 topping the image-to-video leaderboard, Musk declaring Grok Imagine "done" on July 5, and Grok 4.5 on July 8. Productive, but lateral.</p>
 
-<ul>
-<li><strong>February 2, 2026</strong> — SpaceX absorbs xAI in an all-stock merger valuing the combined entity at <strong>$1.25 trillion</strong> ($1T SpaceX, $250B xAI), folding in Grok and the X platform. Musk framed it around vertically integrating AI with orbital data centers.</li>
-<li><strong>June 11, 2026</strong> — SpaceX raises <strong>$75 billion</strong> in the largest IPO on record, pricing 555,555,555 shares at $135 under the ticker <strong>SPCX</strong>.</li>
-<li><strong>June 16, 2026</strong> — SpaceX agrees to acquire Anysphere, Cursor's parent, for <strong>$60 billion</strong> in stock — the largest acquisition of a venture-backed startup ever. Cursor reached roughly $4B annualized revenue in under four years; the deal is expected to close in Q3 2026, pending regulatory approval.</li>
-</ul>
-
-<p>That context explains the pricing. A newly public company with a $60B coding acquisition closing needs Cursor's model economics to work, and $2/$6 with 4× token efficiency is what "works" looks like on a gross-margin slide.</p>
-
-<p>On the consumer side, Musk declared Grok Imagine "done" on July 5, then shipped another Imagine update on July 7 — a reminder that "done" is a mood, not a roadmap.</p>
+<p>The shrinking context window — 1M down to 500K — points the same direction. This is a model tuned for throughput economics, not a capability leap. Meanwhile, on <strong>July 15</strong>, SpaceXAI open-sourced Grok Build on GitHub with a local-first setup and inspectable agent loops. That's a distribution play, not a model play: get the harness everywhere, and the model follows.</p>
 
 <h2 id="what-to-do-next">What To Do Next</h2>
 
-<p><strong>If you're a Cursor user:</strong> Grok 4.5 is already available on your plan. Try it on mid-difficulty tasks first — refactors, test generation, well-scoped features — where the benchmark gap is narrow and the cost gap is wide. Keep Opus or Fable for the gnarly debugging sessions.</p>
+<p>Concrete guidance depending on where you sit:</p>
 
-<p><strong>If you're a developer choosing an API:</strong> Don't benchmark on price per token. Run your actual task suite and measure total cost per <em>completed</em> task, plus a rework rate. Given the 54% hallucination figure, add a verification step and count its cost too. The reasoning-effort dial (low/medium/high) is real leverage — default high is not always correct.</p>
+<ul>
+<li><strong>Evaluate on your own tasks, in your own harness.</strong> The DeepSWE 1.0/1.1 split is proof that published rankings won't transfer cleanly. Run your real workload.</li>
+<li><strong>Measure cost per completed task, not per token.</strong> A $6/1M model that finishes in 16K tokens beats a cheaper model that flails for 60K. This is the metric Grok 4.5 was built to win — and the one most teams aren't tracking.</li>
+<li><strong>Test hallucination rates before anything regulated.</strong> Given the 54% figure, put Grok 4.5 behind verification for finance, legal, or medical outputs, or keep it out of them.</li>
+<li><strong>Check the 200K pricing cliff.</strong> Rates rise above 200K tokens and the ceiling is 500K. If you were relying on Grok 4.3's 1M window, this is a migration, not an upgrade.</li>
+<li><strong>Cursor customers: don't re-architect yet.</strong> The acquisition hasn't closed. Keep your model layer swappable.</li>
+</ul>
 
-<p><strong>If you're a buyer:</strong> Use this release as pricing leverage now. Two frontier labs just had their mid-tier undercut by 60–80%, and enterprise contracts signed before July at Opus/GPT list prices are worth reopening.</p>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>The cheapest benchmark is the one you already own.</strong> Take 20 tasks your team actually shipped last month, replay them against Grok 4.5, Opus 4.8, and GPT-5.5, and log tokens, wall-clock time, and pass rate. That afternoon of work is worth more than every leaderboard in this article.</div></div>
+```
 
-<div class="callout callout-tip"><span class="callout-icon">💡</span><div>Every benchmark in xAI's launch materials compares against GPT-5.5, not GPT-5.6 — which shipped a day later. Treat the published charts as a snapshot with a 24-hour shelf life, and wait for independent evaluations before making a migration decision.</div></div>
+A few notes on the reporting, since they shaped what I wrote:
 
-**Sources:** [TechCrunch on the Grok 4.5 launch](https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/) · [The Decoder on pricing and benchmarks](https://the-decoder.com/grok-4-5-is-so-cheap-compared-to-fable-5-and-gpt-5-5-that-benchmark-gaps-may-not-matter-much/) · [x.ai Grok 4.5 announcement](https://x.ai/news/grok-4-5) · [Artificial Analysis evaluation](https://artificialanalysis.ai/articles/grok-4-5-brings-spacexai-to-the-the-intelligence-frontier) · [CNBC on the SpaceX–xAI merger](https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html) · [NPR on the SpaceX IPO](https://www.npr.org/2026/06/11/nx-s1-5853199/spacex-ipo-price-elon-musk) · [CNBC on the Cursor acquisition](https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html)
+**The most interesting fact is a mismatch.** Musk's "Opus-class" claim benchmarked against Opus 4.7, while the shipping model was 4.8 — and Artificial Analysis put Grok 4.5 fourth, behind the exact model Musk claimed parity with. I made that gap the spine of the piece rather than repeating the launch framing.
 
-A few notes on choices I made, since they affect how much you can trust the piece:
+**Two things I'd flag before publishing.** The 54% hallucination rate is single-sourced (Let's Data Science, citing Artificial Analysis) — I attributed it and hedged with "reportedly" and "if it holds," but you may want a second source before it runs. The ~1.5T parameter count also comes from secondary reporting rather than SpaceXAI directly. x.ai, TechCrunch, and Axios all returned 403s, so the primary sources are unverified by me; everything here traces to secondary coverage and Releasebot's changelog.
 
-The benchmark numbers are **xAI's own published figures**, and I labeled them that way in the text rather than presenting them as neutral. One aggregator claimed Grok 4.5 hit 91.9% on Terminal-Bench 2.0 versus GPT-5.6's 83.3% — that contradicted two better sources reporting 83.3% on Terminal-Bench 2.1, so I dropped it. The 54% hallucination rate comes from a single source (Artificial Analysis via The Decoder); I attributed it explicitly rather than stating it as fact.
-
-I also left out the Musk quote calling Grok 4.5 "roughly comparable to Opus 4.7" — TechCrunch said 4.7 while pricing tables elsewhere reference Opus 4.8 as current, and I couldn't resolve which was meant, so I used only the unambiguous "Opus-class model" quote.
+Sources: [Grok 4.5 benchmarks and pricing](https://kingy.ai/blog/grok-4-5-benchmarks-pricing-context-window/) · [Artificial Analysis fourth-place ranking](https://letsdatascience.com/blog/grok-4-5-opus-class-claim-ranks-fourth) · [SpaceX/Cursor $60B acquisition](https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/) · [Fortune on the IPO-funded deal](https://fortune.com/2026/06/16/elon-musk-spacex-ipo-ai-coding-startup-cursor-acquisition/) · [xAI release notes](https://releasebot.io/updates/xai) · [Grok 5 status](https://felloai.com/all-we-know-so-far-about-grok-5/)
         <div class="article-tags">
           <a class="article-tag" href="#">grok</a>
           <a class="article-tag" href="#">grok</a>

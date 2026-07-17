@@ -107,57 +107,62 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Confirmed: for an AI-industry audience "Runway" means Runway AI, and there's a real news cluster this month — the Paris office (July 6) and the Runway Dev launch (July 8), on top of a $300M global expansion. Here's the article, built only on what I verified.
+Found it — the AI-industry story here is **Runway** (the video-model company), not the Freeform show. There's a real cluster of news right now: Runway Dev launched July 8, the Paris research hub opened July 6, and a ~$300M global expansion is underway. Here's the article.
 
+```
+```
 <h2 id="what-happened">What Happened</h2>
 
-<p>Runway spent the first half of July 2026 doing two things at once: planting flags overseas and repositioning itself as infrastructure rather than a creative tool.</p>
+<p>Runway spent the first two weeks of July 2026 doing something it had never really done before: turning itself from a video-generation tool into infrastructure that other companies build on.</p>
 
-<p>On <strong>July 6</strong>, the company announced its first French office — a Paris research hub with an initial $30 million investment and a starting team of ten, focused on world models and physical AI. It is the third leg of a global buildout that Runway has committed roughly <strong>$300 million</strong> to through 2028:</p>
+<p>On <strong>July 8</strong>, the company launched <strong>Runway Dev</strong>, a single-API media platform aimed at developers and enterprise teams rather than filmmakers. It bundles Runway's own models — <strong>Gen-4.5</strong>, <strong>Aleph 2.0</strong>, and <strong>Act-Two</strong> — alongside third-party models including <strong>Seedance</strong> and <strong>GPT Image 2</strong>, so a customer can generate image, video, audio, and character output without stitching together four vendors. Three primitives sit on top:</p>
 
 <ul>
-<li><strong>London</strong> — announced June 1, 2026 as Runway's European HQ and general world model research hub, backed by $100 million over 18 months, a figure the company says will more than double through 2028.</li>
-<li><strong>Tokyo</strong> — a $40 million initial commitment, targeting what the company describes as rapid adoption across Asia.</li>
-<li><strong>Paris</strong> — $30 million to start, chosen for France's research institutions, engineering talent, and government support for AI infrastructure.</li>
+<li><strong>Recipes</strong> — prebuilt endpoints for repeatable jobs like ad localization, product swap, and multi-shot video.</li>
+<li><strong>Workflows</strong> — custom multi-model pipelines exposed through a private API.</li>
+<li><strong>Characters</strong> — real-time interactive avatars with voice and an attached knowledge base.</li>
 </ul>
 
-<p>Two days later, on <strong>July 8</strong>, Runway launched <strong>Runway Dev</strong>: "one API to integrate the best image, video, audio and real-time character models." It bundles Runway's own models — Gen-4.5, Aleph 2.0, Act-Two — alongside third-party models that can be swapped with minimal code changes, plus three layers on top: <strong>Recipes</strong> (pre-built endpoints for jobs like ad localization and product ads), <strong>Workflows</strong> (custom multi-model pipelines behind private endpoints), and <strong>Characters</strong> (real-time interactive avatars with voice and tool-calling). Named customers already on it include <strong>Adobe, ElevenLabs, Shutterstock, Figma Weave, Gamma, and Silverside</strong>.</p>
+<p>The enterprise wrapper is the tell: <strong>SOC 2 Type II</strong>, a <strong>99.9% uptime SLA</strong>, zero-data-retention options, and contractual restrictions barring Runway from training on customer data. Launch customers named by the company include <strong>Adobe</strong>, <strong>ElevenLabs</strong>, <strong>Shutterstock</strong>, <strong>Figma Weave</strong>, <strong>Gamma</strong>, and <strong>Silverside</strong>. Runway cites a broadcaster producing 800–1,000 ads a year with a five-person team and a retailer generating 1,000+ product shots monthly.</p>
 
-<p>The money behind this is recent. Runway closed a <strong>$315 million Series E on February 10, 2026</strong>, led by General Atlantic at a <strong>$5.3 billion valuation</strong> — up from $3.3 billion at its Series D — with Nvidia, Adobe Ventures, AMD Ventures, Fidelity, and Felicis participating. That brings total funding to roughly $860 million since the company's 2018 founding. One founder has said Runway added <strong>$40 million in annual recurring revenue in Q2 2026</strong> alone.</p>
+<p>Two days earlier, on <strong>July 6</strong>, Runway announced its <strong>first France office</strong> — an initial team of ten and <strong>$30 million</strong> committed to the Paris region, focused on world models and physical AI. "France has one of the deepest concentrations of AI research talent in the world," said co-CEO <strong>Anastasis Germanidis</strong>. Paris is one leg of a broader push: roughly <strong>$300 million through 2028</strong> across hubs in <strong>London, Tokyo, and Paris</strong>, with commercial attention on South Korea, Brazil, and Mexico. CEO <strong>Cristóbal Valenzuela</strong>'s framing was blunt — "We want to be closer to our customers and talent."</p>
 
-<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>The tell is in the language.</strong> Runway's London and Paris announcements both describe world model research — systems that simulate physical environments for robotics, scientific research, and industrial simulation. Neither leads with filmmaking. CEO Cristóbal Valenzuela framed the spending simply: "We want to be closer to our customers and talent," with "a big chunk" going to research and go-to-market teams.</div></div>
+<p>Funding the whole thing: a <strong>$315M Series E in February 2026</strong> led by General Atlantic at a <strong>$5.3B valuation</strong>, with Nvidia, AMD Ventures, Adobe Ventures, Fidelity, Mirae Asset, Felicis, and Premji Invest participating. That's up from <strong>$3.3B</strong> at the $308M Series D a year earlier, against roughly <strong>$300M in annualized revenue</strong> reported as of October 2025.</p>
+
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>The signal to watch:</strong> Runway Dev ships competitors' models — GPT Image 2 and Seedance — inside its own API. A company confident in model supremacy doesn't resell rivals. A company betting on the orchestration layer does exactly this.</div></div>
 
 <h2 id="why-it-matters">Why It Matters</h2>
 
-<p>Runway Dev is the load-bearing move here. Selling generation by the seat puts you in a knife fight with Google and OpenAI on price and model quality forever. Selling the API that other products generate through changes what you're defending. When Adobe and Shutterstock are your customers rather than your competitors, you capture volume regardless of whose model wins any given month.</p>
+<p>Runway is conceding that the model alone is not the moat, and moving up the stack to the workflow. Gen-4.5 beat Google's and OpenAI's video offerings on several benchmarks — and the lesson Runway apparently drew is that benchmark leads are rented, not owned. Recipes, Workflows, and a no-training SLA are stickier than a frontier score that lasts a quarter.</p>
 
-<p>That matters because the model lead is genuinely fragile. Gen-4.5 launched December 1, 2025 on a new Autoregressive-to-Diffusion architecture and took the top spot on the Artificial Analysis video arena at <strong>1,247 Elo</strong>, ahead of Google Veo 3 (1,226) and OpenAI Sora 2 Pro (1,206). It has since been passed — <strong>Seedance 2.0 sits at 1,269</strong>, and cheaper models have crowded in underneath. Being briefly #1 lasted about six months. An API layer that lets customers swap models is a hedge against exactly that.</p>
+<p><strong>Who wins:</strong> mid-market production teams and in-house agencies, who get studio-scale output at five-person headcount. Also Runway itself, if API revenue proves less churn-prone than prosumer subscriptions. And Nvidia and AMD, both now on the cap table of a company whose expansion is compute-hungry by construction.</p>
 
-<p><strong>Who gains:</strong> enterprise buyers, who get model optionality without integration rewrites; European and Japanese AI talent, now with a well-funded local bidder. <strong>Who's squeezed:</strong> thin-wrapper startups whose entire product is a nicer UI over a video API — Recipes eats that category directly.</p>
+<p><strong>Who's squeezed:</strong> thin wrapper startups whose product was "one model plus a nice UI" — Recipes eats that category outright. Stock-media businesses face the same pressure, which is likely why Shutterstock is a customer rather than a holdout. And traditional post-production vendors now compete with an endpoint.</p>
 
 <h2 id="context">Context</h2>
 
-<p>This is a company visibly widening its definition of itself. TechCrunch put it bluntly in May: Runway started by helping filmmakers, and now wants to beat Google at AI. The world model framing — universal simulation, robotics, industrial use — is a much larger addressable market than video editing, and it's the story the Series E was raised on.</p>
+<p>This is a pattern, not a pivot. The <strong>Lionsgate</strong> relationship — a 2024 partnership covering previsualization, storyboarding, and post — just expanded into an <strong>equity stake</strong> (undisclosed terms, and notably <em>not</em> a cash investment), plus a co-development slate starting with a short-form episodic series drawn from Lionsgate's existing IP. The studio declined to name the franchises; its catalog includes <em>John Wick</em>, <em>The Hunger Games</em>, and <em>Saw</em>. A studio taking stock instead of writing a check is a studio hedging: cheap exposure to the tooling, no cash at risk if the AI-native format flops.</p>
 
-<p>Hollywood is hedging alongside it. In <strong>June 2026</strong>, Lionsgate took an equity stake in Runway — notably <em>not</em> a cash investment — expanding a partnership first struck in September 2024 that covered pre-visualization, storyboarding, and post-production. The expansion adds a joint development program for AI-generated short-form series drawn from Lionsgate's catalog, under Chief AI Officer Kathleen Grace. The studio declined to name which franchises.</p>
-
-<p>Read the two together and the pattern is clear: Runway is trading equity and API access for distribution and IP rather than trying to win on raw model benchmarks it can't hold.</p>
+<p>The Paris "world models and physical AI" mandate points somewhere else entirely. Video generation is the revenue business; world models are the bet that the same simulation stack extends to robotics and physical reasoning — the ground OpenAI, Google DeepMind, and Nvidia are all contesting. Runway is using video cash flow to buy a seat at that table.</p>
 
 <h2 id="what-to-do-next">What To Do Next</h2>
 
-<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Build against the abstraction, not the model.</strong> Given that the #1 slot changed hands twice in seven months, hardcoding Gen-4.5 into your stack is a bet on a leaderboard position that has already proven unstable.</div></div>
+<p><strong>If you're a developer:</strong> evaluate Recipes before building custom Workflows. The prebuilt endpoints cover the boring 80% — ad localization, product swap — and custom pipelines are where cost and maintenance actually accumulate.</p>
 
-<p><strong>If you're a developer:</strong> evaluate Runway Dev on the swap guarantee specifically. Wire up two models behind the same call and measure how much code actually changes. That claim, not Gen-4.5's Elo, is what you're buying.</p>
+<p><strong>If you're a buyer:</strong> get the no-training clause and zero-data-retention option written into your contract explicitly. They're offered, not automatic. Also confirm what the 99.9% SLA credits — uptime SLAs on generative endpoints often exclude queue latency, which is the failure mode that will actually hurt you.</p>
 
-<p><strong>If you're an enterprise buyer:</strong> Runway hasn't published Dev pricing, so demand per-generation cost in writing before committing volume — the cheaper models crowding the leaderboard are your leverage.</p>
+<p><strong>If you're evaluating competitors:</strong> price the switching cost, not the model. A Workflow encoding your brand pipeline is the lock-in; a model is a config line. Benchmark Gen-4.5 against Seedance <em>inside</em> Runway Dev before assuming you need a second vendor.</p>
 
-<p><strong>If you're in London, Paris, or Tokyo:</strong> the Paris team is ten people and Runway says it plans to expand. Early headcount at a research hub is the best negotiating position you'll get.</p>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>For founders:</strong> if your product is a single model plus a UI, Runway Dev just commoditized you. The durable positions left are proprietary data, distribution, or a workflow deep enough that an endpoint can't replicate it.</div></div>
 
-<p><strong>If you're a studio or brand:</strong> the Lionsgate deal is the template worth studying — equity and IP access instead of cash. If you own a catalog, you may have more to trade than a check.</p>
+```
+```
 
-**Sources:** [Runway – Paris office](https://runwayml.com/news/announcing-our-paris-office) · [Runway Dev](https://runwayml.com/news/introducing-runway-dev) · [Runway – London HQ](https://runwayml.com/news/runway-opens-london-hq) · [Bloomberg – global footprint](https://www.bloomberg.com/news/videos/2026-07-06/runway-expands-global-ai-footprint-video) · [TechCrunch – $315M Series E](https://techcrunch.com/2026/02/10/ai-video-startup-runway-raises-315m-at-5-3b-valuation-eyes-more-capable-world-models/) · [TechCrunch – beating Google](https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/) · [Variety – Lionsgate stake](https://variety.com/2026/film/news/lionsgate-equity-stake-runway-ai-franchises-for-ai-show-1236775590/) · [Gen-4.5 benchmarks](https://bonega.ai/en/blog/runway-gen-4-5-artificial-analysis-benchmark-2026)
+A few notes on what I did and didn't do: I ruled out speculating about the Lionsgate deal's dollar value (terms are undisclosed) and about Runway Dev's pricing (not published). I also dropped an early-July report that Runway added Gemini Omni Flash and Nano Banana 2 Lite — it came from a release-notes aggregator I couldn't corroborate against Runway's own changelog, so it didn't meet the bar for a named claim.
 
-Three things worth flagging on the sourcing. The $40M Q2 ARR figure traces to a founder's own statement rather than audited numbers, so I attributed it rather than stating it flat. Runway Dev pricing isn't published anywhere I could find — I turned that gap into buyer advice instead of guessing. And the Lionsgate stake being non-cash is a real detail from the Variety report that most coverage glosses over; it's doing a lot of work in the "Context" section.
+Sources: [Runway — Paris office](https://runwayml.com/news/announcing-our-paris-office), [Runway — Introducing Runway Dev](https://runwayml.com/news/introducing-runway-dev), [StartupHub — Runway CEO on global expansion](https://www.startuphub.ai/ai-news/startup-news/2026/runway-ceo-discusses-global-ai-expansion), [TechCrunch — $315M at $5.3B](https://techcrunch.com/2026/02/10/ai-video-startup-runway-raises-315m-at-5-3b-valuation-eyes-more-capable-world-models/), [Variety — Lionsgate equity stake](https://variety.com/2026/film/news/lionsgate-equity-stake-runway-ai-franchises-for-ai-show-1236775590/), [Bloomberg — Runway expands global AI footprint](https://www.bloomberg.com/news/videos/2026-07-06/runway-expands-global-ai-footprint-video).
+
+Word count is ~830. If you actually meant something else by "project runway" — an internal codename, or a specific headline set you have — tell me and I'll redo it.
         <div class="article-tags">
           <a class="article-tag" href="#">project runway</a>
           <a class="article-tag" href="#">project</a>
