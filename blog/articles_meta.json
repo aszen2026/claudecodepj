@@ -1,5 +1,27 @@
 [
   {
+    "title": "Databricks Funding: What Just Happened (July 2026)",
+    "slug": "databricks-funding-what-just-happened-july-2026",
+    "date": "July 18, 2026",
+    "date_str": "2026-07-18",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in databricks funding and break down what matters most for your workflow.",
+    "topic": "Databricks Funding",
+    "is_event": true
+  },
+  {
+    "title": "dow jones index: What Just Happened (July 2026)",
+    "slug": "dow-jones-index-what-just-happened-july-2026",
+    "date": "July 18, 2026",
+    "date_str": "2026-07-18",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in dow jones index and break down what matters most for your workflow.",
+    "topic": "dow jones index",
+    "is_event": true
+  },
+  {
     "title": "grok: What Just Happened (July 2026)",
     "slug": "grok-what-just-happened-july-2026",
     "date": "July 17, 2026",
