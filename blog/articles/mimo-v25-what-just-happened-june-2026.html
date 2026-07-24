@@ -107,20 +107,37 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Done. Wrote the article to `mimo-v2.5-news-explainer.html` (~820 words). Here's the article body HTML:
-
-```html
 <h2 id="what-happened">What Happened</h2>
 <p>On <strong>June 9, 2026</strong>, the MiMo team unveiled <strong>MiMo-v2.5-Pro-UltraSpeed</strong>, the headline variant of its v2.5 model family. The pitch is unusually concrete for a launch announcement: a <strong>1-trillion-parameter</strong> model that serves output at roughly <strong>1,000 tokens per second</strong>. Those two numbers — trillion-scale capacity paired with four-digit throughput — are the entire story, and they are deliberately in tension with each other.</p>
-```
+<p>For context on what "1,000 tokens per second" actually means: most frontier-class chat models today stream somewhere between 30 and 120 tokens per second to a single user. A thousand tokens per second is fast enough that a multi-page response finishes before you've finished reading the first sentence. The "UltraSpeed" suffix signals that this isn't the default v2.5 checkpoint but a throughput-optimized variant, almost certainly leaning on a sparse mixture-of-experts design — the standard way the industry reconciles a 1T total parameter count with low per-token latency, by activating only a fraction of the network for each token.</p>
+<ul>
+<li><strong>Model:</strong> MiMo-v2.5-Pro-UltraSpeed</li>
+<li><strong>Scale:</strong> 1 trillion parameters (total)</li>
+<li><strong>Throughput:</strong> ~1,000 tokens/second</li>
+<li><strong>Announced:</strong> June 9, 2026</li>
+<li><strong>Positioning:</strong> A speed-optimized "Pro" tier within the v2.5 line</li>
+</ul>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div>The number to watch isn't the trillion parameters — labs have shipped trillion-scale models before. It's the <strong>1,000 tok/s at that scale</strong>. Throughput, not raw size, is what changes the economics and the kinds of products you can build.</div></div>
 
-A few notes on the choices I made:
+<h2 id="why-it-matters">Why It Matters</h2>
+<p>Token throughput is the hidden variable behind almost every frustrating AI product experience. Agents that chain dozens of LLM calls feel sluggish because each step waits on generation. Coding assistants that rewrite whole files stall on long outputs. Voice interfaces break the illusion of conversation the moment latency creeps past a second. UltraSpeed's claim attacks all of those at once.</p>
+<p>If the 1,000 tok/s figure holds up under real concurrent load — and that caveat matters enormously — the winners are the builders of <strong>latency-sensitive systems</strong>: agentic workflows that make many sequential calls, real-time coding tools, live translation, and anything voice-driven. A 10x speedup on the generation step compounds across a multi-step agent loop, turning a chain that took 30 seconds into one that finishes in three.</p>
+<p>The pressure lands hardest on inference providers and rival model vendors who compete primarily on price-per-token. When a model is this fast, the cost conversation shifts from "dollars per million tokens" to "tokens per second per dollar." Vendors whose models are smart but slow now have to explain why a user should wait. That's a worse position to defend than a slightly higher per-token price.</p>
 
-- **Stayed inside the headline.** The only hard facts given were the name, "1T model," and "1000 tokens per second." I anchored everything to those and flagged the throughput number as a *claim to verify* rather than treating it as proven — which fits the "don't speculate beyond reasonable inference" constraint.
-- **The one inference I did make** — that 1T-at-1000-tok/s almost certainly implies a sparse mixture-of-experts design — is labeled as inference ("almost certainly," "the standard way the industry reconciles…"), since that's how every shipped trillion-scale fast model works. I avoided inventing prices, benchmarks, dates, or a parent company beyond the "MiMo team."
-- **Structure:** all four required H2s in order with the exact `id` slugs, two `callout-tip` boxes, `<h3>`-free body (the spec listed `<h3>` as allowed, not required), and lists/`<strong>` per the format.
+<h2 id="context">Context</h2>
+<p>MiMo-v2.5-Pro-UltraSpeed doesn't arrive in a vacuum. The whole 2025–2026 model cycle has been defined by a pivot away from "bigger is better" toward serving efficiency — sparse mixture-of-experts architectures, speculative decoding, and aggressive quantization have become table stakes rather than research curiosities. The headline pairing of a 1T total count with low active-parameter latency is the clearest expression yet of where the field has settled.</p>
+<p>It also fits a pattern of vendors splitting a single model generation into purpose-built tiers. Rather than ship one checkpoint and ask users to live with its tradeoffs, labs increasingly offer a "Pro" reasoning tier, a "fast" tier, and now an "UltraSpeed" tier tuned explicitly for throughput. That mirrors how the broader market — across the major frontier labs — has fragmented the menu so that a buyer picks the variant matched to a specific latency-versus-depth requirement instead of a one-size model.</p>
+<p>The competitive read: speed is becoming a first-class marketing axis, not a footnote in a benchmark table. Announcing a model by its tokens-per-second number, before any reasoning-benchmark chart, is itself a statement about what MiMo thinks buyers now care about.</p>
 
-One flag for you: the reference headline names the model "MiMo" — I kept that spelling throughout, but your task title says "Mimo-v2.5." If the brand is officially capitalized differently, do a find-replace before publishing.
+<h2 id="what-to-do-next">What To Do Next</h2>
+<p>Resist the urge to swap your production model on the strength of one launch headline. Speed claims are notoriously fragile: a number measured at batch-size-one on idle hardware can collapse to a fraction of that under real concurrent traffic. Treat 1,000 tok/s as an upper bound to verify, not a guarantee.</p>
+<ul>
+<li><strong>Developers:</strong> Benchmark UltraSpeed on <em>your</em> workload — your prompt lengths, your concurrency, your latency budget — not the vendor's demo. Measure time-to-first-token and tokens/second under realistic batching before committing.</li>
+<li><strong>Agent builders:</strong> This is the use case to prioritize. Re-time your multi-step chains; a fast generation step is where sequential agent loops get their biggest wins. Look for workflows where you previously cut steps purely to save time.</li>
+<li><strong>Buyers and platform teams:</strong> Push for published numbers on quality alongside speed. A trillion-parameter model served fast is only useful if the active-parameter slice is still smart enough for your task. Ask for the reasoning and coding evals, not just the throughput chart.</li>
+<li><strong>Everyone:</strong> Watch for independent third-party latency measurements over the coming weeks. The gap between announced and reproduced throughput will tell you whether UltraSpeed is a genuine shift or a best-case demo number.</li>
+</ul>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div>Before migrating anything, run a one-day bake-off: route a slice of real traffic to UltraSpeed, log p50/p95 latency and a quality score, and compare against your current model. Decisions made on dashboards beat decisions made on launch posts.</div></div>
         <div class="article-tags">
           <a class="article-tag" href="#">Mimo-v2.5</a>
           <a class="article-tag" href="#">Mimo-v2.5</a>
@@ -137,7 +154,10 @@ One flag for you: the reference headline names the model "MiMo" — I kept that 
     <aside class="article-sidebar">
       <div class="sidebar-box">
         <h4>Table of Contents</h4>
-        <ul class="toc-list"><li><a href="#what-happened"><span class="toc-num">01</span> What Happened</a></li></ul>
+        <ul class="toc-list"><li><a href="#what-happened"><span class="toc-num">01</span> What Happened</a></li>
+          <li><a href="#why-it-matters"><span class="toc-num">02</span> Why It Matters</a></li>
+          <li><a href="#context"><span class="toc-num">03</span> Context</a></li>
+          <li><a href="#what-to-do-next"><span class="toc-num">04</span> What To Do Next</a></li></ul>
       </div>
       <div class="sidebar-box">
         <h4>Related Articles</h4>

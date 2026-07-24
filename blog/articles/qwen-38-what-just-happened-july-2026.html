@@ -107,7 +107,32 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Article written to `E:\22\claudecode\ai-demand-bot\qwen-3.8-article.html` (~830 words, 4 required H2 sections plus 1 callout box).
+<h2 id="what-happened">What Happened</h2>
+<p>Alibaba's Qwen team shipped <strong>Qwen 3.8</strong> today, a little over four months after Qwen3's last major refresh. The release lands on the same day Moonshot AI pushed out <strong>Kimi K3</strong>, and the split-screen timing is what's driving most of the coverage — two Chinese labs, one news cycle, both aimed squarely at the same customers Anthropic and OpenAI have been courting for enterprise contracts.</p>
+<p>The headline model is <strong>Qwen3.8-480B-A35B</strong>, a mixture-of-experts architecture with 480 billion total parameters and 35 billion active per token — up from the 235B-A22B configuration that anchored the original Qwen3 launch. Alongside it, Alibaba shipped a dense 32B variant aimed at self-hosting, and a 1M-token context window across the family, doubling what Qwen3 shipped with at launch.</p>
+<p>Weights for everything except the flagship 480B checkpoint are live on Hugging Face and ModelScope under Apache 2.0. The 480B model is available today through Alibaba Cloud's DashScope API, with weight release "to follow," per the model card — the same staggered pattern Alibaba used with Qwen3-Max.</p>
+<p>On benchmarks, Qwen's own numbers put Qwen3.8 at 76.8% on SWE-bench Verified and 71% on LiveCodeBench, both ahead of Qwen3's published scores from earlier this year and within a few points of Claude Opus 4.5 on the same tests. DashScope is pricing API access at $0.40 per million input tokens and $1.60 per million output tokens for the flagship — roughly a fifth of what Anthropic charges for Opus-tier usage.</p>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Quick gap-check:</strong> a fifth of the price with benchmark scores in the same neighborhood doesn't mean equivalent quality on your workload. Run your own eval set — coding agents, RAG pipelines, and long-context retrieval all expose gaps that public benchmarks flatten.</div></div>
+
+<h2 id="why-it-matters">Why It Matters</h2>
+<p>The competitive story here isn't Qwen 3.8 in isolation — it's Qwen 3.8 and Kimi K3 arriving on the same day, both open-weight (or open-weight-adjacent), both priced far below the US frontier labs, and both scoring close enough on public benchmarks to make procurement teams ask uncomfortable questions about what they're actually paying for.</p>
+<p>That question lands hardest on Anthropic. Claude has built its enterprise position on being the safer, more reliable choice for coding and agentic work — a position that gets harder to defend on price alone when a $0.40-per-million-token open-weight model claims comparable SWE-bench numbers. Enterprises that self-host Qwen3.8 or run it through DashScope aren't just saving money; they're proving out an alternative supply chain that doesn't run through a single US vendor.</p>
+<p>Winners: companies with the infrastructure to self-host — they get frontier-adjacent capability without a per-token bill from a US lab, and without the export-control exposure of relying on a single provider. Alibaba Cloud, which monetizes the DashScope API and the cloud compute underneath it either way. Losers, or at least the squeezed: any lab whose pricing depends on a capability gap that's visibly narrowing every few months.</p>
+
+<h2 id="context">Context</h2>
+<p>This is now a pattern, not an event. Qwen3 launched in April 2025 already competitive with Western open releases; Kimi K2 followed in July 2025 with a trillion-parameter MoE and strong agentic benchmarks under a modified MIT license. Each cycle since has compressed the gap between "open-weight Chinese model" and "closed US frontier model" a little further, while US labs have leaned harder into safety framing, enterprise trust, and vertical integration (coding tools, agent harnesses, computer use) as the reason to pay a premium.</p>
+<p>The "Anthropic's Potential Unravelling" framing making the rounds today is industry chatter, not a confirmed internal event — but it's chatter with a mechanism behind it. If Qwen3.8 and Kimi K3 hold up under independent evaluation, the argument for paying 5x for closed frontier access gets narrower, and that pressure shows up first in renewal conversations and RFPs, not in a single dramatic announcement. Anthropic's counter has been to compete on agentic reliability and coding-specific tuning rather than raw benchmark parity — Claude Opus 4.5 and Sonnet 5 are pitched as the safer default for production agents, not the cheapest option.</p>
+<p>Worth watching: whether Alibaba and Moonshot's benchmark numbers survive third-party reproduction. Self-reported SWE-bench and LiveCodeBench scores from Chinese labs have generally held up reasonably well over the past year, but "within a few points on our own eval" has a track record of narrowing once independent labs like Artificial Analysis or LMSYS run their own passes.</p>
+
+<h2 id="what-to-do-next">What To Do Next</h2>
+<p>For developers evaluating a switch or a multi-model setup:</p>
+<ul>
+<li><strong>Run your own eval, not the vendor's.</strong> Pull 50-100 real tickets or tasks from your own codebase and run them through Qwen3.8, Kimi K3, and your current model side by side before touching pricing.</li>
+<li><strong>Check the license on the checkpoint you actually need.</strong> Apache 2.0 covers the smaller Qwen3.8 variants today; the 480B flagship weights aren't out yet, so anyone planning to self-host at the top end is on the API for now.</li>
+<li><strong>Price the full stack, not just tokens.</strong> Self-hosting a 480B-parameter MoE model means serious GPU spend and MLOps overhead — the $0.40/$1.60 DashScope pricing is the API path, not the self-hosted one.</li>
+<li><strong>Don't drop your incumbent model yet on benchmark numbers alone.</strong> Wait for independent reproductions (Artificial Analysis, LMSYS Arena) before treating self-reported scores as settled.</li>
+</ul>
+<p>For buyers and procurement teams, the practical move is to open a side-by-side pilot now — even if you don't switch — so you have real cost and quality data the next time a renewal conversation turns into a price negotiation.</p>
         <div class="article-tags">
           <a class="article-tag" href="#">Qwen 3.8</a>
           <a class="article-tag" href="#">Qwen</a>
@@ -124,7 +149,10 @@ Article written to `E:\22\claudecode\ai-demand-bot\qwen-3.8-article.html` (~830 
     <aside class="article-sidebar">
       <div class="sidebar-box">
         <h4>Table of Contents</h4>
-        <ul class="toc-list"><li><a href="#">Overview</a></li></ul>
+        <ul class="toc-list"><li><a href="#what-happened"><span class="toc-num">01</span> What Happened</a></li>
+          <li><a href="#why-it-matters"><span class="toc-num">02</span> Why It Matters</a></li>
+          <li><a href="#context"><span class="toc-num">03</span> Context</a></li>
+          <li><a href="#what-to-do-next"><span class="toc-num">04</span> What To Do Next</a></li></ul>
       </div>
       <div class="sidebar-box">
         <h4>Related Articles</h4>

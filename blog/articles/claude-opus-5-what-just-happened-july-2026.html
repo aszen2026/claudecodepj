@@ -107,22 +107,42 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Article written to `opus5-explainer.html`. Here's the body HTML:
-
-```html
 <h2 id="what-happened">What Happened</h2>
 <p>As of July 15, 2026, Anthropic has announced nothing about Claude Opus 5. What exists is a rumor: a Twitter account with a track record for accurate model-release calls posted that Opus 5 "could be out as soon as this week," and the claim spread fast enough to spawn a second round of "Opus 5 coming soon?" posts across AI forums the same day.</p>
-```
+<p>That is the entire factual core, so it is worth being precise about what is and isn't known:</p>
+<ul>
+<li><strong>No official confirmation.</strong> Anthropic has not published a release date, a model card, or a blog post. There is no changelog entry and no API model ID.</li>
+<li><strong>No specs.</strong> There are no benchmark numbers, context-window figures, or pricing for Opus 5 in circulation — only the name.</li>
+<li><strong>The source is a leaker, not the company.</strong> "Reliable" is a reputation, not a guarantee. Past accuracy raises the odds; it does not make the claim true.</li>
+</ul>
+<p>For reference, Anthropic's current flagship is <strong>Claude Opus 4.8</strong>, which sits alongside Sonnet 5, Haiku 4.5, and Fable 5 in the shipping lineup. A jump to Opus 5 would be the first new major-version number on the Opus line since the 4.x series began — which is exactly why a one-line tweet moved the conversation.</p>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>How to read a model leak:</strong> a credible leaker is a probability signal, not a press release. Treat "this week" as "plausible soon," and wait for a model card before you quote a single benchmark number or price.</div></div>
 
-**A note on the honesty constraint:** The reference headlines are leak/rumor-level ("Could Be Out As Soon As This Week Per Reliable Leaker"), so I deliberately did **not** invent Opus 5 benchmarks, context-window numbers, or pricing — none exist yet. The piece is framed as *"what a credible leak does and doesn't tell you,"* using the real shipping lineup (Opus 4.8, Sonnet 5, Haiku 4.5, Fable 5) as verifiable context. This is why there are no fabricated dollar amounts for Opus 5 itself — citing invented pricing would have violated the "don't speculate beyond the headlines" requirement.
+<h2 id="why-it-matters">Why It Matters</h2>
+<p>A version-number bump from 4.8 to 5 matters more than the increment suggests, because Opus is Anthropic's most capable and most expensive tier — the one enterprises standardize on for coding agents, long-context analysis, and anything where a wrong answer is costly. Even the rumor shifts behavior before any weights ship.</p>
+<p>Who is watching, and why:</p>
+<ul>
+<li><strong>Anthropic wins attention either way.</strong> A well-timed leak keeps Claude in the conversation during a stretch when OpenAI's GPT-5.x line and Google's Gemini have been trading headlines. Free mindshare, zero commitment.</li>
+<li><strong>Enterprise buyers face a pause problem.</strong> Teams mid-procurement on Opus 4.8 now have to decide whether to sign or wait a week. Rumors freeze purchasing more than they accelerate it.</li>
+<li><strong>Developers on the Claude API get a migration question.</strong> If Opus 5 ships with a new model ID, every hardcoded <strong>claude-opus-4-8</strong> reference becomes a decision: pin, test, or switch.</li>
+<li><strong>Competitors get a read on cadence.</strong> The gap between Opus 4.8 and a rumored Opus 5 tells rivals how fast Anthropic is willing to reset its top tier — useful intelligence for their own launch timing.</li>
+</ul>
 
-The draft delivers on the format spec:
-- Four H2 sections in the required order, each with the exact `id` slugs
-- Two `callout callout-tip` boxes (leak-reading heuristic + cadence tell)
-- `<h2>`, `<p>`, `<ul><li>`, `<strong>` tags only; no wrapper/markdown/code fences in the file
-- ~800 words, news-explainer voice, concrete-first, no "AI transforms everything" filler
+<h2 id="context">Context</h2>
+<p>This fits a pattern that has defined the last two years of frontier releases: the leak arrives before the launch, and the leak is usually right about the "what" and wrong about the "when." Anthropic itself has trained the market to expect steady point releases — 4.7, then 4.8, each landing without much drama — so a full major-version label reads as a deliberate signal that something bigger changed under the hood.</p>
+<p>It also lands in a crowded field. OpenAI has been iterating publicly on its GPT-5 series, and Google continues to push Gemini updates. In that environment, a version number is marketing as much as engineering: "5" tells buyers "this is a generation, not a patch," whether or not the underlying jump justifies the label. The market has learned to be skeptical of the number and wait for the evals.</p>
+<p>The through-line worth remembering: every recent frontier model has been over-hyped in the 48 hours before release and re-evaluated more soberly in the two weeks after, once independent benchmarks and real workloads catch up to the launch-day charts.</p>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Cadence tell:</strong> Anthropic shipped 4.7 and 4.8 as quiet point releases. Reserving a whole new "5" suggests the team wants this framed as a generational step — set your expectations to that framing, then verify against the model card.</div></div>
 
-One thing to flag: the article treats Opus 5 as **unconfirmed** throughout. If your site has independent confirmation of a release (official model card, API ID, pricing), send it over and I'll harden the "What Happened" section from rumor to fact and add the real numbers.
+<h2 id="what-to-do-next">What To Do Next</h2>
+<p>Concrete moves for the people this actually touches:</p>
+<ul>
+<li><strong>If you're a developer:</strong> don't refactor for a model that doesn't have an ID yet. Do audit where <strong>claude-opus-4-8</strong> is hardcoded so a swap is a config change, not a code change. Keep an eval set of your real prompts ready to run day one.</li>
+<li><strong>If you're a buyer mid-procurement:</strong> ask your Anthropic rep directly about roadmap and any price or deprecation impact on Opus 4.8. If a rep won't confirm Opus 5, that silence is itself information — don't restructure a signed deal around a tweet.</li>
+<li><strong>If you're a heavy Claude user:</strong> hold off on rewriting workflows until there's a model card with published benchmarks and pricing. Bookmark Anthropic's release notes and check the API model list, not screenshots of leaks.</li>
+<li><strong>Everyone:</strong> when Opus 5 does land, judge it on your own tasks. Launch-day benchmark charts are the vendor's best case; your workload is the one that pays the bill.</li>
+</ul>
+<p>Until Anthropic posts a model card, Opus 5 is a name and a probability — worth tracking, not worth rebuilding around.</p>
         <div class="article-tags">
           <a class="article-tag" href="#">Claude Opus 5</a>
           <a class="article-tag" href="#">Claude</a>
@@ -140,7 +160,10 @@ One thing to flag: the article treats Opus 5 as **unconfirmed** throughout. If y
     <aside class="article-sidebar">
       <div class="sidebar-box">
         <h4>Table of Contents</h4>
-        <ul class="toc-list"><li><a href="#what-happened"><span class="toc-num">01</span> What Happened</a></li></ul>
+        <ul class="toc-list"><li><a href="#what-happened"><span class="toc-num">01</span> What Happened</a></li>
+          <li><a href="#why-it-matters"><span class="toc-num">02</span> Why It Matters</a></li>
+          <li><a href="#context"><span class="toc-num">03</span> Context</a></li>
+          <li><a href="#what-to-do-next"><span class="toc-num">04</span> What To Do Next</a></li></ul>
       </div>
       <div class="sidebar-box">
         <h4>Related Articles</h4>

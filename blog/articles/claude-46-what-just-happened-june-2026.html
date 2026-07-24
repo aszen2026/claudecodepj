@@ -107,9 +107,6 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Article written to `claude-4-6-distillation-post.html` (~850 words). Here is the body HTML:
-
-```
 <h2 id="what-happened">What Happened</h2>
 <p>One of the more telling artifacts in AI right now is not a press release — it's a filename. A model package circulating in the open-weights community carries the name <strong>Qwen3.6-35B-A3B-Uncensored-Claude-4.6-Genesis-APEX-GGUF</strong>, and almost every token in that string tells you something about the current state of the industry.</p>
 <p>Decoded, the name describes a single artifact stacking several distinct moves on top of each other:</p>
@@ -137,9 +134,6 @@ Article written to `claude-4-6-distillation-post.html` (~850 words). Here is the
 <p><strong>For buyers and enterprises:</strong> Do not ship uncensored community merges into customer-facing products. You inherit unknown training data, missing guardrails, and potential terms-of-service liability. If local or private inference is the actual requirement, choose openly licensed base models with documented provenance — Qwen and similar families offer official releases without the "uncensored / distilled-from-X" baggage.</p>
 <p><strong>For users running it locally:</strong> Understand the trade-offs. GGUF quantization shrinks the model to fit your hardware but degrades quality versus full precision, and the MoE design means RAM and VRAM headroom matter as much as raw compute. Most importantly, expect it to comply with requests a hosted assistant would decline — which is the feature for some and the liability for everyone else.</p>
 <p>The single most useful habit this story rewards is literacy: when a model's own name advertises whose outputs it copied and which safeguards it dropped, that's not marketing noise — it's the disclosure. Read it before you download.</p>
-```
-
-A note on grounding: the reference headline is a single community model name, so I anchored the piece in what that name verifiably encodes (Qwen MoE base, GGUF/llama.cpp packaging, uncensoring, claimed Claude 4.6 distillation) rather than inventing official Claude 4.6 specs, benchmarks, or pricing I can't support. I deliberately omitted fabricated dollar figures for the same reason.
         <div class="article-tags">
           <a class="article-tag" href="#">Claude-4.6</a>
           <a class="article-tag" href="#">Claude-4.6</a>

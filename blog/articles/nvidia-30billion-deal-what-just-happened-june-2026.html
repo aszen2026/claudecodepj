@@ -107,26 +107,48 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Done. Article written to `firmus-nvidia-30b-indonesia.html` (~860 words). Here's the body HTML:
-
-```html
 <h2 id="what-happened">What Happened</h2>
 <p>Firmus, an AI infrastructure company backed by Nvidia, said today it will build a <strong>360-megawatt AI data centre in Indonesia</strong> and expects the project to generate <strong>$30 billion in offtake deals</strong> — long-term contracts in which customers pre-commit to buying the compute capacity before it comes online.</p>
-```
+<p>Two numbers carry the announcement, and they describe different things:</p>
+<ul>
+<li><strong>360MW</strong> is the physical scale — the power the campus will draw at full build. For reference, that is enough to run a cluster of tens of thousands of high-end GPUs, putting it among the larger AI-dedicated sites announced in Southeast Asia.</li>
+<li><strong>$30 billion</strong> is not the construction cost. It is the expected value of <strong>offtake agreements</strong> — demand booked in advance. In an offtake model, buyers reserve capacity the way an airline pre-sells seats, which is how a developer finances a build this size without owning all the risk.</li>
+</ul>
+<p>The Nvidia backing matters for one concrete reason: it signals priority access to GPU supply. The bottleneck for any project like this is not concrete or land — it is getting Nvidia accelerators allocated at all. A vendor-backed developer starts further up that queue.</p>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Offtake vs. capex:</strong> When you read "$30 billion in offtake deals," read it as <em>booked demand</em>, not <em>money spent on the building</em>. The capital cost of a 360MW campus is large but a fraction of that figure. The $30B is the revenue customers have effectively promised to pay over the contracts' life.</div></div>
 
-**Key choices I made to keep it honest and on-brief:**
+<h2 id="why-it-matters">Why It Matters</h2>
+<p>The headline tells you AI compute is moving to where the power and the customers are, not where Silicon Valley is.</p>
+<p>Who wins:</p>
+<ul>
+<li><strong>Firmus</strong> turns Nvidia's supply relationship and pre-committed demand into a financeable asset. Offtake deals de-risk the build before the first GPU ships.</li>
+<li><strong>Nvidia</strong> gets another anchored outlet for its accelerators in a fast-growing region, deepening the pattern of the chipmaker investing in the customers who buy its chips.</li>
+<li><strong>Indonesia</strong> gets a large-scale AI facility on its soil — sovereign-adjacent compute, local jobs, and a reason for regional enterprises and governments to keep their workloads in-country.</li>
+</ul>
+<p>Who feels pressure:</p>
+<ul>
+<li><strong>Hyperscalers</strong> (AWS, Google Cloud, Microsoft Azure) that have historically served Southeast Asia from Singapore now face a specialist building dedicated AI capacity closer to the demand — and potentially cheaper, given Indonesia's power and land costs versus Singapore's constraints.</li>
+<li><strong>Singapore as the default regional hub.</strong> The city-state has effectively capped new data-centre power draw for years. A 360MW campus next door is exactly the spillover that cap was always going to produce.</li>
+</ul>
 
-- **Disambiguated the two numbers.** The biggest risk in this story is readers conflating "$30 billion" with construction cost. I led with the distinction (360MW = physical scale; $30B = booked offtake demand) and reinforced it with a callout. This is the single most important factual point and the headline doesn't make it obvious.
+<h2 id="context">Context</h2>
+<p>This fits a pattern that has defined 2025 and 2026: <strong>compute is being pre-sold and pre-financed before it is built.</strong> The offtake structure here mirrors the megadeals that dominated headlines over the past year, where capacity commitments — not finished hardware — became the unit of negotiation.</p>
+<p>It also continues Nvidia's strategy of backing the builders. Rather than only selling chips, Nvidia has taken positions across the infrastructure layer, ensuring its accelerators land in projects that scale. Firmus is the Southeast Asian expression of that playbook.</p>
+<p>And the location is not incidental. Singapore's moratorium on data-centre power pushed regional capacity toward Malaysia's Johor first, and now Indonesia. Power availability has become the real constraint on AI buildout — more binding than chips in some markets — and Indonesia has it. A 360MW commitment is a bet that the demand for AI inference and training in the region is durable enough to fill a campus that takes years to complete.</p>
 
-- **Stayed inside the headline's evidence.** I did not invent a build cost, a completion date, a GPU count as fact (framed it as "tens of thousands" reference-class, not a claim), partner names, or financing terms. The Nvidia-backing implication (GPU supply priority) is reasonable inference, not speculation.
-
-- **Used real, checkable industry context** rather than "AI is transforming everything" filler: Singapore's data-centre power moratorium pushing capacity to Johor then Indonesia, and Nvidia's pattern of investing in its own customers. These are the genuine "why here, why now" drivers.
-
-- **Concrete "What To Do Next"** split by audience (developers, buyers/procurement) with the one trackable signal — commissioning timeline and first live megawatts, not the $30B headline.
-
-All four required H2 sections are in order with the exact slugs, two `callout-tip` boxes, and only the specified tags. No intro boilerplate, no "in conclusion," no markdown.
-
-One caveat worth flagging: I treated "Firmus = Nvidia-backed AI infra company" as given by your headline. I did **not** assert Firmus's specific cooling technology or its parent/brand relationships as fact, since the headline doesn't supply them — if you want those details added, confirm them and I'll weave them in.
+<h2 id="what-to-do-next">What To Do Next</h2>
+<p>For developers and AI teams building in or for Southeast Asia:</p>
+<ul>
+<li><strong>Watch for in-region GPU capacity to actually open.</strong> A 360MW campus is multi-year. Do not replan production workloads around it until capacity is bookable with real timelines — announced megawatts and available megawatts are years apart.</li>
+<li><strong>If you serve Indonesian or ASEAN users, factor data residency in now.</strong> Local AI infrastructure makes in-country deployment a near-term option, which matters for latency and for regulations that favor keeping data domestic.</li>
+</ul>
+<p>For buyers and procurement:</p>
+<ul>
+<li><strong>Understand what an offtake commitment locks you into.</strong> Pre-committing capacity gets you supply priority and likely better unit pricing, but it transfers utilization risk to you. Only commit to capacity you have a credible plan to fill.</li>
+<li><strong>Treat Singapore-only as a legacy default.</strong> If your current architecture routes all regional AI workloads through Singapore, price the Indonesia and Johor alternatives the next time contracts come up for renewal.</li>
+</ul>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>The one signal to track:</strong> Not the $30B — that is booked intent. Track the <strong>commissioning timeline and the first tranche of live megawatts</strong>. That is when this announcement stops being a financing story and starts being capacity you can actually rent.</div></div>
+<p>For now, this is a demand-and-power story dressed as a hardware story. The chips are the easy part once Nvidia is on the cap table. The hard part — power, location, and customers willing to commit years in advance — is what the $30 billion figure is really measuring.</p>
         <div class="article-tags">
           <a class="article-tag" href="#">Nvidia $30BILLION Deal</a>
           <a class="article-tag" href="#">Nvidia</a>
@@ -145,7 +167,10 @@ One caveat worth flagging: I treated "Firmus = Nvidia-backed AI infra company" a
     <aside class="article-sidebar">
       <div class="sidebar-box">
         <h4>Table of Contents</h4>
-        <ul class="toc-list"><li><a href="#what-happened"><span class="toc-num">01</span> What Happened</a></li></ul>
+        <ul class="toc-list"><li><a href="#what-happened"><span class="toc-num">01</span> What Happened</a></li>
+          <li><a href="#why-it-matters"><span class="toc-num">02</span> Why It Matters</a></li>
+          <li><a href="#context"><span class="toc-num">03</span> Context</a></li>
+          <li><a href="#what-to-do-next"><span class="toc-num">04</span> What To Do Next</a></li></ul>
       </div>
       <div class="sidebar-box">
         <h4>Related Articles</h4>
