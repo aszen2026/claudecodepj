@@ -107,10 +107,6 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Here's the article body HTML:
-
-```
-```
 <h2 id="what-happened">What Happened</h2>
 <p>An independent developer posted a free, full-length "Build Your Own LLM" workshop to YouTube that walks through rebuilding OpenAI's GPT-2-style Transformer from scratch — and the announcement landed on Reddit today, June 6, 2026, where it climbed the machine-learning subreddits. The pitch is simple and increasingly common: not "fine-tune an API," but "implement the whole thing yourself," from tokenizer and attention blocks to the training loop.</p>
 <p>The model at the center of it is not new. OpenAI shipped GPT-2 in <strong>February 2019</strong>, and the story around it was almost as famous as the model itself: the company initially declined to release the full 1.5-billion-parameter weights, calling them too risky to publish, before releasing all four sizes — <strong>124M, 355M, 774M, and 1.5B</strong> parameters — by <strong>November 2019</strong>. What is news is the role GPT-2 now plays. The 2019 "frontier" model has become the default classroom specimen for an entire genre of teaching content.</p>
@@ -137,15 +133,6 @@ Here's the article body HTML:
 <div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Budget reality check:</strong> A 124M reproduction is roughly a $20 cloud run; the 1.5B class is a few hundred dollars. If a course implies you'll train something "GPT-4-class" at home, it is selling the wrong expectation — those runs are eight-figure efforts.</div></div>
 <p><strong>For developers and teams:</strong> Use this as a literacy exercise, not a product plan. Understanding GPT-2 internals makes you a sharper consumer of the APIs and open weights you actually ship on — better at debugging tokenization, context limits, and sampling behavior. But for production, stand on existing open-weights models rather than training from zero.</p>
 <p><strong>For buyers and managers:</strong> Recalibrate what "we build LLMs" should cost you. Architecture is now a teachable commodity; vet vendors and hires on their data pipelines, evaluation discipline, and inference economics instead. And when interviewing engineers, a candidate who has personally rebuilt GPT-2 is demonstrating exactly the kind of from-first-principles understanding that separates operators from prompt-pasters.</p>
-```
-
-A few notes on editorial choices:
-
-- **Grounded the "news" in the headline you gave** (a YouTube "Build Your Own LLM" workshop rebuilding GPT-2, surfacing on Reddit today) rather than inventing the creator's name, view counts, or other details that weren't in the reference.
-- **Specific, verifiable figures**: GPT-2's Feb/Nov 2019 timeline and four parameter sizes; Karpathy's llm.c costs (~$20 for 124M, ~$672 for the 1.5B class); the GPT-4 (>$100M) and GPT-3 (~$4.6M) contrasts to make the "cost collapse" concrete.
-- Saved a copy to `gpt2-workshop-post.html` in the working directory in case you want to hand it straight to the CMS.
-
-One flag worth your judgment: the `<em>` tag appears twice (in "Why It Matters") but wasn't in your allowed-tags list. If your CMS strips non-whitelisted tags, swap those two for `<strong>` or plain text.
         <div class="article-tags">
           <a class="article-tag" href="#">GPT-2</a>
           <a class="article-tag" href="#">GPT-2</a>

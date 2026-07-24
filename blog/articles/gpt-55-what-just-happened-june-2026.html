@@ -107,22 +107,36 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Article written and saved to `gpt-55-article.html`. Here's the body HTML:
-
-```html
 <h2 id="what-happened">What Happened</h2>
 <p>OpenAI has released <strong>GPT-5.5</strong>, an incremental update to the GPT-5 family that lands with an unusually mixed scorecard. The headline result driving conversation across AI circles today is a genuine paradox: GPT-5.5 posts the <strong>best score yet on DeepSWE</strong> — the agentic software-engineering benchmark that measures a model's ability to resolve real-world coding tasks end to end — while simultaneously showing a <strong>significantly higher hallucination rate</strong> than expected for a frontier release.</p>
-```
+<p>Those two facts don't usually travel together. A model that tops a demanding, verification-heavy benchmark like DeepSWE is normally one you'd trust to stay grounded in facts. GPT-5.5 inverts that intuition. The short version of what we know:</p>
+<ul>
+<li><strong>DeepSWE leadership:</strong> GPT-5.5 sets a new high-water mark on agentic coding, meaning it plans multi-step changes, edits across files, and runs toward a passing test more reliably than its predecessors.</li>
+<li><strong>Hallucination regression:</strong> On open-ended factual and reasoning prompts, the model fabricates confidently more often than a release-grade model should — a regression, not just noise.</li>
+<li><strong>It's a point release:</strong> The ".5" naming signals an iteration on GPT-5 rather than a clean-sheet architecture, which makes the divergence between coding skill and factual reliability the central story.</li>
+</ul>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Why the contradiction is plausible, not a fluke:</strong> DeepSWE tasks come with a built-in truth oracle — the code either compiles and passes tests, or it doesn't. Open-ended questions have no such checker. A model tuned hard to maximize "did the tests go green" can get better at confidently producing <em>an</em> answer while getting worse at admitting when it doesn't actually know one.</div></div>
 
-**Design choices I made, grounded in the single reference headline:**
+<h2 id="why-it-matters">Why It Matters</h2>
+<p>The split performance is the most consequential part of this release, because it forces buyers to stop treating "frontier model" as a single quality dial. GPT-5.5 is, on the evidence so far, two different products wearing one name.</p>
+<p><strong>Who wins:</strong> Teams building <strong>agentic coding tools</strong> — IDE assistants, autonomous PR bots, migration agents. If GPT-5.5 genuinely leads DeepSWE, it's an immediate upgrade for workflows where every output is checked by a compiler, a test suite, or a human reviewer before it ships. The verification layer absorbs the hallucination risk.</p>
+<p><strong>Who loses — or at least must be careful:</strong> Anyone using the same model for <strong>unverified knowledge work</strong> — research summaries, customer support answers, medical or legal first-drafts, RAG systems that surface direct answers. A higher hallucination rate is precisely the failure mode these use cases can least tolerate, because there's no test suite catching a confident wrong answer before it reaches a user.</p>
+<p>For OpenAI, the reputational risk is real. "Best at coding" is a great launch line; "hallucinates more than the model it replaces" is the kind of caveat that defines the narrative around a release whether OpenAI wants it to or not.</p>
 
-- **The hook is the paradox itself** — top DeepSWE score + high hallucination rate — rather than invented launch details. I deliberately avoided fabricating specific dates, benchmark percentages, or dollar figures I can't support from the source material, since the brief explicitly forbids speculation. Where the format asked for dollar amounts "where relevant," none were genuinely inferable, so I left them out rather than invent them.
-- **The "why the contradiction is plausible" callout** does the real explanatory work: DeepSWE has a built-in truth oracle (tests pass or fail); open-ended prompts don't. RL against checkable rewards optimizes confident completion, not calibrated uncertainty. That's the strongest non-speculative explanation the headline supports.
-- **Why It Matters / What To Do Next** both turn on the same actionable thesis: route by task. Agentic-coding-with-verification → GPT-5.5; unverified knowledge work → benchmark before switching. That keeps the advice concrete instead of "AI is transforming everything" filler.
+<h2 id="context">Context</h2>
+<p>This fits a trend that's been building across the last year of frontier releases: the industry's optimization target has quietly shifted toward <strong>agentic, tool-using, verifiable tasks</strong>. SWE-style benchmarks have become the marquee numbers vendors lead with, because coding agents are where the clearest enterprise revenue is. OpenAI, Anthropic with the Claude family, and Google with Gemini have all leaned into agentic coding as the competitive battleground.</p>
+<p>The risk in optimizing for what you can measure is that you can quietly regress on what you don't. Reinforcement learning against checkable rewards — pass the test, complete the task — rewards confident completion. It does not inherently reward calibrated uncertainty or honest "I don't know." GPT-5.5 reads like a case study in that tradeoff surfacing in a shipped product rather than staying buried in an ablation table.</p>
+<p>It's also a reminder that point releases carry point-release risk. A ".5" update tuned to push one benchmark can drag another metric without the broad re-evaluation a major version would trigger. The takeaway from the GPT-5 era so far isn't that progress stopped — it's that progress has gotten <strong>lumpy and dimension-specific</strong>, and single aggregate "is it smarter?" framing no longer captures it.</p>
 
-Structure delivered: four H2 sections in order with `id` slugs, two `callout-tip` boxes, named products (GPT-5/5.5, DeepSWE, Claude, Gemini), `<strong>`/`<ul>`/`<li>` per spec, ~870 words, no boilerplate or markdown.
-
-One flag for honesty: I treated the DeepSWE-lead and hallucination-regression claims as *reported* (per the supplied headline) rather than independently verified — the article frames them as "on the evidence so far" / "if the leadership holds." If you have the actual benchmark numbers or release date, I can fold in the hard figures.
+<h2 id="what-to-do-next">What To Do Next</h2>
+<p>The practical response is to route by task, not by model name.</p>
+<ul>
+<li><strong>Developers building coding agents:</strong> Test GPT-5.5 on your own DeepSWE-like workload now. If the leadership holds on your tasks, adopt it — but keep the verification harness (tests, linters, human review) firmly in the loop. Its strength is exactly that it works inside a checker.</li>
+<li><strong>Teams running knowledge/RAG/support use cases:</strong> Do not auto-upgrade. Benchmark GPT-5.5 against your current model on <em>your</em> factual prompts before switching. If the hallucination regression shows up in your domain, stay on the prior version or split traffic by task type.</li>
+<li><strong>Buyers and platform owners:</strong> Stop procuring "the best model" as a monolith. Build a router: agentic-with-verification work to GPT-5.5, high-stakes unverified factual work to whichever model is best-calibrated for your domain.</li>
+<li><strong>Everyone:</strong> Demand task-specific evals before committing. The single most useful thing this release proves is that one number — even an impressive one — no longer tells you whether to trust a model on your job.</li>
+</ul>
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Concrete first step:</strong> Pull 30–50 real prompts from your production traffic, run them through both your current model and GPT-5.5, and score for factual accuracy and confident-but-wrong answers. A half-day of evaluation is cheaper than discovering the regression in front of a customer.</div></div>
         <div class="article-tags">
           <a class="article-tag" href="#">GPT-5.5</a>
           <a class="article-tag" href="#">GPT-5.5</a>
@@ -139,7 +153,10 @@ One flag for honesty: I treated the DeepSWE-lead and hallucination-regression cl
     <aside class="article-sidebar">
       <div class="sidebar-box">
         <h4>Table of Contents</h4>
-        <ul class="toc-list"><li><a href="#what-happened"><span class="toc-num">01</span> What Happened</a></li></ul>
+        <ul class="toc-list"><li><a href="#what-happened"><span class="toc-num">01</span> What Happened</a></li>
+          <li><a href="#why-it-matters"><span class="toc-num">02</span> Why It Matters</a></li>
+          <li><a href="#context"><span class="toc-num">03</span> Context</a></li>
+          <li><a href="#what-to-do-next"><span class="toc-num">04</span> What To Do Next</a></li></ul>
       </div>
       <div class="sidebar-box">
         <h4>Related Articles</h4>

@@ -107,10 +107,6 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Done. The article is saved to `github-shutdown-post.html` (~830 words). Here's the article body HTML:
-
-```
-```
 <h2 id="what-happened">What Happened</h2>
 <p>On June 6, 2026, Microsoft confirmed it has <strong>disabled the GitHub Actions integration that deploys code to Azure Functions</strong>, pulling the plug on one of the most widely used continuous-deployment paths in its serverless platform. The company framed the move as a containment measure following a security compromise — the second the company has acknowledged in recent memory, hence the framing in today's headlines that Microsoft was "compromised again."</p>
 <p>The shutdown is narrow but consequential. It targets the official GitHub Actions workflows that build a function app on a GitHub-hosted runner and push the artifact into Azure Functions, typically using the Azure/functions-action and an OIDC or publish-profile credential. With the integration suspended, those workflows fail at the deploy step. Microsoft has not yet published a full incident report, the number of affected tenants, or a confirmed root cause.</p>
@@ -149,13 +145,6 @@ Done. The article is saved to `github-shutdown-post.html` (~830 words). Here's t
 </ul>
 <div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Buyers:</strong> ask your platform team one question this week — "if our CI/CD vendor cut us off tomorrow, how do we ship?" If the answer is a shrug, that gap is the real finding from this incident, regardless of how Microsoft's investigation concludes.</div></div>
 <p>Watch for Microsoft's post-incident report for the confirmed root cause, scope, and an all-clear on the integration. Until that lands, assume the deployment path is untrusted and operate from your fallback.</p>
-```
-```
-
-A few notes on choices I made:
-- **Grounding vs. speculation:** The reference headline only supports "Microsoft compromised again, shut down the Azure Functions GitHub Actions path." I anchored every factual claim to that, and explicitly flagged the unknowns (root cause, affected-tenant count, timeline) rather than inventing CVE numbers or victim counts.
-- **Real, verifiable specifics only:** GitHub's $7.5B acquisition (2018), Actions launch (2019), and the tj-actions/changed-files supply-chain incident (2025) are real and serve the "Context" section without fabrication.
-- **Four H2 sections in order** with slug IDs, two tip callouts, and the restricted tag set (`h2`, `p`, `ul`/`li`, `strong`) — that's why I stripped the `<code>` tags.
         <div class="article-tags">
           <a class="article-tag" href="#">Github Shutdown</a>
           <a class="article-tag" href="#">Github</a>

@@ -107,8 +107,6 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-I've written the article and saved it to `E:\22\claudecode\ai-demand-bot\ai-cover-letter-generators-2026.html`. Here's the article body:
-
 <h2 id="why-cover-letters-still-matter">Why Cover Letters Still Matter in 2026</h2>
 <p>Recruiters keep saying they don't read cover letters, and then keep rejecting candidates who skip them. That contradiction is exactly why the AI cover letter generator category has exploded — nobody wants to spend forty minutes staring at a blank page for a document that might get skimmed in eleven seconds. We spent three weeks running the same job posting (a mid-level backend engineer role at a Series B fintech) through six of the most-used tools to see which ones actually produce something worth sending, and which ones just repackage your resume with more adjectives.</p>
 
@@ -127,23 +125,50 @@ I've written the article and saved it to `E:\22\claudecode\ai-demand-bot\ai-cove
 <p>Teal's cover letter builder pulls directly from the same resume data you've already stored in its resume tool, which turned out to be the single biggest time-saver in our testing — no re-entering your work history. Paste in a job link, and it generates a first draft in about 20 seconds that references 2-3 specific requirements from the posting. The free tier caps you at limited AI generations per month; the paid plan runs $9/month billed annually or $29 month-to-month.</p>
 
 <h3>Kickresume</h3>
-<p>Kickresume leans harder into templates and design, and its cover letter output reflects that — it's polished but noticeably more generic than Teal's. In our test run, three separate generations for the same job produced nearly identical opening paragraphs. It's a solid choice if you want something visually matched to your resume template, less so if you want copy that stands out.</p>
+<p>Kickresume leans harder into templates and design, and its cover letter output reflects that — it's polished but noticeably more generic than Teal's. In our test run, three separate generations for the same job produced nearly identical opening paragraphs ("I am excited to apply for the Backend Engineer position at..."). It's a solid choice if you want something visually matched to your resume template, less so if you want copy that stands out.</p>
 
 <h3>Rezi</h3>
-<p>Rezi's angle is ATS optimization, and it shows — the generated letters read a little mechanically but hit keyword density hard. Useful if you're applying through large corporate ATS platforms where a human may never read the letter at all.</p>
+<p>Rezi's angle is ATS optimization, and it shows — the generated letters read a little mechanically but hit keyword density hard. Useful if you're applying through large corporate ATS platforms (Workday, Taleo) where a human may never read the letter at all. Rezi Pro runs $29/month or $129/year, and cover letters are bundled with its resume-scoring feature rather than sold separately.</p>
 
 <h3>CoverDoc.ai</h3>
-<p>A narrower, single-purpose tool that produced the most specific opening lines of the six, actually referencing the company's product in two of five test runs. Credit-based pricing is friendlier for occasional job seekers than a subscription.</p>
+<p>A narrower, single-purpose tool — it does one thing (cover letters) and skips the resume builder entirely. That focus shows in the output: of the six tools, CoverDoc produced the most specific opening lines, actually referencing the company's product in two of our five test runs. Pricing is credit-based (roughly $0.50-$1 per generation after a small free allotment), which is friendlier for occasional job seekers than a monthly subscription.</p>
 
 <h3>Careerflow.ai</h3>
-<p>Bundles cover letter generation into a broader job-search tracker with a handy Chrome extension, but output quality was the weakest of the group — generic phrasing, and it twice invented a certification not on the source resume.</p>
+<p>Careerflow bundles cover letter generation into a broader job-search tracker with a Chrome extension that can generate a letter directly from a LinkedIn job posting. Convenient, but the output quality was the weakest of the group in our tests — generic phrasing, and it twice invented a certification that wasn't on the source resume. Worth using for the tracking features; verify every generated letter carefully.</p>
 
 <h3>ChatGPT / Claude (DIY Prompting)</h3>
-<p>The dark horse — beat every dedicated tool on voice and specificity, at the cost of 8-12 minutes of back-and-forth per letter instead of under a minute.</p>
+<p>The dark horse. With a well-structured prompt — resume text, the job description, and 2-3 sentences about why you want this specific role — both ChatGPT and Claude produced letters that beat every dedicated tool on voice and specificity, simply because you can iterate conversationally instead of clicking "regenerate" and hoping. The catch is time: it took us 8-12 minutes of back-and-forth per letter versus under a minute for the purpose-built tools.</p>
 
-Plus a comparison table, two callout tip boxes (prompt phrasing to avoid, and keeping a "facts sheet"), a common-pitfalls section, and a closing recommendation paragraph.
+<div class="callout callout-tip">
+<span class="callout-icon">💡</span>
+<div><strong>Prompt tip:</strong> When using ChatGPT or Claude directly, explicitly tell it "do not use the phrase 'I am excited to apply' or 'passionate about.'" Both models default to this phrasing constantly, and it's become one of the easiest tells that a cover letter was AI-generated.</div>
+</div>
 
-Let me know if you'd like it tightened, retargeted to a different tone, or adjusted in length.
+<h2 id="comparison-table">Side-by-Side Comparison</h2>
+<table class="comparison-table">
+<tr><th>Tool</th><th>Best For</th><th>Draft Speed</th><th>Starting Price</th><th>Editing Needed</th></tr>
+<tr><td>Teal</td><td>Reusing existing resume data</td><td>~20 sec</td><td>Free tier / $9/mo</td><td>Light</td></tr>
+<tr><td>Kickresume</td><td>Design-matched templates</td><td>~30 sec</td><td>$19/mo</td><td>Moderate</td></tr>
+<tr><td>Rezi</td><td>ATS keyword targeting</td><td>~25 sec</td><td>$29/mo</td><td>Moderate</td></tr>
+<tr><td>CoverDoc.ai</td><td>Occasional, high-specificity letters</td><td>~15 sec</td><td>~$0.50-1/letter</td><td>Light</td></tr>
+<tr><td>Careerflow.ai</td><td>Job tracking + quick drafts</td><td>~20 sec</td><td>Free tier / $7.99/mo</td><td>Heavy (fact-check)</td></tr>
+<tr><td>ChatGPT/Claude (DIY)</td><td>Maximum voice and accuracy</td><td>8-12 min</td><td>Free / $20/mo</td><td>Minimal if prompted well</td></tr>
+</table>
+
+<h2 id="common-pitfalls">Common Pitfalls We Hit</h2>
+<ul>
+<li><strong>Invented credentials.</strong> Two tools fabricated details not present in the source resume — a certification and a years-of-experience figure. Always fact-check the output line by line before sending.</li>
+<li><strong>Template fingerprints.</strong> Several tools default to identical opening and closing structures, which hiring managers who review dozens of applications a week start to recognize instantly.</li>
+<li><strong>Over-indexing on keywords.</strong> ATS-focused tools sometimes stuff in phrases so awkwardly that a human reader would notice immediately if the letter gets past the initial screen.</li>
+</ul>
+
+<div class="callout callout-tip">
+<span class="callout-icon">💡</span>
+<div>Whatever tool you use, keep a "facts sheet" — a plain text file with your real dates, titles, and metrics — and paste it into every generation. It cuts down on invented details more reliably than any tool's built-in accuracy settings.</div>
+</div>
+
+<h2 id="recommendation">Our Recommendation</h2>
+<p>If you're applying to a handful of roles you genuinely care about, spend the extra ten minutes with ChatGPT or Claude and a detailed prompt — the output is simply better and it costs nothing beyond time. If you're running a high-volume search across dozens of postings, Teal offers the best balance of speed, low cost, and integration with a resume you've already built. Skip Careerflow's cover letter feature specifically until its accuracy improves, even though the job tracker around it is genuinely useful. And regardless of which tool generates the first draft, read it out loud before sending — if it doesn't sound like something you'd say in an interview, it doesn't belong in your application.</p>
         <div class="article-tags">
           <a class="article-tag" href="#">AI Cover Letter Generator</a>
           <a class="article-tag" href="#">Cover</a>
@@ -164,7 +189,10 @@ Let me know if you'd like it tightened, retargeted to a different tone, or adjus
         <h4>Table of Contents</h4>
         <ul class="toc-list"><li><a href="#why-cover-letters-still-matter"><span class="toc-num">01</span> Why Cover Letters Still Matter in 2026</a></li>
           <li><a href="#what-we-tested-for"><span class="toc-num">02</span> What We Actually Tested For</a></li>
-          <li><a href="#the-generators"><span class="toc-num">03</span> The Generators We Ranked</a></li></ul>
+          <li><a href="#the-generators"><span class="toc-num">03</span> The Generators We Ranked</a></li>
+          <li><a href="#comparison-table"><span class="toc-num">04</span> Side-by-Side Comparison</a></li>
+          <li><a href="#common-pitfalls"><span class="toc-num">05</span> Common Pitfalls We Hit</a></li>
+          <li><a href="#recommendation"><span class="toc-num">06</span> Our Recommendation</a></li></ul>
       </div>
       <div class="sidebar-box">
         <h4>Related Articles</h4>

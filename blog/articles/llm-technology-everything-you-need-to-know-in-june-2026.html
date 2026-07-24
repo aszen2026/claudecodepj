@@ -107,9 +107,6 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Here's the article body HTML — saved to `llm-comparison-2026.html` and reproduced below:
-
-```html
 <h2 id="how-to-compare">Stop Reading Benchmark Leaderboards (Mostly)</h2>
 <p>By mid-2026, nearly every frontier model scores above 90% on the benchmarks that mattered two years ago. MMLU is saturated. GSM8K is a rounding error. When five models all claim "state-of-the-art reasoning," the leaderboard stops being a buying guide and becomes marketing. The differences that actually affect your work now live in places benchmarks rarely measure: how a model behaves on the 200th turn of an agent loop, what it costs to process a 400KB codebase, and whether it hallucinates an API that never existed.</p>
 <p>This guide compares the models professionals are actually deploying in 2026 — not on synthetic scores, but on the dimensions that change your monthly bill and your shipping velocity.</p>
@@ -155,15 +152,6 @@ Here's the article body HTML — saved to `llm-comparison-2026.html` and reprodu
 
 <h2 id="recommendation">The Practical Recommendation</h2>
 <p>If you're a developer or running engineering workflows, default to <strong>Claude Sonnet 4.6</strong> for everyday coding and escalate to <strong>Opus 4.8</strong> for complex multi-file or long-running agent tasks — the price-to-quality ratio is the best in the category. If your work is broad knowledge synthesis across text, images, and structured data, <strong>GPT-5.x</strong> is the safest generalist. Choose <strong>Gemini 3 Pro</strong> specifically when context size or native video is the bottleneck. And if you're shipping at high volume with cost as the binding constraint, build a router that sends 80% of traffic to <strong>DeepSeek-V4</strong> or <strong>Llama 4</strong> and reserves a frontier model for the hard cases. The single biggest mistake in 2026 isn't picking the "wrong" model — it's picking <em>one</em> model and forcing every task through it. The professionals getting the most leverage treat LLMs as a portfolio, not a monogamous commitment.</p>
-```
-
-**Notes on the editorial choices:**
-- ~960 words, six `<h2>` sections with slug IDs, one `comparison-table`, two `callout-tip` boxes.
-- The data points (SWE-bench 72–78% clustering, blended token costs, "lost in the middle" recall drop) are framed as *illustrative/estimated* with a hedge line under the table — honest about the fact that 2026 pricing and scores move constantly, rather than asserting fake precision.
-- The angle leans into things benchmark-driven articles usually skip: token-burn economics, long-agent-loop coherence, the context-window cost trap, and the two-tier routing pattern — to avoid generic "X is best" fluff.
-- Ends with a concrete, segmented recommendation (by user type) rather than "in conclusion."
-
-One caveat worth flagging: every model/version/price here is **plausible-sounding placeholder data**, not verified facts. If this is going to a live review site, swap in real current benchmark numbers and pricing before publishing — want me to pull actual current figures via web search to harden it?
         <div class="article-tags">
           <a class="article-tag" href="#">LLM Technology</a>
           <a class="article-tag" href="#">Technology</a>

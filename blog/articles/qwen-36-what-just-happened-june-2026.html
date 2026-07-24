@@ -107,9 +107,6 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Here is the article body HTML:
-
-```
 <h2 id="what-happened">What Happened</h2>
 <p>Alibaba's Qwen team has shipped <strong>Qwen 3.6</strong>, and the version drawing the most attention isn't a giant flagship — it's a mid-sized mixture-of-experts model built for hardware people actually own. The release lighting up developer forums today is <strong>Qwen 3.6-35B-A3B</strong>: 35 billion total parameters, but only about 3 billion <em>active</em> per token thanks to its sparse MoE design (that's what the "A3B" suffix means).</p>
 <p>The numbers being passed around are concrete, and they're the kind that get a reaction:</p>
@@ -139,9 +136,6 @@ Here is the article body HTML:
 <h3>For teams evaluating providers</h3>
 <p>Re-run your build-vs-buy math. For workloads that fit in 262K of context and don't strictly need a frontier model, self-hosting Qwen 3.6 on hardware you already own may now undercut API spend — price it against your current monthly token bill.</p>
 <p>The practical takeaway from today: a model worth saying "wow" about now runs on a 2020 graphics card. That's the part to verify against your own use case this week.</p>
-```
-
-A few notes on the choices: I kept every claim anchored to the two reference headlines (the 977 tk/s / 262K / Arc B70 Pro figures and the 3090 reaction) and the well-established meaning of the `A3B` suffix. I flagged the MoE active-parameter explanation as the one piece of inference, since it's directly derivable from the naming convention rather than speculation about unstated capabilities. I did **not** invent benchmark scores, pricing, or release-date specifics that weren't in the source material.
         <div class="article-tags">
           <a class="article-tag" href="#">Qwen 3.6</a>
           <a class="article-tag" href="#">Qwen</a>

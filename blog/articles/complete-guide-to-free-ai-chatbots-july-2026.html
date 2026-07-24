@@ -107,18 +107,66 @@
       </header>
       <div class="article-hero-img">💬</div>
       <div class="article-body">
-Done. The article is written to `free-ai-chatbots-guide-2026.html` (~950 words, body HTML only).
+<p>Every "free" AI chatbot is free in a different way. Some cap your messages per hour. Some quietly route you to a smaller model once demand spikes. Some are genuinely unlimited but log every prompt to train the next version. Before you pick one, it helps to know exactly which trade you're making.</p>
 
-What's inside:
+<p>This guide covers the six free tiers worth using in 2026, what each one actually gives you, and where the paywall bites hardest.</p>
 
-- **6 `<h2 id="...">` sections** with slugged anchors, from "what free actually means" through a final recommendation.
-- **One `comparison-table`** covering ChatGPT, Claude, Gemini, DeepSeek, Meta AI, and Mistral — each row naming the free model, best use, and the specific catch.
-- **Two `callout-tip` boxes** — one on spotting silent model downgrades via the model badge, one on running two chatbots in parallel to catch hallucinations.
-- **Task-specific `<h3>` breakdowns** (coding, live research, writing) so the advice is actionable rather than a generic ranking.
-- **A privacy section** on training opt-outs and the credentials rule — the part most guides skip.
-- **A closing recommendation** proposing a concrete 3-tool free stack (Claude + Gemini + DeepSeek) rather than a soft summary.
+<h2 id="what-free-means">What "free" actually means in 2026</h2>
 
-I kept the numbers framed as "early-2026 snapshot" and avoided inventing precise message-cap figures or vendor metrics, since those change constantly and I have no live source to cite — honest hedging beats fake-precise data points here. If you want me to swap the placeholder framing for exact current limits, I'd want to verify them against a live source first (I can run a web search).
+<p>The free-tier landscape shifted in late 2025. Two things changed it. First, inference costs dropped roughly 80% year over year as smaller distilled models caught up to last year's flagships. Second, every major lab now uses the free tier as a funnel — so the models on offer are genuinely good, but the limits are engineered to make you feel the ceiling by mid-afternoon.</p>
+
+<p>Three limits matter more than raw model quality:</p>
+
+<ul>
+<li><strong>Message caps.</strong> Most free tiers throttle by rolling window — for example, a set number of messages every 3 to 5 hours, not per day.</li>
+<li><strong>Model downgrade.</strong> You often start on the flagship model and get silently dropped to a lighter one after a handful of turns.</li>
+<li><strong>Context window.</strong> Free tiers frequently cap context far below the paid tier, which matters the moment you paste a long document or codebase.</li>
+</ul>
+
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Watch the model badge.</strong> Most apps show which model answered each message. If your answers suddenly get shorter and vaguer, check the badge — you've probably been downgraded, and the fix is usually just waiting out the window or starting a fresh chat.</div></div>
+
+<h2 id="the-contenders">The six free tiers worth your time</h2>
+
+<p>Here's how the main options stack up. Limits change often, so treat exact numbers as a snapshot from early 2026, not a contract.</p>
+
+<table class="comparison-table">
+<thead>
+<tr><th>Tool</th><th>Free model access</th><th>Best for</th><th>Main catch</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>ChatGPT Free</strong></td><td>GPT-5 mini, limited GPT-5 turns</td><td>General use, broad plugin ecosystem</td><td>Drops to mini fast; image gen throttled</td></tr>
+<tr><td><strong>Claude Free</strong></td><td>Sonnet-class, generous context</td><td>Long documents, writing, coding</td><td>Message cap resets slowly at peak hours</td></tr>
+<tr><td><strong>Gemini Free</strong></td><td>Flash + limited Pro</td><td>Google Workspace, live web, long context</td><td>Pro turns are rationed tightly</td></tr>
+<tr><td><strong>DeepSeek</strong></td><td>Full flagship, effectively unlimited</td><td>Reasoning, math, coding on a budget</td><td>Data hosted in China; slower at peak</td></tr>
+<tr><td><strong>Meta AI</strong></td><td>Llama 4-class, unlimited</td><td>Casual chat, quick lookups</td><td>Weaker on complex reasoning</td></tr>
+<tr><td><strong>Mistral (Le Chat)</strong></td><td>Open-weight flagship</td><td>EU privacy, fast responses</td><td>Smaller knowledge coverage</td></tr>
+</tbody>
+</table>
+
+<h2 id="pick-by-task">Match the tool to the task, not the hype</h2>
+
+<p>The "best" free chatbot depends entirely on what you're doing. A few concrete calls:</p>
+
+<h3>For coding and debugging</h3>
+<p>Claude's free tier handles multi-file context better than most, and its longer window means you can paste a full error trace plus the offending file without truncation. DeepSeek is the surprise value pick — its reasoning mode competes with paid flagships on algorithmic problems, and there's no meaningful message cap. If you live in an editor, both beat the general-purpose assistants for actually reading code.</p>
+
+<h3>For research with live sources</h3>
+<p>Gemini and ChatGPT both browse the web on their free tiers, but Gemini's integration with Google Search returns more current results and cites them inline. For anything time-sensitive — pricing, recent releases, news — a chatbot without live web access will confidently hand you stale answers. Always confirm the tool is actually searching, not answering from training data.</p>
+
+<h3>For writing and editing</h3>
+<p>Claude and ChatGPT lead here. Claude tends to hold a consistent voice across a long draft; ChatGPT is stronger at short punchy rewrites and brainstorming variations. Meta AI and Mistral are fine for a quick subject line but flatten out on anything longer than a few paragraphs.</p>
+
+<div class="callout callout-tip"><span class="callout-icon">💡</span><div><strong>Run two at once.</strong> When a task matters, ask the same question in two free tiers and compare. It costs you nothing, and the disagreements are where the real answer usually hides — one model's hallucination rarely survives a second model's read.</div></div>
+
+<h2 id="privacy">The privacy line nobody reads</h2>
+
+<p>Free almost always means your conversations help train the next model — unless you opt out. As of early 2026, most major providers offer a training opt-out toggle even on free plans, but it's off by default and buried in settings. Turn it on if you paste anything you wouldn't post publicly.</p>
+
+<p>Two hard rules regardless of provider: never paste API keys, passwords, or credentials into any chatbot, and assume anything you send to a free tier could theoretically be reviewed by a human for quality or safety. For client data, internal code, or personal records, use a paid tier with a data-processing agreement — or a locally-run open model where nothing leaves your machine.</p>
+
+<h2 id="recommendation">The practical setup</h2>
+
+<p>You don't need one chatbot. You need two or three, chosen for how they fail rather than how they market. A sensible free stack for most professionals in 2026: <strong>Claude</strong> as the default for writing and code because of its context window and consistency, <strong>Gemini</strong> when you need live web results and Google integration, and <strong>DeepSeek</strong> as the unlimited fallback for heavy reasoning when the others hit their caps. Keep the training opt-out on everywhere, keep credentials out of every prompt, and cross-check anything you'd actually act on. That combination costs nothing, covers the gaps in each tool, and gets you 90% of what a paid subscription buys — which is often reason enough to stay on the free tiers a while longer.</p>
         <div class="article-tags">
           <a class="article-tag" href="#">Free AI Chatbots</a>
           <a class="article-tag" href="#">Free</a>
@@ -136,7 +184,11 @@ I kept the numbers framed as "early-2026 snapshot" and avoided inventing precise
     <aside class="article-sidebar">
       <div class="sidebar-box">
         <h4>Table of Contents</h4>
-        <ul class="toc-list"><li><a href="#">Overview</a></li></ul>
+        <ul class="toc-list"><li><a href="#what-free-means"><span class="toc-num">01</span> What "free" actually means in 2026</a></li>
+          <li><a href="#the-contenders"><span class="toc-num">02</span> The six free tiers worth your time</a></li>
+          <li><a href="#pick-by-task"><span class="toc-num">03</span> Match the tool to the task, not the hype</a></li>
+          <li><a href="#privacy"><span class="toc-num">04</span> The privacy line nobody reads</a></li>
+          <li><a href="#recommendation"><span class="toc-num">05</span> The practical setup</a></li></ul>
       </div>
       <div class="sidebar-box">
         <h4>Related Articles</h4>

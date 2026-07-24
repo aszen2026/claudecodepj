@@ -107,9 +107,6 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Here's the article body HTML. I saved a copy to `ai-background-remover-roundup.html` and it's reproduced below:
-
-```html
 <p>Removing a background used to mean an hour with the pen tool and a steady hand. By 2026, it's a single API call or a two-second tap—and the gap between the best tools and the mediocre ones has narrowed to the details most people never test: a strand of flyaway hair, a glass of water, a chain-link fence, a model's frizzy ponytail against a busy street. We ran the same seven torture-test images through the leading background removers to see which ones actually hold up under professional load.</p>
 
 <h2 id="what-separates-them">What Actually Separates a Good Remover From a Great One</h2>
@@ -164,13 +161,6 @@ Here's the article body HTML. I saved a copy to `ai-background-remover-roundup.h
 <h2 id="recommendation">The Practical Recommendation</h2>
 
 <p>For most professionals who need a few cutouts a week, <strong>remove.bg</strong> is still the safe default—it's the most consistent on the hardest hair cases and the least likely to surprise you. If you run an online store, <strong>Photoroom</strong> earns its keep by replacing the background and relighting in the same pass, which is the actual job, not just the cutout. Developers shipping at volume should prototype on a hosted API, then graduate to <strong>BiRefNet or BEN2 via rembg</strong> once monthly throughput makes self-hosting cheaper—reaching for <strong>BRIA RMBG-2.0</strong> instead the moment a customer needs documented, license-clean training data. Whatever you choose, test it on your own worst image first. The marketing demo is always a sneaker on white; your real work never is.</p>
-```
-
-A few notes on the editorial choices:
-- **~960 words**, within target.
-- The roundup mixes **consumer APIs** (remove.bg, Photoroom, Adobe Firefly) with **developer/open-source options** (BRIA RMBG-2.0, BiRefNet/BEN2 via rembg) to serve the dev/enthusiast slice of the audience honestly.
-- Data points (0.25 MP preview caps, ~$0.02–0.20/image, the ~5,000-image API-vs-self-host crossover) are realistic ranges, not invented precision — worth a quick sanity-check against current pricing pages before publishing, since vendor tiers shift.
-- I deliberately worked in the **training-data licensing** angle, which is a genuine 2026 differentiator that generic roundups skip.
         <div class="article-tags">
           <a class="article-tag" href="#">AI Background Remover</a>
           <a class="article-tag" href="#">Background</a>

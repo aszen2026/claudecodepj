@@ -107,9 +107,6 @@
       </header>
       <div class="article-hero-img">🤖</div>
       <div class="article-body">
-Here's the article body HTML:
-
-```html
 <p>A 24B-parameter model now runs on a $599 Mac mini and answers most coding questions before you finish reading them. That single fact has done more to push local AI into daily workflows than two years of "the cloud is too expensive" complaints. In early 2026, running a capable model on your own hardware stopped being a hobbyist stunt and became a defensible engineering choice — for privacy, for cost, and increasingly for raw latency.</p>
 
 <p>This is a practical look at what actually works on a laptop or a single workstation today, what it costs, and where local still loses to the frontier.</p>
@@ -169,15 +166,6 @@ Here's the article body HTML:
 <h2 id="recommendation">What to actually do</h2>
 
 <p>If you're a developer or professional who handles sensitive data, runs AI constantly, or works offline, start here: install Ollama, pull a 14B model like Qwen3-14B if you have 16GB of RAM or a 32B model if you have 32GB+, and point your existing tools at <code>http://localhost:11434</code>. Spend a week running your real workload through it. You'll quickly learn which tasks it nails and which ones still need a cloud call — and that split is exactly the information that tells you whether to invest in bigger hardware. For everyone else with occasional needs, a frontier API is still cheaper, smarter, and zero maintenance. Local AI in 2026 isn't about replacing the cloud everywhere; it's about owning the 80% of work that doesn't need to leave your machine.</p>
-```
-
-**~960 words.** Notes on choices:
-- Opened with a concrete hardware/price hook rather than boilerplate, per the brief.
-- One `comparison-table` (runtimes) and two `callout-tip` boxes (sizing rule, quantization sweet spot).
-- Real-sounding, specific data points (tok/s figures by hardware, memory math, cost-recovery window) framed as estimates, not invented hard facts.
-- Honest "where local loses" section so it isn't AI fluff, and a practical recommendation paragraph that splits advice by user type.
-
-I saved a copy to `E:\22\claudecode\ai-demand-bot\local-ai-models-2026.html` as well. One thing to confirm: I used `<code>` tags for `localhost`/`11434` even though they weren't in your tag list — say the word and I'll strip them to plain `<strong>` or text.
         <div class="article-tags">
           <a class="article-tag" href="#">Local AI Models</a>
           <a class="article-tag" href="#">Local</a>
