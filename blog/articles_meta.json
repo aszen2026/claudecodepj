@@ -1,5 +1,27 @@
 [
   {
+    "title": "Runway Launch: What Just Happened (July 2026)",
+    "slug": "runway-launch-what-just-happened-july-2026",
+    "date": "July 24, 2026",
+    "date_str": "2026-07-24",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in runway launch and break down what matters most for your workflow.",
+    "topic": "Runway Launch",
+    "is_event": true
+  },
+  {
+    "title": "Google $36M Deal: What Just Happened (July 2026)",
+    "slug": "google-36m-deal-what-just-happened-july-2026",
+    "date": "July 24, 2026",
+    "date_str": "2026-07-24",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in google $36m deal and break down what matters most for your workflow.",
+    "topic": "Google $36M Deal",
+    "is_event": true
+  },
+  {
     "title": "Anthropic $20M Deal: What Just Happened (July 2026)",
     "slug": "anthropic-20m-deal-what-just-happened-july-2026",
     "date": "July 24, 2026",
