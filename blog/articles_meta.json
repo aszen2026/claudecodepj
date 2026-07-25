@@ -1,5 +1,16 @@
 [
   {
+    "title": "Claude 5: What Just Happened (July 2026)",
+    "slug": "claude-5-what-just-happened-july-2026",
+    "date": "July 25, 2026",
+    "date_str": "2026-07-25",
+    "year_month": "2026-07",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in claude 5 and break down what matters most for your workflow.",
+    "topic": "Claude 5",
+    "is_event": true
+  },
+  {
     "title": "Runway Launch: What Just Happened (July 2026)",
     "slug": "runway-launch-what-just-happened-july-2026",
     "date": "July 24, 2026",
