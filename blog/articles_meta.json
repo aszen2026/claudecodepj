@@ -1,5 +1,27 @@
 [
   {
+    "title": "GPT-5: What Just Happened (August 2026)",
+    "slug": "gpt-5-what-just-happened-august-2026",
+    "date": "August 01, 2026",
+    "date_str": "2026-08-01",
+    "year_month": "2026-08",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5 and break down what matters most for your workflow.",
+    "topic": "GPT-5",
+    "is_event": true
+  },
+  {
+    "title": "LLM Technology: Everything You Need to Know in August 2026",
+    "slug": "llm-technology-everything-you-need-to-know-in-august-2026",
+    "date": "August 01, 2026",
+    "date_str": "2026-08-01",
+    "year_month": "2026-08",
+    "category": "LLM Comparison Guide",
+    "excerpt": "We analyzed the latest trends in llm technology and break down what matters most for your workflow.",
+    "topic": "LLM Technology",
+    "is_event": false
+  },
+  {
     "title": "Deepseek V4: What Just Happened (August 2026)",
     "slug": "deepseek-v4-what-just-happened-august-2026",
     "date": "August 01, 2026",
