@@ -1,5 +1,27 @@
 [
   {
+    "title": "Phi 1.0: What Just Happened (August 2026)",
+    "slug": "phi-10-what-just-happened-august-2026",
+    "date": "August 15, 2026",
+    "date_str": "2026-08-15",
+    "year_month": "2026-08",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in phi 1.0 and break down what matters most for your workflow.",
+    "topic": "Phi 1.0",
+    "is_event": true
+  },
+  {
+    "title": "Gemini 0: What Just Happened (August 2026)",
+    "slug": "gemini-0-what-just-happened-august-2026",
+    "date": "August 15, 2026",
+    "date_str": "2026-08-15",
+    "year_month": "2026-08",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gemini 0 and break down what matters most for your workflow.",
+    "topic": "Gemini 0",
+    "is_event": true
+  },
+  {
     "title": "Qwen 3.5: What Just Happened (August 2026)",
     "slug": "qwen-35-what-just-happened-august-2026",
     "date": "August 14, 2026",
