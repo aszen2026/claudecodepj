@@ -1,5 +1,27 @@
 [
   {
+    "title": "Cursor Launch: What Just Happened (August 2026)",
+    "slug": "cursor-launch-what-just-happened-august-2026",
+    "date": "August 19, 2026",
+    "date_str": "2026-08-19",
+    "year_month": "2026-08",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in cursor launch and break down what matters most for your workflow.",
+    "topic": "Cursor Launch",
+    "is_event": true
+  },
+  {
+    "title": "Google Acquisition: What Just Happened (August 2026)",
+    "slug": "google-acquisition-what-just-happened-august-2026",
+    "date": "August 19, 2026",
+    "date_str": "2026-08-19",
+    "year_month": "2026-08",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in google acquisition and break down what matters most for your workflow.",
+    "topic": "Google Acquisition",
+    "is_event": true
+  },
+  {
     "title": "Qwen3: What Just Happened (August 2026)",
     "slug": "qwen3-what-just-happened-august-2026",
     "date": "August 18, 2026",
