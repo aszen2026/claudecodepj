@@ -1,5 +1,27 @@
 [
   {
+    "title": "Claude 5: What Just Happened (August 2026)",
+    "slug": "claude-5-what-just-happened-august-2026",
+    "date": "August 21, 2026",
+    "date_str": "2026-08-21",
+    "year_month": "2026-08",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in claude 5 and break down what matters most for your workflow.",
+    "topic": "Claude 5",
+    "is_event": true
+  },
+  {
+    "title": "the motley fool: What Just Happened (August 2026)",
+    "slug": "the-motley-fool-what-just-happened-august-2026",
+    "date": "August 21, 2026",
+    "date_str": "2026-08-21",
+    "year_month": "2026-08",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in the motley fool and break down what matters most for your workflow.",
+    "topic": "the motley fool",
+    "is_event": true
+  },
+  {
     "title": "Anthropic Acquisition: What Just Happened (August 2026)",
     "slug": "anthropic-acquisition-what-just-happened-august-2026",
     "date": "August 20, 2026",
