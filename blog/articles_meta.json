@@ -1,5 +1,27 @@
 [
   {
+    "title": "Gemini 0: What Just Happened (September 2026)",
+    "slug": "gemini-0-what-just-happened-september-2026",
+    "date": "September 03, 2026",
+    "date_str": "2026-09-03",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gemini 0 and break down what matters most for your workflow.",
+    "topic": "Gemini 0",
+    "is_event": true
+  },
+  {
+    "title": "GPT-6: What Just Happened (September 2026)",
+    "slug": "gpt-6-what-just-happened-september-2026",
+    "date": "September 03, 2026",
+    "date_str": "2026-09-03",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-6 and break down what matters most for your workflow.",
+    "topic": "GPT-6",
+    "is_event": true
+  },
+  {
     "title": "ad fraud: What Just Happened (September 2026)",
     "slug": "ad-fraud-what-just-happened-september-2026",
     "date": "September 01, 2026",
