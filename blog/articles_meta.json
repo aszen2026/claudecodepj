@@ -1,5 +1,27 @@
 [
   {
+    "title": "Anthropic IPO: What Just Happened (September 2026)",
+    "slug": "anthropic-ipo-what-just-happened-september-2026",
+    "date": "September 04, 2026",
+    "date_str": "2026-09-04",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in anthropic ipo and break down what matters most for your workflow.",
+    "topic": "Anthropic IPO",
+    "is_event": true
+  },
+  {
+    "title": "AI Coding Tools: Everything You Need to Know in September 2026",
+    "slug": "ai-coding-tools-everything-you-need-to-know-in-september-202",
+    "date": "September 04, 2026",
+    "date_str": "2026-09-04",
+    "year_month": "2026-09",
+    "category": "Best AI Coding Assistants",
+    "excerpt": "We analyzed the latest trends in ai coding tools and break down what matters most for your workflow.",
+    "topic": "AI Coding Tools",
+    "is_event": false
+  },
+  {
     "title": "Gemini 3.8 Flash: What Just Happened (September 2026)",
     "slug": "gemini-38-flash-what-just-happened-september-2026",
     "date": "September 04, 2026",
