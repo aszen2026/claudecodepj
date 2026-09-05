@@ -1,5 +1,27 @@
 [
   {
+    "title": "Gemini 3.8 Flash: What Just Happened (September 2026)",
+    "slug": "gemini-38-flash-what-just-happened-september-2026",
+    "date": "September 04, 2026",
+    "date_str": "2026-09-04",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gemini 3.8 flash and break down what matters most for your workflow.",
+    "topic": "Gemini 3.8 Flash",
+    "is_event": true
+  },
+  {
+    "title": "Openai Launch: What Just Happened (September 2026)",
+    "slug": "openai-launch-what-just-happened-september-2026",
+    "date": "September 04, 2026",
+    "date_str": "2026-09-04",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in openai launch and break down what matters most for your workflow.",
+    "topic": "Openai Launch",
+    "is_event": true
+  },
+  {
     "title": "gate: What Just Happened (September 2026)",
     "slug": "gate-what-just-happened-september-2026",
     "date": "September 03, 2026",
