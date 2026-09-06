@@ -1,5 +1,27 @@
 [
   {
+    "title": "Google Gemini: Everything You Need to Know in September 2026",
+    "slug": "google-gemini-everything-you-need-to-know-in-september-2026",
+    "date": "September 05, 2026",
+    "date_str": "2026-09-05",
+    "year_month": "2026-09",
+    "category": "Gemini AI Review",
+    "excerpt": "We analyzed the latest trends in google gemini and break down what matters most for your workflow.",
+    "topic": "Google Gemini",
+    "is_event": false
+  },
+  {
+    "title": "GPT-5.6: What Just Happened (September 2026)",
+    "slug": "gpt-56-what-just-happened-september-2026",
+    "date": "September 05, 2026",
+    "date_str": "2026-09-05",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5.6 and break down what matters most for your workflow.",
+    "topic": "GPT-5.6",
+    "is_event": true
+  },
+  {
     "title": "Anthropic IPO: What Just Happened (September 2026)",
     "slug": "anthropic-ipo-what-just-happened-september-2026",
     "date": "September 04, 2026",
