@@ -1,5 +1,27 @@
 [
   {
+    "title": "Gemini 4: What Just Happened (September 2026)",
+    "slug": "gemini-4-what-just-happened-september-2026",
+    "date": "September 06, 2026",
+    "date_str": "2026-09-06",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gemini 4 and break down what matters most for your workflow.",
+    "topic": "Gemini 4",
+    "is_event": true
+  },
+  {
+    "title": "Claude 5.1: What Just Happened (September 2026)",
+    "slug": "claude-51-what-just-happened-september-2026",
+    "date": "September 06, 2026",
+    "date_str": "2026-09-06",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in claude 5.1 and break down what matters most for your workflow.",
+    "topic": "Claude 5.1",
+    "is_event": true
+  },
+  {
     "title": "Best AI Resume Builder Tools (September 2026): Top Picks Tested",
     "slug": "best-ai-resume-builder-tools-september-2026-top-picks-tested",
     "date": "September 06, 2026",
