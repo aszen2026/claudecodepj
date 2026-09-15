@@ -1,5 +1,27 @@
 [
   {
+    "title": "Openai Funding: What Just Happened (September 2026)",
+    "slug": "openai-funding-what-just-happened-september-2026",
+    "date": "September 14, 2026",
+    "date_str": "2026-09-14",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in openai funding and break down what matters most for your workflow.",
+    "topic": "Openai Funding",
+    "is_event": true
+  },
+  {
+    "title": "Qwen 3.6: What Just Happened (September 2026)",
+    "slug": "qwen-36-what-just-happened-september-2026",
+    "date": "September 14, 2026",
+    "date_str": "2026-09-14",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in qwen 3.6 and break down what matters most for your workflow.",
+    "topic": "Qwen 3.6",
+    "is_event": true
+  },
+  {
     "title": "Complete Guide to AI Tools for Small Business (September 2026)",
     "slug": "complete-guide-to-ai-tools-for-small-business-september-2026",
     "date": "September 13, 2026",
