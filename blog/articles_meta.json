@@ -1,5 +1,16 @@
 [
   {
+    "title": "Claude 4.6: What Just Happened (September 2026)",
+    "slug": "claude-46-what-just-happened-september-2026",
+    "date": "September 16, 2026",
+    "date_str": "2026-09-16",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in claude 4.6 and break down what matters most for your workflow.",
+    "topic": "Claude 4.6",
+    "is_event": true
+  },
+  {
     "title": "GPT-5.5: What Just Happened (September 2026)",
     "slug": "gpt-55-what-just-happened-september-2026",
     "date": "September 16, 2026",
