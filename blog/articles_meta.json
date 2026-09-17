@@ -1,5 +1,27 @@
 [
   {
+    "title": "GPT-5.5: What Just Happened (September 2026)",
+    "slug": "gpt-55-what-just-happened-september-2026",
+    "date": "September 16, 2026",
+    "date_str": "2026-09-16",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in gpt-5.5 and break down what matters most for your workflow.",
+    "topic": "GPT-5.5",
+    "is_event": true
+  },
+  {
+    "title": "Mimo 2.6: What Just Happened (September 2026)",
+    "slug": "mimo-26-what-just-happened-september-2026",
+    "date": "September 16, 2026",
+    "date_str": "2026-09-16",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in mimo 2.6 and break down what matters most for your workflow.",
+    "topic": "Mimo 2.6",
+    "is_event": true
+  },
+  {
     "title": "Complete Guide to AI Prompts for ChatGPT (September 2026)",
     "slug": "complete-guide-to-ai-prompts-for-chatgpt-september-2026",
     "date": "September 15, 2026",
