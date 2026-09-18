@@ -1,5 +1,27 @@
 [
   {
+    "title": "Hugging Face Launch: What Just Happened (September 2026)",
+    "slug": "hugging-face-launch-what-just-happened-september-2026",
+    "date": "September 17, 2026",
+    "date_str": "2026-09-17",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in hugging face launch and break down what matters most for your workflow.",
+    "topic": "Hugging Face Launch",
+    "is_event": true
+  },
+  {
+    "title": "Google Launch: What Just Happened (September 2026)",
+    "slug": "google-launch-what-just-happened-september-2026",
+    "date": "September 17, 2026",
+    "date_str": "2026-09-17",
+    "year_month": "2026-09",
+    "category": "News",
+    "excerpt": "We analyzed the latest trends in google launch and break down what matters most for your workflow.",
+    "topic": "Google Launch",
+    "is_event": true
+  },
+  {
     "title": "Claude 4.6: What Just Happened (September 2026)",
     "slug": "claude-46-what-just-happened-september-2026",
     "date": "September 16, 2026",
